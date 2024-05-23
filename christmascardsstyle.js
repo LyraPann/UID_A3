@@ -1,5 +1,5 @@
 // Search Bar
-let searchResults= ["green", "beige"];
+let searchResults= ["green", "beige", "orange"];
 
 let searchBox= document.getElementById("inputbox");
 let resultsBox= document.querySelector(".search-results");
