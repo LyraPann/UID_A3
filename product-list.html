@@ -29,13 +29,30 @@
     </div>
   </div>
 
-<div>
-<h1>Christmas is Coming</h1>
-<p>Check out our collection of Christmas cards that will sure to set a cozy mood for the coming season!</p>
-<button>Christmas Cards</button>
+<div class="card-text">
+  <div>
+    <img class="card-pile" src="img/cardfile.png">
+  </div>
+  <div class="christmas-text">
+    <h1>Christmas is Coming</h1>
+    <p>Check out our collection of Christmas cards that will sure to set a cozy mood for the coming season!</p>
+    <button>Christmas Cards</button>
+  </div>
 </div>
-<h2>All Cards</h2>
 
+
+<div class="title-search">
+  <h2>All Cards</h2>
+      <!-- ===================== the search ===================== -->
+      <div class="search-bar">
+        <div class="lines">
+          <img class="three-lines-icon" src="img/3lines.svg">
+          <input type="text" id="inputbox" placeholder="Search Bar" autocomplete="off">
+          <button class="search-icon"><img src="img/Icon.svg"></button>
+    </div>
+</div>
+
+<div class="products-filter">
   <!-- ===================== the filter ===================== -->
     <div class="filter">
         <div class="select">
@@ -43,35 +60,19 @@
           <div class="arrow arrow-right"></div>
         </div>
         <div class="menu">
-                <div class="text-option">All Cards</div>
-                <div class="text-option">Christmas Cards</div>
-                <div class="text-option">Pick Me Up Cards</div>
-                <div class="text-option">Thanksgiving Cards</div>
-                <div class="text-option">Valentines Cards</div>
+                <div class="text-option" data-filter="allcard">All Cards</div>
+                <div class="text-option" data-filter="christmascards">Christmas Cards</div>
+                <div class="text-option" data-filter="pickmecards">Pick Me Up Cards</div>
+                <div class="text-option" data-filter="thanksgivingcards">Thanksgiving Cards</div>
+                <div class="text-option" data-filter="valentinecards">Valentines Cards</div>
         </div>
-    </div>
-
-      <!-- ===================== the search ===================== -->
-      <div>
-        <div>
-          <img src="img/3lines.svg">
-          <input type="text" placeholder="Search Bar">
-          <a><img src="img/Icon.svg"></a>
-        </div>
-            <ul>
-                <li><a href="#">green</a></li>
-                <li><a href="#">christmas</a></li>
-                <li><a href="#">beige</a></li>
-                <li><a href="#">valentines</a></li>
-                <li><a href="#">cute</a></li>
-            </ul>      
     </div>
 
 
       <!-- ===================== the products ===================== -->
 
       <div class="products-list" id="products">
-        <div class="popupVal1">
+        <div class="popupVal1" data-category="valentinecards">
           <a href="#">
             <img id="popupButton" class="product-items thanks" src="img/val1.png">
           </a>
@@ -80,6 +81,14 @@
               <button id="closeValpopup1">
                 <img class="close-button help" src="img/Close.svg">
               </button>
+              <div class="slider">
+                <div class="slides">
+                    <img class="slide" src="img/val1.png" alt="Image #1">
+                    <img class="slide" src="img/val2.png" alt="Image #2">
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094</button>
+                <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
               <h2>
                 I Love You a Whole Bunch!
               </h2>
@@ -91,191 +100,201 @@
           </div>
         </div>
         
-        <div>
+        <div data-category="thanksgivingcards">
           <a href="#">
             <img class="product-items thanks" src="img/thanks1.png">
           </a>
         </div>
-        <div>
+
+        <div data-category="pickmecards">
           <a href="#">
             <img class="product-items motivate" src="img/motivate1.png">
           </a>
         </div>
-        <div>
+
+        <div data-category="valentinecards">
           <a href="#">
             <img class="product-items val" src="img/val2.png">
           </a>
         </div>
-        <div>
+        <div data-category="thanksgivingcards">
           <a href="#">
             <img class="product-items thanks" src="img/thanks2.png">
           </a>
         </div>
-        <div>
+        <div data-category="christmascards">
           <a href="#">
             <img class="product-items xmas" src="img/xmas1.png">
           </a>
         </div>
-        <div>
+        <div data-category="christmascards">
           <a href="#">
             <img class="product-items xmas" src="img/xmas2.png">
           </a>
         </div>
-        <div>
+        <div data-category="pickmecards">
           <a href="#">
             <img class="product-items motivate" src="img/motivate2.png">
           </a>
         </div>
-        <div>
+        <div data-category="valentinecards">
           <a href="#">
             <img class="product-items val" src="img/val1.png">
           </a>
         </div>
-        <div>
+        <div data-category="thanksgivingcards">
           <a href="#">
             <img class="product-items thanks" src="img/thanks1.png">
           </a>
         </div>
-        <div>
+        <div data-category="pickmecards">
           <a href="#">
             <img class="product-items motivate" src="img/motivate1.png">
           </a>
         </div>
-        <div>
+        <div data-category="valentinecards">
           <a href="#">
             <img class="product-items val" src="img/val2.png">
           </a>
         </div>
-        <div>
+        <div data-category="thanksgivingcards">
           <a href="#">
             <img class="product-items thanks" src="img/thanks2.png">
           </a>
         </div>
-        <div>
+        <div data-category="christmascards">
           <a href="#">
             <img class="product-items xmas" src="img/xmas1.png">
           </a>
         </div>
-        <div>
+        <div data-category="christmascards">
           <a href="#">
             <img class="product-items xmas" src="img/xmas2.png">
           </a>
         </div>
-        <div>
+        <div data-category="pickmecards">
           <a href="#">
             <img class="product-items motivate" src="img/motivate2.png">
           </a>
-        </div><div>
+        </div>
+        <div data-category="valentinecards">
           <a>
             <img class="product-items val" src="img/val1.png">
           </a>
         </div>
-        <div>
+        <div data-category="thanksgivingcards">
           <a href="#">
             <img class="product-items thanks" src="img/thanks1.png">
           </a>
         </div>
-        <div>
+        <div data-category="pickmecards">
           <a href="#">
             <img class="product-items motivate" src="img/motivate1.png">
           </a>
         </div>
-        <div>
+        <div data-category="valentinecards">
           <a href="#">
             <img class="product-items val" src="img/val2.png">
           </a>
         </div>
-        <div>
+        <div data-category="thanksgivingcards">
           <a href="#">
             <img class="product-items thanks" src="img/thanks2.png">
           </a>
         </div>
-        <div>
+        <div data-category="christmascards">
           <a href="#">
             <img class="product-items xmas" src="img/xmas1.png">
           </a>
         </div>
-        <div>
+        <div data-category="christmascards">
           <a href="#">
             <img class="product-items xmas" src="img/xmas2.png">
           </a>
         </div>
-        <div>
+        <div data-category="pickmecards">
           <a href="#">
             <img class="product-items motivate" src="img/motivate2.png">
           </a>
         </div>
-        <div>
+        <div data-category="valentinecards">
           <a href="#">
             <img class="product-items val" src="img/val1.png">
           </a>
         </div>
-        <div>
+        <div data-category="thanksgivingcards">
           <a href="#">
             <img class="product-items thanks" src="img/thanks1.png">
           </a>
         </div>
-        <div>
+        <div data-category="pickmecards">
           <a href="#">
             <img class="product-items motivate" src="img/motivate1.png">
           </a>
         </div>
-        <div>
+        <div data-category="valentinecards">
           <a href="#">
             <img class="product-items val" src="img/val2.png">
           </a>
         </div>
-        <div>
+        <div data-category="thanksgivingcards">
           <a href="#">
             <img class="product-items thanks" src="img/thanks2.png">
           </a>
         </div>
-        <div>
+        <div data-category="christmascards">
           <a href="#">
             <img class="product-items xmas" src="img/xmas1.png">
           </a>
         </div>
-        <div>
+        <div data-category="christmascards">
           <a href="#">
             <img class="product-items xmas" src="img/xmas2.png">
           </a>
         </div>
-        <div>
+        <div data-category="pickmecards">
           <a href="#">
             <img class="product-items" src="img/motivate2.png">
           </a>
         </div>
-        <div>
+        <div data-category="valentinecards">
           <a href="#">
             <img class="product-items" src="img/val1.png">
           </a>
         </div>
-        <div>
+        <div data-category="thanksgivingcards">
           <a href="#">
             <img class="product-items" src="img/thanks1.png">
           </a>
         </div>
-        <div>
+        <div data-category="pickmecards">
           <a href="#">
             <img class="product-items" src="img/motivate1.png">
           </a>
         </div>
-        <div>
+        <div data-category="valentinecards">
           <a href="#">
             <img class="product-items" src="img/val2.png">
           </a>
         </div>
-        <div>
+        <div data-category="thanksgivingcards">
           <a href="#">
             <img class="product-items" src="img/thanks2.png">
           </a>
         </div>
-        <div>
+        <div data-category="christmascards">
           <a href="#">
             <img class="product-items" src="img/xmas1.png">
           </a>
         </div>
       </div>
+    </div>
+
+
+
+
+
+
 
   <!-- ===================== footer ===================== -->
   <footer>
