@@ -77,10 +77,20 @@ dropdownDisplay.addEventListener('click', () => {
 
 function filterItems(filterValue) {
     products.forEach(product => {
-        product.style.display= (filterValue=== "all" || product.getAttribute("data-category")=== filterValue) ? block: none
+        product.style.display= (filterValue=== "all" || product.getAttribute("data-category")=== filterValue) ? "block": "none";
     })
 }
 
+filterOptions.forEach(option => {
+    option.addEventListener('click', () => {
+        const filterValue= option.getAttribute('data-filter');
+        filterItems(filterValue);
+        dropdownContent.style.display = 'none';
+        arrow.classList.remove('arrow-down');
+        arrow.classList.add('arrow-right');
+        document.querySelector('.selected').textContent= option.textContent;
+    });
+});
 
 window.addEventListener('click', (event) => {
     if (!event.target.closest('.filter')) {
