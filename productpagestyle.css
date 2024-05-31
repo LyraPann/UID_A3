@@ -3,7 +3,8 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: none;
+    width: 100%;
   }
   
   /* Navigation bar styles */
@@ -186,7 +187,35 @@ body {
 
 
 
-
+@media screen and (min-width: 1368px){
+    .mobile-menu{
+        display: block;
+        padding: 12px 21px;
+    }
+    #myElement{
+        display: none;
+    }
+    .menu-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .products-list {
+        display: flex;
+        flex-direction: row;
+        overflow-x: none;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px;
+    }
+    .products-filter {
+        flex-direction: row;
+    }
+    .search-bar {
+        display: block;
+    }
+}
 
 
 
@@ -198,6 +227,7 @@ body {
     height: 2rem;
     min-width: 11rem;
     max-width: 45rem;
+    display: block;
 }
 .lines {
     background-color: #ECE6F0;
@@ -311,16 +341,80 @@ img.displaySlide{
 }
 
 
-.mobile-menu{
-    display: none;
-}
 
 
-@media screen and (max-width: 600px){
+
+
+@media screen and (min-width: 390px){
     .mobile-menu{
         display: block;
+        padding: 12px 21px;
     }
     #myElement{
+        display: none;
+    }
+    .menu-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .products-list {
+        display: flex;
+        flex-direction: row;
+        overflow-x: none;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px;
+    }
+    .products-filter {
+        flex-direction: row;
+    }
+    .card-text {
+        flex-direction: column;
+    }
+    .christmas-text {
+        max-width: 500px;
+    }
+    .title-search {
+        flex-direction: column;
+    }
+    #logo h1 {
+        font-size: 1em;
+    }
+    .menu-icon {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .nav {
+        display: none;
+    }
+    .desktop-footer {
+        display: none;
+    }
+    .mobile-footer {
+        padding: 12px 21px;
+    }
+    .footer-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .shopping-profile {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .profile-pic {
+        width: 2.5rem;
+    }
+    .search-bar {
         display: none;
     }
 }

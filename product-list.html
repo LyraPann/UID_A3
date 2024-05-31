@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="productpagestyle.css">
-  
+
   <title>Product List Page</title>
 </head>
 
 
 <body>
-      <!-- ===================== navigation bar ===================== --> 
+  <!-- ===================== navigation bar ===================== -->
   <div class="mobile-menu">
     <header>
-      <button id="myButton" onclick={openMenu()}><img src="img/3lines.svg"></button>
+      <div class="menu-flex">
+        <div class="menu-icon">
+          <button id="myButton" onclick={openMenu()}><img src="img/3lines.svg"></button>
+          <div id="logo">
+            <h1>CHARITYECARDS</h1>
+          </div>
+        </div>
+        <div class="shopping-profile">
+          <button><img src="img/shoppingcart.svg" alt="shopping cart"></button>
+          <img class="profile-pic" src="img/Avatars/3d_avatar_7.png" alt="profile image">
+        </div>
+      </div>
       <nav id="myElement">
         <ul>
           <li><a href="#">Pricing</a></li>
@@ -44,44 +58,46 @@
     </div>
   </div>
 
-<div class="card-text">
-  <div>
-    <img class="card-pile" src="img/cardfile.png">
-  </div>
-  <div class="christmas-text">
-    <h1>Christmas is Coming</h1>
-    <p>Check out our collection of Christmas cards that will sure to set a cozy mood for the coming season!</p>
-    <button>Christmas Cards</button>
-  </div>
-</div>
-
-
-<div class="title-search">
-  <h2>All Cards</h2>
-      <!-- ===================== the search ===================== -->
-      <div class="search-bar">
-        <div class="lines">
-          <img class="three-lines-icon" src="img/3lines.svg">
-          <input type="text" id="inputbox" placeholder="Search Bar" autocomplete="off">
-          <button class="search-icon"><img src="img/Icon.svg"></button>
+  <div class="card-text">
+    <div>
+      <img class="card-pile" src="img/card flip.png">
     </div>
-</div>
+    <div class="christmas-text">
+      <h1>Christmas is Coming</h1>
+      <p>Check out our collection of Christmas cards that will sure to set a cozy mood for the coming season!</p>
+      <button>Christmas Cards</button>
+    </div>
+  </div>
 
-<div class="products-filter">
-  <!-- ===================== the filter ===================== -->
-    <div class="filter">
+
+  <div class="title-search">
+    <h2>All Cards</h2>
+    <!-- ===================== the search ===================== -->
+    <div class="search-bar">
+      <div class="lines">
+        <img class="three-lines-icon" src="img/3lines.svg">
+        <input type="text" id="inputbox" placeholder="Search Bar" autocomplete="off">
+        <button class="search-icon"><img src="img/Icon.svg"></button>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="products-filter">
+      <!-- ===================== the filter ===================== -->
+      <div class="filter">
         <div class="select">
           <span class="selected">Filter</span>
           <div class="arrow arrow-right"></div>
         </div>
         <div class="menu">
-                <div class="text-option" data-filter="allcard">All Cards</div>
-                <div class="text-option" data-filter="christmascards">Christmas Cards</div>
-                <div class="text-option" data-filter="pickmecards">Pick Me Up Cards</div>
-                <div class="text-option" data-filter="thanksgivingcards">Thanksgiving Cards</div>
-                <div class="text-option" data-filter="valentinecards">Valentines Cards</div>
+          <div class="text-option" data-filter="allcard">All Cards</div>
+          <div class="text-option" data-filter="christmascards">Christmas Cards</div>
+          <div class="text-option" data-filter="pickmecards">Pick Me Up Cards</div>
+          <div class="text-option" data-filter="thanksgivingcards">Thanksgiving Cards</div>
+          <div class="text-option" data-filter="valentinecards">Valentines Cards</div>
         </div>
-    </div>
+      </div>
 
 
       <!-- ===================== the products ===================== -->
@@ -98,12 +114,12 @@
               </button>
               <div class="slider">
                 <div class="slides">
-                    <img class="slide" src="img/val1.png" alt="Image #1">
-                    <img class="slide" src="img/val2.png" alt="Image #2">
+                  <img class="slide" src="img/val1.png" alt="Image #1">
+                  <img class="slide" src="img/val2.png" alt="Image #2">
                 </div>
                 <button class="prev" onclick="prevSlide()">&#10094</button>
                 <button class="next" onclick="nextSlide()">&#10095</button>
-            </div>
+              </div>
               <h2>
                 I Love You a Whole Bunch!
               </h2>
@@ -114,7 +130,7 @@
             </div>
           </div>
         </div>
-        
+
         <div data-category="thanksgivingcards">
           <a href="#">
             <img class="product-items thanks" src="img/thanks1.png">
@@ -311,45 +327,69 @@
 
 
 
-  <!-- ===================== footer ===================== -->
-  <footer>
-    <img src="img/footericon.svg" alt="footer icon">
-    <div class="footerlinks">
-      <table>
-        <tr>
-          <th>Useful Links</th>
-          <th>Socials</th>
-          <th>Secure Payments</th>
-        </tr>
-        <tr>
-          <td>About Us</td>
-          <td>Facebook</td>
-          <td>
-            <img src="img/VISA.png" alt="VISA">
-            <img src="img/Mastercard.png" alt="Mastercard">
-            <img src="img/AmericanExpress.png" alt="American AmericanExpress">
-          </td>
-        </tr>
-        <tr>
-          <td>Contact Us</td>
-          <td>Linkedin</td>
-        </tr>
-        <tr>
-          <td>Pricing</td>
-          <td>Instagram</td>
-        </tr>
-        <tr>
-          <td>Terms and Conditions</td>
-          <td>Twitter</td>
-        </tr>
-        <tr>
-          <td>Privacy Policy</td>
-        </tr>
-      </table>
-    </div>
-  </footer>
+    <!-- ===================== footer ===================== -->
+    <footer>
+      <hr>
+      <div class="footer-div">
+        <div class="footer-items">
+          <div>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Privacy Policies</p>
+            <p>Terms and Conditions</p>
+          </div>
+          <div class="social-media">
+            <img src="img/socials-icon/dark/default/facebook.svg" alt="Facebook">
+            <img src="img/socials-icon/dark/default/instagram.svg" alt="Instagram">
+            <img src="img/socials-icon/dark/default/Twitter.svg" alt="Twitter">
+            <img src="img/socials-icon/dark/default/Linkedin.svg" alt="Linkedin">
+          </div>
+          <div>
+            <p>© Copyright Charity Greeting Cards PTY LTD. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-    
+    <footer class="desktop-footer">
+      <img src="img/footericon.svg" alt="footer icon">
+      <div class="footerlinks">
+        <table>
+          <tr>
+            <th>Useful Links</th>
+            <th>Socials</th>
+            <th>Secure Payments</th>
+          </tr>
+          <tr>
+            <td>About Us</td>
+            <td>Facebook</td>
+            <td>
+              <img src="img/VISA.png" alt="VISA">
+              <img src="img/Mastercard.png" alt="Mastercard">
+              <img src="img/AmericanExpress.png" alt="American AmericanExpress">
+            </td>
+          </tr>
+          <tr>
+            <td>Contact Us</td>
+            <td>Linkedin</td>
+          </tr>
+          <tr>
+            <td>Pricing</td>
+            <td>Instagram</td>
+          </tr>
+          <tr>
+            <td>Terms and Conditions</td>
+            <td>Twitter</td>
+          </tr>
+          <tr>
+            <td>Privacy Policy</td>
+          </tr>
+        </table>
+      </div>
+    </footer>
+
+
     <script src="productliststyle.js"></script>
 </body>
+
 </html>

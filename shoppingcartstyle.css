@@ -1,0 +1,26 @@
+.total-amount {
+    display: flex;
+    width: 14rem;
+    height: 9rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: -44px 215px 61px 0px rgba(0, 0, 0, 0.00), -28px 138px 56px 0px rgba(0, 0, 0, 0.01), -16px 77px 47px 0px rgba(0, 0, 0, 0.05), -7px 34px 35px 0px rgba(0, 0, 0, 0.09), -2px 9px 19px 0px rgba(0, 0, 0, 0.10);
+}
+
+.total-amount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.shopping-cart {
+    display: flex;
+    flex-direction: row;
+}
