@@ -102,3 +102,21 @@ window.addEventListener('click', (event) => {
 });
 
 
+const openMenu = () => { 
+    console.log('click');
+        const myElement= document.getElementById('myElement');
+        const myButton= document.getElementById('myButton');
+        const closeButton= document.getElementById('closeButton');
+
+        myButton.addEventListener('click', () => {
+            myButton.classList.toggle('activebtn');
+
+            if (myButton.classList.contains('activebtn')) {
+                myElement.style.display= 'block';          
+            } 
+            else {
+                myElement.style.display= 'none';
+            }       
+        })
+}
+
