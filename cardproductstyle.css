@@ -7,6 +7,11 @@ body {
     width: 100%;
   }
   
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
   /* Navigation bar styles */
   .navwrapper {
     background-color: #fff;
@@ -138,8 +143,8 @@ input {
         overflow-x: none;
         flex-wrap: wrap;
         width: 100%;
-        gap: 1rem 2rem;
-        justify-content: center;
+        gap: 1rem 3rem;
+        padding: 2em 6em 8em 6em;
     }
 
     .title-search {
@@ -147,7 +152,7 @@ input {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 6em;
+        padding: 6em 6em 2em 6em;
     }
 
     .last-item{
