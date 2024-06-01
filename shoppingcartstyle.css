@@ -90,18 +90,12 @@ body {
 
 
 .total-amount {
-    display: flex;
-    width: 14rem;
-    height: 9rem;
-    border-radius: 0.5rem;
+    width: 28.9375rem;
+    height: 17.75rem;
+    border-radius: 0.75rem;
     background-color: white;
+    padding: 20px;
     box-shadow: -44px 215px 61px 0px rgba(0, 0, 0, 0.00), -28px 138px 56px 0px rgba(0, 0, 0, 0.01), -16px 77px 47px 0px rgba(0, 0, 0, 0.05), -7px 34px 35px 0px rgba(0, 0, 0, 0.09), -2px 9px 19px 0px rgba(0, 0, 0, 0.10);
-}
-
-.total-amount {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .total-price {
@@ -114,6 +108,11 @@ body {
 .shopping-cart {
     display: flex;
     flex-direction: row;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 8px;
+    width: 100%;
+    gap: 40px;
 }
 
 .product-photo {
@@ -127,6 +126,93 @@ body {
     height: 14.5rem;
     border-radius: 1.375rem;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
     box-shadow: -44px 215px 61px 0px rgba(0, 0, 0, 0.00), -28px 138px 56px 0px rgba(0, 0, 0, 0.01), -16px 77px 47px 0px rgba(0, 0, 0, 0.05), -7px 34px 35px 0px rgba(0, 0, 0, 0.09), -2px 9px 19px 0px rgba(0, 0, 0, 0.10);
+}
+
+.shop-photo {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.btn-qty {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.remove {
+    outline: none;
+    border-radius: 1.375rem;
+    border: 1px solid #5100B9; 
+    background: #FFF;
+    color: #5100B9;
+    padding: 0.2rem 1.5rem;
+}
+
+.number-select {
+    outline: transparent;
+    border-radius: 1.375rem;
+    background: #FFF;
+    width: 6.5625rem;
+    height: 2.25rem;
+    padding: 0.125rem 0.625rem;
+    background: url(img/Icon/ChevronRight.svg)no-repeat right;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+    appearance: none;
+    box-shadow: 0px 72px 20px 0px rgba(150, 150, 150, 0.00), 0px 46px 18px 0px rgba(150, 150, 150, 0.01), 0px 26px 16px 0px rgba(150, 150, 150, 0.05), 0px 12px 12px 0px rgba(150, 150, 150, 0.09), 0px 3px 6px 0px rgba(150, 150, 150, 0.10);
+}
+
+.number-select::after {
+    content: '\25B6';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+#dropdown-items * {
+    background-color: #fff;
+    color: #000;
+    border: 6px solid yellow;
+}
+
+.item-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #000;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+}
+
+.checkout {
+width: 24.125rem;
+text-align: center;
+margin: auto;
+outline: none;
+margin: 40px;
+}
+
+.checkout button {
+background-color: #6750A4;  
+border-radius: 8.90625rem;  
+width: 100%;
+box-shadow: none;
+padding: 12px 0;
+border: none;
+}
+
+.checkout button a {
+    text-decoration: none;
+    color: white;
+    outline: none;
 }

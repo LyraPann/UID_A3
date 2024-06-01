@@ -33,24 +33,49 @@
 
     <div class="shopping-cart">
         <div class="cart-item">
-            <img class="product-photo" src="img/xmas2.png">
-            <h5>Christmas Party</h5>
-            <h2>$2.25</h2>
-            <p>View Qty</p>
+            <div class="shop-photo">
+                <img class="product-photo" src="img/xmas2.png">
+                <div>
+                    <h5>Christmas Party</h5>
+                    <h2>$2.25</h2>
+                </div>
+            </div>
+
+            <div class="btn-qty">
+                <div>
+                    <p>View Qty</p>
+                    <div>
+
+                    </div> 
+                    <select id="dropdown-items" name="dropdown-items" class="number-select">
+                        <option value="1" class="option">1</option>
+                        <option value="51-100" class="option">51-100</option>
+                        <option value="201-250" class="option">201-250</option>
+                    </select>
+                </div>
+
+                <div class="rem-btn">
+                    <button class="remove" type="button">Remove</button>
+                </div>
+            </div>
         </div>
+
         <div class="total-amount">
             <div class="item-price">
                 <h5>Items(2)</h5>
                 <h5>$4.50</h5>
             </div>
+        <hr/>
             <div class="total-price">
                 <h4>Total</h4>
                 <h4>$4.50</h4>
             </div>
             <div class="checkout">
-                <a href="payment-page1.html"><button>Checkout</button></a>
+                <button type="button"><a href="payment-page1.html">Checkout</a></button>
             </div>
         </div>
+    </div>
+
 </body>
 
 </html>

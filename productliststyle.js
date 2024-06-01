@@ -17,6 +17,7 @@ chooseCard1.addEventListener('click', function() {
     valPopup1.classList.remove('show');
 });
 
+
 //pop up image slider
 const slides = document.querySelectorAll(".slides img");
 let slideIndex = 0;
