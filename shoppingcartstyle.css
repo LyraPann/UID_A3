@@ -1,16 +1,109 @@
-.total-amount {
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    width: 100%;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Navigation bar styles */
+.navwrapper {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav {
     display: flex;
-    width: 14rem;
-    height: 9rem;
-    border-radius: 0.5rem;
-    background-color: white;
-    box-shadow: -44px 215px 61px 0px rgba(0, 0, 0, 0.00), -28px 138px 56px 0px rgba(0, 0, 0, 0.01), -16px 77px 47px 0px rgba(0, 0, 0, 0.05), -7px 34px 35px 0px rgba(0, 0, 0, 0.09), -2px 9px 19px 0px rgba(0, 0, 0, 0.10);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.navlist ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navlist ul li {
+    margin: 0 1rem;
+}
+
+.navlist ul li:hover {
+    text-decoration: underline;
+}
+
+.shoppingbuttons {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    text-decoration: none;
+
+    border-radius: 113.061px;
+    background: var(--M3-sys-light-primary, #6750A4);
+
+    /* M3/Elevation Light/1 */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 2px;
+    width: 25px;
+    background: #000;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+.items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#second {
+    z-index: 1;
 }
 
 .total-amount {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    width: 28.9375rem;
+    height: 17.75rem;
+    border-radius: 0.75rem;
+    background-color: white;
+    padding: 20px;
+    box-shadow: -44px 215px 61px 0px rgba(0, 0, 0, 0.00), -28px 138px 56px 0px rgba(0, 0, 0, 0.01), -16px 77px 47px 0px rgba(0, 0, 0, 0.05), -7px 34px 35px 0px rgba(0, 0, 0, 0.09), -2px 9px 19px 0px rgba(0, 0, 0, 0.10);
 }
 
 .total-price {
@@ -23,4 +116,201 @@
 .shopping-cart {
     display: flex;
     flex-direction: row;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 8px;
+    width: 100%;
+    gap: 40px;
+}
+
+.product-photo {
+    width: 9.0625rem;
+    height: 12.875rem;
+    border-radius: 1.375rem;
+}
+
+.cart-item {
+    width: 46.1875rem;
+    height: 14.5rem;
+    border-radius: 1.375rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: -44px 215px 61px 0px rgba(0, 0, 0, 0.00), -28px 138px 56px 0px rgba(0, 0, 0, 0.01), -16px 77px 47px 0px rgba(0, 0, 0, 0.05), -7px 34px 35px 0px rgba(0, 0, 0, 0.09), -2px 9px 19px 0px rgba(0, 0, 0, 0.10);
+}
+
+.shop-photo {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.btn-qty {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.remove {
+    outline: none;
+    border-radius: 1.375rem;
+    border: 1px solid #5100B9;
+    background: #FFF;
+    color: #5100B9;
+    padding: 0.2rem 1.5rem;
+}
+
+.number-select {
+    outline: transparent;
+    border-radius: 1.375rem;
+    background: #FFF;
+    width: 6.5625rem;
+    height: 2.25rem;
+    padding: 0.125rem 0.625rem;
+    background: url(img/Icon/ChevronRight.svg)no-repeat right;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+    appearance: none;
+    box-shadow: 0px 72px 20px 0px rgba(150, 150, 150, 0.00), 0px 46px 18px 0px rgba(150, 150, 150, 0.01), 0px 26px 16px 0px rgba(150, 150, 150, 0.05), 0px 12px 12px 0px rgba(150, 150, 150, 0.09), 0px 3px 6px 0px rgba(150, 150, 150, 0.10);
+}
+
+.number-select::after {
+    content: '\25B6';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+#dropdown-items * {
+    background-color: #fff;
+    color: #000;
+    border: 6px solid yellow;
+}
+
+.item-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #000;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.checkout {
+    width: 24.125rem;
+    text-align: center;
+    margin: auto;
+    outline: none;
+    margin: 40px;
+}
+
+.checkout button {
+    background-color: #6750A4;
+    border-radius: 8.90625rem;
+    width: 100%;
+    box-shadow: none;
+    padding: 12px 0;
+    border: none;
+}
+
+.checkout button a {
+    text-decoration: none;
+    color: white;
+    outline: none;
+}
+
+.mobile-shopping-cart {
+    display: none;
+}
+
+.mobile-amount {
+    display: none;
+}
+
+
+@media screen and (max-width: 390px) {
+    .shopping-cart {
+        display: block;
+    }
+
+    .total-amount {
+        display: none;
+    }
+
+    .shopping-title {
+        color: #000;
+        font-size: 2.8125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 20px;
+    }
+
+    .shopping-cart {
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 8px;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .cart-item {
+        width: 22rem;
+        height: 10.375rem;
+        border-radius: 1.375rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        box-shadow: -44px 215px 61px 0px rgba(0, 0, 0, 0.00), -28px 138px 56px 0px rgba(0, 0, 0, 0.01), -16px 77px 47px 0px rgba(0, 0, 0, 0.05), -7px 34px 35px 0px rgba(0, 0, 0, 0.09), -2px 9px 19px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    .shop-photo {
+        display: flex;
+        gap: 0;
+        flex-direction: row;
+    }
+
+    .btn-qty {
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .product-photo {
+        width: 6.125rem;
+        height: 8.6875rem;
+        border-radius: 0.3125rem;
+    }
+
+    .remove {
+        outline: none;
+        border: 1px solid #5100B9;
+        background: #FFF;
+        color: #5100B9;
+        width: 4rem;
+        height: 1.0625rem;
+        padding: 0rem 0.5rem;
+        border-radius: 1rem;
+        border: 1px solid #5100B9;
+    }
+
+    .mobile-amount {
+        display: block;
+        width: 24.5625rem;
+        height: 8.3125rem;
+    }
+
+    .mobile-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
