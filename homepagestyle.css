@@ -8,8 +8,11 @@ body {
   
   /* Navigation bar styles */
   .navwrapper {
+    width: 100%;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
+    position: fixed;
+    z-index: 100;
   }
   
   .nav {
