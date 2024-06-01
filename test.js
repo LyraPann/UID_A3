@@ -1,66 +1,66 @@
-// Get the dropdown display, dropdown content, arrow, and filter options
-const dropdownDisplay = document.querySelector('.dropdown-display');
-const dropdownContent = document.querySelector('.dropdown-content');
-const arrow = document.querySelector('.arrow');
-const filterOptions = document.querySelectorAll('.filter-option');
-const itemsContainer = document.getElementById('imagesContainer');
+// Pop ups
+let popupButton = document.getElementById("popupButton");
+let valPopup1 = document.getElementById("valPopup1");
+let closeValpopup1 = document.getElementById("closeValpopup1");
+let chooseCard1 = document.getElementById("chooseCard1");
 
-// Toggle dropdown content visibility on display click
-dropdownDisplay.addEventListener('click', () => {
-    const isDropdownOpen = dropdownContent.style.display === 'block';
-    if (isDropdownOpen) {
-        dropdownContent.style.display = 'none';
-        arrow.classList.remove('arrow-up');
-        arrow.classList.add('arrow-down');
-    } else {
-        dropdownContent.style.display = 'block';
-        arrow.classList.remove('arrow-down');
-        arrow.classList.add('arrow-up');
-    }
+popupButton.addEventListener('click', function() {
+    console.log("about to add to " + valPopup1);
+    valPopup1.classList.add('show');
 });
 
-// Add event listener to each filter option
-filterOptions.forEach(option => {
-    option.addEventListener('click', filterItems);
+closeValpopup1.addEventListener('click', function() {
+    valPopup1.classList.remove('show');
 });
 
-// Function to filter items
-function filterItems(event) {
-    // Get the filter value from the option's text content
-    const filterValue = event.target.textContent.toLowerCase().replace(' ', '-');
-    
-    // Update the dropdown display text with the selected filter value
-    dropdownDisplay.firstElementChild.textContent = event.target.textContent;
-    
-    // Get all items
-    const items = itemsContainer.querySelectorAll('.item');
-    
-    // Loop through each item
-    items.forEach(item => {
-        // Check if the item matches the filter value
-        const itemClass = item.className.toLowerCase();
-        
-        // If the filter value is 'all' or matches the item's class, display it, otherwise hide it
-        if (filterValue === 'all' || itemClass.includes(filterValue)) {
-            item.style.display = 'block';
-        } else {
-            item.style.display = 'none';
-        }
-    });
+chooseCard1.addEventListener('click', function() {
+    valPopup1.classList.remove('show');
+});
 
-    // Hide the dropdown content after selection and reset the arrow
-    dropdownContent.style.display = 'none';
-    arrow.classList.remove('arrow-up');
-    arrow.classList.add('arrow-down');
-}
+// Filter functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdownDisplay = document.querySelector('.select');
+    const dropdownContent = document.querySelector('.menu');
+    const arrow = document.querySelector('.arrow');
+    const filterOptions = document.querySelectorAll('.text-option');
+    const products = document.querySelectorAll('.products-list > div');
 
-// Close the dropdown if the user clicks outside of it
-window.addEventListener('click', function(event) {
-    if (!event.target.closest('.dropdown')) {
+    dropdownDisplay.addEventListener('click', () => {
+        console.log('Dropdown clicked');
         if (dropdownContent.style.display === 'block') {
             dropdownContent.style.display = 'none';
-            arrow.classList.remove('arrow-up');
-            arrow.classList.add('arrow-down');
+        } else {
+            dropdownContent.style.display = 'block';
         }
+        arrow.classList.toggle('arrow-down');
+        arrow.classList.toggle('arrow-right');
+    });
+
+    filterOptions.forEach(option => {
+        option.addEventListener('click', () => {
+            console.log('Option clicked', option.textContent);
+            const filterValue = option.getAttribute('data-filter');
+            filterItems(filterValue);
+            dropdownContent.style.display = 'none';
+            arrow.classList.remove('arrow-down');
+            arrow.classList.add('arrow-right');
+            document.querySelector('.selected').textContent = option.textContent;
+        });
+    });
+
+    function filterItems(filterValue) {
+        console.log('Filtering items with filter:', filterValue);
+        products.forEach(product => {
+            product.style.display = (filterValue === 'all' || product.getAttribute('data-category') === filterValue) ? 'block' : 'none';
+        });
     }
+
+    window.addEventListener('click', (event) => {
+        if (!event.target.closest('.filter')) {
+            console.log('Clicked outside the dropdown');
+            dropdownContent.style.display = 'none';
+            arrow.classList.remove('arrow-down');
+            arrow.classList.add('arrow-right');
+        }
+    });
 });

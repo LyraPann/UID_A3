@@ -3,11 +3,24 @@ let popupButton= document.getElementById("popupButton");
 let valPopup1= document.getElementById("valPopup1");
 let closeValpopup1= document.getElementById("closeValpopup1");
 let chooseCard1= document.getElementById("chooseCard1");
+let helloDisplay= document.getElementById("hello");
 
+// const cardDetails= ()=> {
 popupButton.addEventListener('click', function() {
     console.log("about to add to "+valPopup1)
-    valPopup1.classList.add('show');
+    // valPopup1.classList.add('show');
+    // helloDisplay.style.display= 'block';
+    valPopup1.classList.toggle('show');
+
+    if (valPopup1.classList.contains('show')) {
+        helloDisplay.style.display= 'block';          
+    } 
+    else {
+        helloDisplay.style.display= 'none';
+    }       
 });
+// }
+
 
 closeValpopup1.addEventListener('click', function() {
     valPopup1.classList.remove('show');
@@ -16,7 +29,6 @@ closeValpopup1.addEventListener('click', function() {
 chooseCard1.addEventListener('click', function() {
     valPopup1.classList.remove('show');
 });
-
 
 //pop up image slider
 const slides = document.querySelectorAll(".slides img");
