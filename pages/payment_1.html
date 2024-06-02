@@ -3,20 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Payment Page</title>
     <link rel="stylesheet" href="../assets/css/payment_1_style.css">
 </head>
-<body>
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#">CHARITY ECARDS</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Cards</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+<body>  
+    
+    <!-- ===================== navigation bar ===================== -->
+    <div class="navwrapper">
+      <nav class="nav">
+        <div class="logo">CHARITYECARDS</div>
+        <div class="navlist">
+          <ul>
+            <li class="btn.nav"><a href="#">Pricing</a></li>
+            <li class="btn.nav"><a href="#">Cards</a></li>
+            <li class="btn.nav"><a href="#">About</a></li>
+            <li class="btn.nav"><a href="#">Contact</a></li>
+            <li class="btn.nav"><a href="#">Charity</a></li>
+          </ul>
+        </div>
+        <div class="shoppingbuttons">
+          <img src="../img/shoppingcart.svg" alt="shoppingcart">
+          <a href="#" class="btn nav">Our Cards</a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
     
     <!-- Main Container -->
     <div class="container">
@@ -24,19 +42,24 @@
         <section class="cart-charity">
             <div class="cart-preview">
                 <h2>Items(2) $4.50</h2>
-                <ul>
-                    <li>I Love You a Whole Bunch! - $2.25 <button class="remove-btn">Remove</button></li>
-                    <li>Christmas Party - $2.25 <button class="remove-btn">Remove</button></li>
-                </ul>
+                <div>
+                    <div>I Love You a Whole Bunch! - $2.25 <button class="remove-btn">Remove</button></div>
+                    <div>Christmas Party - $2.25 <button class="remove-btn">Remove</button></div>
+                </div>
                 <h3>Total: $4.50</h3>
             </div>
             <div class="choose-charity">
                 <h2>Choose Charity</h2>
-                <select>
-                    <option value="">-Select a Charity-</option>
-                    <option value="charity1">Charity 1</option>
-                    <option value="charity2">Charity 2</option>
-                </select>
+                    <div class="custom-select">
+                        <div class="select-selected">1</div>
+                        <div class="select-arrow"><img src="../img/Icon/ChevronRight.svg"></div>
+                        <div class="select-arrow-down"><img src="../img/Icon/down.svg"></div>
+                        <div class="select-items">
+                            <div>1</div>
+                            <div>51-100</div>
+                            <div>201-250</div>
+                        </div>
+                    </div>
             </div>
         </section>
         

@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Payment Page</title>
-    <link rel="stylesheet" href="paymentpagestyle.css">
+    <link rel="stylesheet" href="../paymentpagestyle.css">
 </head>
 <body>
 
-    <!-- ===================== navigation bar ===================== -->
-    <div class="nav">
-        <div class="logo">CHARITYECARDS</div>
-        <div class="navlist">
-            <ul>Pricing</ul>
-            <ul>Cards</ul>
-            <ul>About</ul>
-            <ul>Contact</ul>
-            <ul>Charity</ul>
-        </div>
-        <div class="shoppingbottons">
-            <img src="img/shoppingcart.svg" alt="shoppingcart">
-            <button class="ourcards">Our Cards</button>
-        </div>
-    </div>
-
+  <!-- ===================== navigation bar ===================== -->
+  <div class="navwrapper">
+    <nav class="nav">
+      <div class="logo">CHARITYECARDS</div>
+      <div class="navlist">
+        <ul>
+          <li class="btn.nav"><a href="#">Pricing</a></li>
+          <li class="btn.nav"><a href="#">Cards</a></li>
+          <li class="btn.nav"><a href="#">About</a></li>
+          <li class="btn.nav"><a href="#">Contact</a></li>
+          <li class="btn.nav"><a href="#">Charity</a></li>
+        </ul>
+      </div>
+      <div class="shoppingbuttons">
+        <img src="../img/shoppingcart.svg" alt="shoppingcart">
+        <a href="#" class="btn nav">Our Cards</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
 
     <!-- ===================== payment selection ===================== -->   
     <div>
