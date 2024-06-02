@@ -6,9 +6,6 @@ body {
     box-sizing: border-box;
   }
   
-  li {
-    text-decoration: none;
-  }
   
   /* Navigation bar styles */
   .navwrapper {
@@ -41,6 +38,7 @@ body {
   
   .navlist ul li {
     margin: 0 1rem;
+    list-style: none;
   }
   
   .navlist ul li:hover {
