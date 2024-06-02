@@ -39,12 +39,15 @@ body {
   .navlist ul li {
     margin: 0 1rem;
     list-style: none;
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
   }
   
-  .navlist ul li:hover {
-    text-decoration: underline;
-  }
-  
+
   .shoppingbuttons {
     display: flex;
     align-items: center;
