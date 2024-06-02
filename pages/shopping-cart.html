@@ -4,27 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/shoppingcartstyle.css">
     <title>Shopping Cart</title>
 </head>
 
 <body>
 
-    <!-- ===================== navigation bar ===================== -->
-    <div class="nav">
-        <div class="logo">CHARITYECARDS</div>
-        <div class="navlist">
-            <ul>Pricing</ul>
-            <ul>Cards</ul>
-            <ul>About</ul>
-            <ul>Contact</ul>
-            <ul>Charity</ul>
-        </div>
-        <div class="shoppingbottons">
-            <img src="img/shoppingcart.svg" alt="shoppingcart">
-            <button class="ourcards">Our Cards</button>
-        </div>
-    </div>
+  <!-- ===================== navigation bar ===================== -->
+  <div class="navwrapper">
+    <nav class="nav">
+      <div class="logo">CHARITYECARDS</div>
+      <div class="navlist">
+        <ul>
+          <li class="btn.nav"><a href="#">Pricing</a></li>
+          <li class="btn.nav"><a href="#">Cards</a></li>
+          <li class="btn.nav"><a href="#">About</a></li>
+          <li class="btn.nav"><a href="#">Contact</a></li>
+          <li class="btn.nav"><a href="#">Charity</a></li>
+        </ul>
+      </div>
+      <div class="shoppingbuttons">
+        <img src="../img/shoppingcart.svg" alt="shoppingcart">
+        <a href="#" class="btn nav">Our Cards</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
 
     <!-- ===================== cart ===================== -->
     <div>
@@ -34,7 +46,7 @@
         <div class="items-container">
             <div class="cart-item">
                 <div class="shop-photo">
-                    <img class="product-photo" src="img/xmas2.png">
+                    <img class="product-photo" src="../img/xmas2.png">
                     <div>
                         <h5>Christmas Party</h5>
                         <h2>$2.25</h2>
@@ -44,9 +56,6 @@
                 <div class="btn-qty">
                     <div>
                         <p>View Qty</p>
-                        <div>
-
-                        </div>
                         <!-- <select id="dropdown-items" name="dropdown-items" class="number-select">
                             <option value="1" class="option">1</option>
                             <option value="51-100" class="option">51-100</option>
@@ -54,8 +63,8 @@
                         </select> -->
                         <div class="custom-select">
                             <div class="select-selected">1</div>
-                            <div class="select-arrow"><img src="img/Icon/ChevronRight.svg"></div>
-                            <div class="select-arrow-down"><img src="img/Icon/down.svg"></div>
+                            <div class="select-arrow"><img src="../img/Icon/ChevronRight.svg"></div>
+                            <div class="select-arrow-down"><img src="../img/Icon/down.svg"></div>
                             <div class="select-items">
                                 <div>1</div>
                                 <div>51-100</div>
@@ -72,7 +81,7 @@
 
             <div class="cart-item">
                 <div class="shop-photo">
-                    <img class="product-photo" src="img/xmas2.png">
+                    <img class="product-photo" src="../img/xmas2.png">
                     <div>
                         <h5>Christmas Party</h5>
                         <h2>$2.25</h2>
@@ -82,14 +91,16 @@
                 <div class="btn-qty">
                     <div>
                         <p>View Qty</p>
-                        <div>
-
+                        <div class="custom-select">
+                            <div class="select-selected">1</div>
+                            <div class="select-arrow"><img src="../img/Icon/ChevronRight.svg"></div>
+                            <div class="select-arrow-down"><img src="../img/Icon/down.svg"></div>
+                            <div class="select-items">
+                                <div>1</div>
+                                <div>51-100</div>
+                                <div>201-250</div>
+                            </div>
                         </div>
-                        <select id="dropdown-items" name="dropdown-items" class="number-select">
-                            <option value="1" class="option">1</option>
-                            <option value="51-100" class="option">51-100</option>
-                            <option value="201-250" class="option">201-250</option>
-                        </select>
                     </div>
 
                     <div class="rem-btn">
@@ -125,5 +136,5 @@
         </div>
     </footer>
 </body>
-<script src="shoppingcart.js"></script>
+<script src="../assets/script/shopping-cart.js"></script>
 </html>

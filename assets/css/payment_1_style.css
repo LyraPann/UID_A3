@@ -102,6 +102,61 @@ nav ul li a {
     background: #555;
 }
 
+
+/* dropdown menu for charity */
+.custom-select {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+}
+
+.select-selected {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.select-items {
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 999;
+    width: 100%;
+    display: none;
+}
+
+.select-items div {
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.select-items div:hover {
+    background-color: #ddd;
+}
+
+.select-arrow, .select-arrow-down {
+    position:absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.select-arrow-down {
+    display: none;
+}
+
+.select-items.show {
+    display: block;
+
+}
+
+
 /* Footer */
 footer {
     background: #333;

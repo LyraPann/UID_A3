@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const removeButtons = document.querySelectorAll('.remove-btn');
     removeButtons.forEach(button => {
         button.addEventListener('click', function (e) {
-            e.target.closest('li').remove();
+            e.target.closest('div').remove();
             // Update the total price
             updateTotal();
         });

@@ -5,30 +5,56 @@ let closeValpopup1= document.getElementById("closeValpopup1");
 let chooseCard1= document.getElementById("chooseCard1");
 let helloDisplay= document.getElementById("hello");
 
-// const cardDetails= ()=> {
-popupButton.addEventListener('click', function() {
+const cardDetails= ()=> {
+//popupButton.addEventListener('click', function() {
     console.log("about to add to "+valPopup1)
     // valPopup1.classList.add('show');
     // helloDisplay.style.display= 'block';
     valPopup1.classList.toggle('show');
 
     if (valPopup1.classList.contains('show')) {
-        helloDisplay.style.display= 'block';          
+        helloDisplay.style.display= 'block';        
     } 
     else {
         helloDisplay.style.display= 'none';
     }       
-});
-// }
+// });
+}
+
+
+// document.getElementById("open-modal").addEventListener('click', function(){
+//     document.body.classList.add('modal-open');
+//     console.log('clicked')
+// })
+
+// document.getElementById('close-modal').addEventListener('click', function(){
+//     document.body.classList.remove('modal-open');
+// })
+
+// document.querySelector('.modal-overlay').addEventListener('click', function(){
+//     document.body.classList.remove('modal-open');
+// })
 
 
 closeValpopup1.addEventListener('click', function() {
-    valPopup1.classList.remove('show');
+    //valPopup1.classList.remove('show');
+
+    if (valPopup1.classList.contains('show')) {
+        helloDisplay.style.display= 'none';          
+    } 
+    else {
+        helloDisplay.style.display= 'block';
+    } 
 });
 
-chooseCard1.addEventListener('click', function() {
-    valPopup1.classList.remove('show');
-});
+// chooseCard1.addEventListener('click', function() {
+//     valPopup1.classList.remove('show');
+// });
+
+function addCards() {
+    let cardDetails= chooseCard1.innerHTML;
+    console.log(cardDetails);
+}
 
 //pop up image slider
 const slides = document.querySelectorAll(".slides img");
@@ -68,13 +94,20 @@ function nextSlide(){
     showSlide(slideIndex);
 }
 
+function scrollOut(){
+    let left= document.querySelector('.scroll-imgs');
+    left.scrollBy(350, 0);
+}
 
-
+function scrollIn(){
+    let right= document.querySelector('.scroll-imgs');
+    right.scrollBy(-350, 0);
+}
 
 
 
 //filter
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
     const dropdownDisplay= document.querySelector('.select');
     const dropdownContent= document.querySelector('.menu');
     const arrow= document.querySelector('.arrow');
@@ -83,14 +116,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 dropdownDisplay.addEventListener('click', () => {
-    dropdownContent.style.display= dropdownContent.style.display=== "block" ? "none": "block";
+    dropdownContent.style.display= dropdownContent.style.display=== 'block' ? 'none': 'block';
     arrow.classList.remove('arrow-down');
     arrow.classList.add('arrow-right');
     });
 
 function filterItems(filterValue) {
     products.forEach(product => {
-        product.style.display= (filterValue=== "all" || product.getAttribute("data-category")=== filterValue) ? "block": "none";
+        product.style.display= (filterValue=== 'all' || product.getAttribute("data-category")=== filterValue) ? 'block': 'none';
     })
 }
 
@@ -98,6 +131,9 @@ filterOptions.forEach(option => {
     option.addEventListener('click', () => {
         const filterValue= option.getAttribute('data-filter');
         filterItems(filterValue);
+        let filterClass=document.getElementsByClassName('filter');
+        // filterClass.classList.add('filter-class')
+        filterClass.style.display='none';
         dropdownContent.style.display = 'none';
         arrow.classList.remove('arrow-down');
         arrow.classList.add('arrow-right');
@@ -132,4 +168,3 @@ const openMenu = () => {
             }       
         })
 }
-
