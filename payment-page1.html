@@ -7,88 +7,99 @@
     <link rel="stylesheet" href="payment-page1_style.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#">CHARITY ECARDS</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Cards</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Shopping Cart Preview and Choose Charity Section -->
+        <section class="cart-charity">
+            <div class="cart-preview">
+                <h2>Items(2) $4.50</h2>
+                <ul>
+                    <li>I Love You a Whole Bunch! - $2.25 <button class="remove-btn">Remove</button></li>
+                    <li>Christmas Party - $2.25 <button class="remove-btn">Remove</button></li>
+                </ul>
+                <h3>Total: $4.50</h3>
+            </div>
+            <div class="choose-charity">
+                <h2>Choose Charity</h2>
+                <select>
+                    <option value="">-Select a Charity-</option>
+                    <option value="charity1">Charity 1</option>
+                    <option value="charity2">Charity 2</option>
+                </select>
+            </div>
+        </section>
+        
+        <!-- Billing Information Section -->
+        <section class="billing-info">
+            <h2>Billing Information</h2>
+            <form id="billing-form">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="Enter Company Name">
 
-    <section class="shopping-cart">
-        <h2>Items(2)</h2>
-        <div class="item">
-            <span class="item-name">I Love You a Whole Bunch!</span>
-            <span class="item-price">$2.25</span>
-            <button class="remove">Remove</button>
-        </div>
-        <div class="item">
-            <span class="item-name">Christmas Party</span>
-            <span class="item-price">$2.25</span>
-            <button class="remove">Remove</button>
-        </div>
-        <div class="total">
-            <span>Total</span>
-            <span>$4.50</span>
-        </div>
-    </section>
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter First Name" required>
 
-    <section class="choose-charity">
-        <h2>Choose Charity</h2>
-        <select name="charity" id="charity">
-            <option value="">-Select a Charity-</option>
-            <option value="charity1">Charity 1</option>
-            <option value="charity2">Charity 2</option>
-        </select>
-    </section>
+                <label for="last-name">Last Name*</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter Last Name" required>
 
-    <section class="billing-information">
-        <h2>Billing Information</h2>
-        <form id="billing-form">
-            <label for="company">Company</label>
-            <input type="text" id="company" name="company" placeholder="Enter Company Name">
-            <label for="first-name">First Name*</label>
-            <input type="text" id="first-name" name="first-name" placeholder="Enter First Name" required>
-            <label for="last-name">Last Name*</label>
-            <input type="text" id="last-name" name="last-name" placeholder="Enter Last Name" required>
-            <label for="email">Email*</label>
-            <input type="email" id="email" name="email" placeholder="Enter Email" required>
-            <label for="contact-number">Contact Number*</label>
-            <input type="text" id="contact-number" name="contact-number" placeholder="Enter Phone Number" required>
-            <label for="address1">Address Line 1*</label>
-            <input type="text" id="address1" name="address1" placeholder="Enter Address" required>
-            <label for="address2">Address Line 2</label>
-            <input type="text" id="address2" name="address2" placeholder="Enter Address">
-            <label for="suburb">Suburb*</label>
-            <input type="text" id="suburb" name="suburb" placeholder="Enter Suburb" required>
-            <label for="state">State*</label>
-            <input type="text" id="state" name="state" placeholder="Enter State" required>
-            <label for="postcode">Postcode*</label>
-            <input type="text" id="postcode" name="postcode" placeholder="Enter Postcode" required>
-            <label for="country">Country*</label>
-            <input type="text" id="country" name="country" placeholder="Enter Country" required>
-            <button type="submit">Pay Now</button>
-        </form>
-    </section>
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
 
+                <label for="phone">Contact Number*</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required>
+
+                <label for="address1">Address Line 1*</label>
+                <input type="text" id="address1" name="address1" placeholder="Enter Address" required>
+
+                <label for="address2">Address Line 2</label>
+                <input type="text" id="address2" name="address2" placeholder="Enter Address">
+
+                <label for="suburb">Suburb*</label>
+                <input type="text" id="suburb" name="suburb" placeholder="Enter Suburb" required>
+
+                <label for="state">State*</label>
+                <input type="text" id="state" name="state" placeholder="Enter State" required>
+
+                <label for="postcode">Postcode*</label>
+                <input type="text" id="postcode" name="postcode" placeholder="Enter Postcode" required>
+
+                <label for="country">Country*</label>
+                <input type="text" id="country" name="country" placeholder="Enter Country" required>
+
+                <button type="submit">Pay Now</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
     <footer>
         <div class="useful-links">
             <h3>Useful Links</h3>
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <ul>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Cards</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
         <div class="socials">
             <h3>Socials</h3>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
+            <!-- Social media links can be added here -->
         </div>
         <div class="secure-payments">
             <h3>Secure Payments</h3>
-            <img src="secure-payments.png" alt="Secure Payments">
+            <!-- Secure payment logos can be added here -->
         </div>
     </footer>
 

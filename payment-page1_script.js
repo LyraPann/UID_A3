@@ -1,25 +1,22 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const removeButtons = document.querySelectorAll('.remove');
-
+document.addEventListener('DOMContentLoaded', function () {
+    // Handle remove button click event
+    const removeButtons = document.querySelectorAll('.remove-btn');
     removeButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            button.parentElement.remove();
+        button.addEventListener('click', function (e) {
+            e.target.closest('li').remove();
+            // Update the total price
             updateTotal();
         });
     });
 
-    const updateTotal = () => {
-        const items = document.querySelectorAll('.item');
+    // Update the total price function
+    function updateTotal() {
         let total = 0;
+        const items = document.querySelectorAll('.cart-preview li');
         items.forEach(item => {
-            const price = parseFloat(item.querySelector('.item-price').textContent.replace('$', ''));
+            const price = parseFloat(item.textContent.match(/\$(\d+\.\d+)/)[1]);
             total += price;
         });
-        document.querySelector('.total span:last-child').textContent = `$${total.toFixed(2)}`;
-    };
-
-    document.getElementById('billing-form').addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Payment processed!');
-    });
+        document.querySelector('.cart-preview h3').textContent = `Total: $${total.toFixed(2)}`;
+    }
 });
