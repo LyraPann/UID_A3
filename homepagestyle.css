@@ -6,6 +6,10 @@ body {
     box-sizing: border-box;
   }
   
+  li {
+    text-decoration: none;
+  }
+  
   /* Navigation bar styles */
   .navwrapper {
     width: 100%;
