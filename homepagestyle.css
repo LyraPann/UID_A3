@@ -9,8 +9,6 @@ body {
   /* Navigation bar styles */
   .navwrapper {
     width: 100%;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
     position: fixed;
     z-index: 100;
   }
@@ -89,7 +87,7 @@ body {
   .cover {
     position: relative;
     text-align: center;
-    background-color: #f8f9fa;
+    background-color: #D9B89E;
     padding: 4rem 2rem;
   }
   
@@ -97,6 +95,15 @@ body {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 2rem;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
   }
   
   .cardsspin {
