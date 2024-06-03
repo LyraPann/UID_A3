@@ -5,22 +5,47 @@ let closeValpopup1= document.getElementById("closeValpopup1");
 let chooseCard1= document.getElementById("chooseCard1");
 let helloDisplay= document.getElementById("hello");
 
-const cardDetails= ()=> {
-//popupButton.addEventListener('click', function() {
-    console.log("about to add to "+valPopup1)
-    // valPopup1.classList.add('show');
-    // helloDisplay.style.display= 'block';
-    valPopup1.classList.toggle('show');
+// const cardDetails= ()=> {
+// //popupButton.addEventListener('click', function() {
+//     console.log("about to add to "+valPopup1)
+//     // valPopup1.classList.add('show');
+//     // helloDisplay.style.display= 'block';
+//     valPopup1.classList.toggle('show');
 
-    if (valPopup1.classList.contains('show')) {
-        helloDisplay.style.display= 'block';        
-    } 
-    else {
-        helloDisplay.style.display= 'none';
-    }       
-// });
-}
+//     if (valPopup1.classList.contains('show')) {
+//         helloDisplay.style.display= 'block';        
+//     } 
+//     else {
+//         helloDisplay.style.display= 'none';
+//     }       
+// // });
+// }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const modal= document.getElementById('card-modal');
+    const modalTitle= document.getElementById('modal-title');
+    const modalDes= document.getElementById('modal-description');
+    const span= document.getElementsByClassName('close')[0];
+    const cards= document.querySelectorAll('.product-items');
+        cards.forEach(card=> {
+            card.addEventListener('click', function(){
+                const title= this.getAttribute('data-title');
+                const description= this.getAttribute('data-description');
+                modalTitle.innerText= title;
+                modalDes.innerText= description;
+                modal.style.display= 'block';
+                console.log('click');
+            })
+        })
+        span.onclick= function(){
+            modal.style.display= 'none';
+        }
+        window.onclick= function(event) {
+            if (event.target== modal) {
+                modal.style.display='none';
+            }
+        }
+})
 
 // document.getElementById("open-modal").addEventListener('click', function(){
 //     document.body.classList.add('modal-open');
@@ -50,6 +75,8 @@ closeValpopup1.addEventListener('click', function() {
 // chooseCard1.addEventListener('click', function() {
 //     valPopup1.classList.remove('show');
 // });
+
+
 
 function addCards() {
     let cardDetails= chooseCard1.innerHTML;
@@ -112,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropdownContent= document.querySelector('.menu');
     const arrow= document.querySelector('.arrow');
     const filterOptions= document.querySelectorAll('.text-option');
-    const products= document.querySelectorAll('.products-list > div');
+    const products= document.getElementById('.products-list > div');
 
 
 dropdownDisplay.addEventListener('click', () => {
@@ -121,68 +148,31 @@ dropdownDisplay.addEventListener('click', () => {
     arrow.classList.add('arrow-right');
     });
 
-filterOptions.forEach(option =>{
-option.addEventListener('click', function(){
-    const filterValue= this.getAttribute('data-filter');
-    filterItems(filterValue);
-    // filterClass= document.getElementsByClassName('filter');
-    // filterClass.classList.add('filter-class');
-    // filterClass.style.display='none';
-    const filterClass = document.getElementsByClassName('filter');
-Array.from(filterClass).forEach(element => {
-    element.classList.add('filter-class');
-});
-    document.querySelector('.selected').textContent= option.textContent;
-    dropdownContent.style.display='none';
-    arrow.classList.remove('arrow-down');
-    arrow.classList.add('arrow-right');
-}) 
-})
-
-function filterItems(category) {
+function filterItems(filterValue) {
     products.forEach(product => {
-        if (category=== 'allcard') {
-            product.style.display='block'
-        }
-        else {
-            if (product.getAttribute('data-category')=== category) {
-                product.style.display='block'
-            }
-            else {
-                product.style.display='none'
-            }
-        }
+        product.style.display= (filterValue=== 'all' || product.getAttribute("data-category")=== filterValue) ? 'block': 'none';
     })
 }
 
-// function filterItems(filterValue) {
-//     products.forEach(product => {
-//         product.style.display= (filterValue=== 'all' || product.getAttribute("data-category")=== filterValue) ? 'block': 'none';
-//     })
-// }
-
-// filterOptions.forEach(option => {
-//     option.addEventListener('click', () => {
-//         const filterValue= option.getAttribute('data-filter');
-//         filterItems(filterValue);
-//         let filterClass=document.getElementsByClassName('filter');
-//         // filterClass.classList.add('filter-class')
-//         filterClass.style.display='none';
-//         dropdownContent.style.display = 'none';
-//         arrow.classList.remove('arrow-down');
-//         arrow.classList.add('arrow-right');
-//         document.querySelector('.selected').textContent= option.textContent;
-//     });
-// });
-
+filterOptions.forEach(option => {
+    option.addEventListener('click', () => {
+        const filterValue= option.getAttribute('data-filter');
+        filterItems(filterValue);
+        let filterClass=document.getElementsByClassName('filter');
+        // filterClass.classList.add('filter-class')
+        filterClass.style.display='none';
+        dropdownContent.style.display = 'none';
+        arrow.classList.remove('arrow-down');
+        arrow.classList.add('arrow-right');
+        document.querySelector('.selected').textContent= option.textContent;
+    });
+});
 
 window.addEventListener('click', (event) => {
     if (!event.target.closest('.filter')) {
-            if (dropdownDisplay.style.display=== 'block') {
-                dropdownContent.style.display= 'none';
-                arrow.classList.remove('arrow-down');
-                arrow.classList.add('arrow-right');
-            }
+            dropdownContent.style.display= 'none';
+            arrow.classList.remove('arrow-down');
+            arrow.classList.add('arrow-right');
         }
     });
 });
