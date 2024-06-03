@@ -287,6 +287,10 @@ footer ul li a {
         width: 100%;
         margin-bottom: 1em;
     }
+
+    .cart-preview {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
@@ -296,6 +300,10 @@ footer ul li a {
 
     nav ul li {
         margin: 0.5em 0;
+    }
+
+    .cart-preview {
+        display: none;
     }
 }
 
