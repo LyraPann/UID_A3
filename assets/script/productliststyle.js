@@ -4,6 +4,8 @@ let valPopup1= document.getElementById("valPopup1");
 let closeValpopup1= document.getElementById("closeValpopup1");
 let chooseCard1= document.getElementById("chooseCard1");
 let helloDisplay= document.getElementById("hello");
+const title= document.getElementById('title')
+const price= document.getElementById('para1')
 
 const cardDetails= ()=> {
 //popupButton.addEventListener('click', function() {
@@ -52,8 +54,17 @@ closeValpopup1.addEventListener('click', function() {
 // });
 
 function addCards() {
-    let cardDetails= chooseCard1.innerHTML;
-    console.log(cardDetails);
+    const itemObjects= [];
+    const myItem= {
+        title: title.innerHTML, 
+        price: price.innerHTML,
+        image: popupButton.innerHTML,
+    }
+    itemObjects.push(myItem);
+    const itemObjectsJSON = JSON.stringify(itemObjects);
+    localStorage.setItem('items', itemObjectsJSON);
+    console.log(itemObjects);
+    
 }
 
 //pop up image slider
@@ -175,6 +186,70 @@ function filterItems(category) {
 //     });
 // });
 
+const cards= [];
+const addtocartButtons= document.querySelectorAll('.add-to-cart');
+const cardModal= document.getElementById('card-modal');
+// const cardSpan= cardModal.getElementsByClassName('close')[0];
+const cardsItems= document.getElementById('cards-items');
+const viewcardsButton= document.getElementById('view-cards')
+
+// // const newItem = ()=> {
+//     addtocartButtons.forEach(button => {
+//         document.getElementById('chooseCard1').addEventListener('click', function(){
+//             const itemTitle= this.getAttribute('data-title');
+//             // additemstoCart(itemTitle);
+//             console.log('clicked')
+//             // localStorage.setItem(additemtoCart(itemTitle));
+//             alert(itemTitle + ' has been added to your cart');
+//         })
+//     })
+// // }
+
+// addtocartButtons.forEach(button => {
+//     button.addEventListener('click', function(){
+//         const itemTitle= this.getAttribute('data-title');
+//         // additemstoCart(itemTitle);
+//         localStorage.setItem(additemtoCart(itemTitle));
+//         alert(itemTitle + ' has been added to your cart');
+//     })
+// })
+
+// function additemtoCart(itemTitle) {
+//     cards.push(itemTitle);
+//     // updateCardDisplay() {
+
+//     // }
+//     function updateCardDisplay () {
+//         cardsItems.innerHTML= '';
+//         cards.forEach((item, index)=> {
+//             const listItem= document.createElement('li');
+//             listItem.textContent= item;
+//             const removeButton= doucment.createElement('button');
+//             removeButton.textContent= 'remove';
+//             removeButton.addEventListener('click', ()=> {
+//                 removeitemfromCart(index);
+//             })
+//             listItem.appendChild(removeButton);
+//             cardsItems.appendChild(listItem);
+//         })
+//     }
+//     function removeitemfromCart(index) {
+//         cards.splice(index, 1);
+//         updateCardDisplay();
+//     }
+//     viewcardsButton.addEventListener('click', function(){
+//         cardModal.style.display='block';
+//     })
+//     cardSpan.onclick= function(){
+//         cardModal.style.display='none';
+//     }
+//     window.onclick= function(event) {
+//         if (event.target= cardModal) {
+//             cardModal.style.display= 'none';
+//         }
+//     }
+// }
+
 
 window.addEventListener('click', (event) => {
     if (!event.target.closest('.filter')) {
@@ -205,3 +280,5 @@ const openMenu = () => {
             }       
         })
 }
+
+
