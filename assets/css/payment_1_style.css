@@ -120,6 +120,12 @@ nav ul li a {
     flex-direction: column;
 }
 
+.top-number {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px 10px 25px;
+}
+
 
 /* Billing Information Section */
 .billing-info {
@@ -283,13 +289,10 @@ footer ul li a {
         flex-direction: column;
     }
 
+    .cart-preview,
     .choose-charity {
         width: 100%;
         margin-bottom: 1em;
-    }
-
-    .cart-preview {
-        display: none;
     }
 }
 
@@ -300,10 +303,6 @@ footer ul li a {
 
     nav ul li {
         margin: 0.5em 0;
-    }
-
-    .cart-preview {
-        display: none;
     }
 }
 
@@ -316,7 +315,4 @@ footer ul li a {
         display: none;
     }
 
-    .cart-preview {
-        display: none;
-    }
 }
