@@ -1,3 +1,4 @@
+// dropdown
 const selected= document.querySelector('.select-selected');
 const items= document.querySelector('.select-items');
 const arrow= document.querySelector('.select-arrow');
@@ -36,3 +37,46 @@ window.addEventListener('click', function(){
         arrowDown.style.display='none'
     }
 })
+
+
+
+    // const myCards= localStorage.getItem('items')
+    // const JSONcards= JSON.parse(myCards);
+    // console.log(JSONcards);
+    // function getItems() {
+    //     JSONcards.forEach(product => {
+    //         const title= document.getElementById('title');
+    //         const price= document.getElementById('price');
+    //         title.innerHTML= product.title
+    //         price.innerHTML= product.price
+    //     })
+    // }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const myCards = localStorage.getItem('items');
+        if (myCards) {
+            const JSONcards = JSON.parse(myCards);
+            console.log(JSONcards);
+    
+            function getItems() {
+                JSONcards.forEach(product => {
+                    const title = document.getElementById('title');
+                    const price = document.getElementById('price');
+                    title.innerHTML = product.title;
+                    price.innerHTML = product.price;
+                });
+            }
+    
+            getItems(); 
+        } else {
+            console.log("No items found in localStorage");
+        }
+    })
+
+    // const itemObjects= [];
+    // const myItem= {
+    //     title: title.innerHTML, 
+    //     price: price.innerHTML,
+    //     image: popupButton.innerHTML,
+    // }
+

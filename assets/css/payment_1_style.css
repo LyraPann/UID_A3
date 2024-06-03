@@ -43,6 +43,7 @@ nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 /* Cart and Charity Section */
@@ -53,16 +54,72 @@ nav ul li a {
     flex-wrap: wrap;
 }
 
-.cart-preview, .choose-charity {
+.cart-preview,
+.choose-charity {
     width: 48%;
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.cart-preview h2, .choose-charity h2, .billing-info h2 {
-    margin-bottom: 1em;
+.cart-preview h2,
+.choose-charity h2,
+.billing-info h2 {}
+
+.circle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+.circle-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.circle {
+    line-height: 0px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #573A76;
+    color: white;
+}
+
+.circle span {
+    display: block;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+.preview-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.preview-image {
+    width: 5.09888rem;
+    height: 7.24388rem;
+    border-radius: 0.38769rem;
+}
+
+.preview-layout {
+    width: 90%;
+    margin: 2em auto;
+}
+
+.text-money {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* Billing Information Section */
 .billing-info {
@@ -72,7 +129,10 @@ nav ul li a {
 
 .billing-info form {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 .billing-info label {
@@ -80,52 +140,78 @@ nav ul li a {
     margin-top: 1em;
 }
 
-.billing-info input, .billing-info select {
+.billing-info input,
+.billing-info select {
     width: 100%;
     padding: 0.5em;
-    margin-top: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 0.5rem;
+    border: none;
+    height: 3.1875rem;
+    background: #FAFAFA;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.17) inset;
 }
 
 .billing-info button {
-    margin-top: 1em;
-    padding: 1em 2em;
+    margin-top: 5em;
     border: none;
-    background: #333;
+    background-color: #735EAB;
     color: #fff;
     cursor: pointer;
-    border-radius: 5px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
 }
 
 .billing-info button:hover {
-    background: #555;
+    background: #6750A4;
 }
 
+.text-box {
+    width: 47.5%;
+}
+
+.input-title {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pay-btn {
+    width: 24.125rem;
+    height: 3.5625rem;
+    border-radius: 8.90625rem;
+    background-color: #735EAB;
+    color: white;
+}
 
 /* dropdown menu for charity */
 .custom-select {
     display: inline-block;
     position: relative;
-    width: 200px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .select-selected {
     background-color: #f0f0f0;
-    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 1.375rem;
     cursor: pointer;
     user-select: none;
+    width: 19.5625rem;
+    height: 2.5625rem;
+    padding: 0.5rem 0.75rem 0.5rem 1.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .select-items {
     position: absolute;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    background-color: white;
     z-index: 999;
-    width: 100%;
+    width: 19.5625rem;
     display: none;
 }
 
@@ -139,8 +225,9 @@ nav ul li a {
     background-color: #ddd;
 }
 
-.select-arrow, .select-arrow-down {
-    position:absolute;
+.select-arrow,
+.select-arrow-down {
+    position: absolute;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
@@ -156,6 +243,11 @@ nav ul li a {
 
 }
 
+.img-size {
+    max-width: 1em;
+    max-height: 1em;
+}
+
 
 /* Footer */
 footer {
@@ -166,7 +258,9 @@ footer {
     text-align: center;
 }
 
-footer .useful-links, footer .socials, footer .secure-payments {
+footer .useful-links,
+footer .socials,
+footer .secure-payments {
     margin: 1em 0;
 }
 
@@ -189,7 +283,8 @@ footer ul li a {
         flex-direction: column;
     }
 
-    .cart-preview, .choose-charity {
+    .cart-preview,
+    .choose-charity {
         width: 100%;
         margin-bottom: 1em;
     }
@@ -203,4 +298,16 @@ footer ul li a {
     nav ul li {
         margin: 0.5em 0;
     }
+}
+
+@media screen and (max-width: 390px) {
+    .billing-info {
+        display: none;
+}
+
+footer {
+    display: none;
+}
+
+    
 }

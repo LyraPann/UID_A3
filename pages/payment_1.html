@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,100 +10,154 @@
     <title>Payment Page</title>
     <link rel="stylesheet" href="../assets/css/payment_1_style.css">
 </head>
-<body>  
-    
+
+<body>
+
     <!-- ===================== navigation bar ===================== -->
     <div class="navwrapper">
-      <nav class="nav">
-        <div class="logo">CHARITYECARDS</div>
-        <div class="navlist">
-          <ul>
-            <li class="btn.nav"><a href="#">Pricing</a></li>
-            <li class="btn.nav"><a href="#">Cards</a></li>
-            <li class="btn.nav"><a href="#">About</a></li>
-            <li class="btn.nav"><a href="#">Contact</a></li>
-            <li class="btn.nav"><a href="#">Charity</a></li>
-          </ul>
-        </div>
-        <div class="shoppingbuttons">
-          <img src="../img/shoppingcart.svg" alt="shoppingcart">
-          <a href="#" class="btn nav">Our Cards</a>
-        </div>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
+        <nav class="nav">
+            <div class="logo">CHARITYECARDS</div>
+            <div class="navlist">
+                <ul>
+                    <li class="btn.nav"><a href="#">Pricing</a></li>
+                    <li class="btn.nav"><a href="#">Cards</a></li>
+                    <li class="btn.nav"><a href="#">About</a></li>
+                    <li class="btn.nav"><a href="#">Contact</a></li>
+                    <li class="btn.nav"><a href="#">Charity</a></li>
+                </ul>
+            </div>
+            <div class="shoppingbuttons">
+                <img src="../img/shoppingcart.svg" alt="shoppingcart">
+                <a href="#" class="btn nav">Our Cards</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </div>
-    
+
     <!-- Main Container -->
     <div class="container">
         <!-- Shopping Cart Preview and Choose Charity Section -->
         <section class="cart-charity">
+            <div class="choose-charity">
+                <div class="circle-title">
+                    <div class="circle-container">
+                        <span class="circle">
+                            <span class="circle-text">1</span>
+                        </span>
+                    </div>
+                    <h2>Choose Charity</h2>
+                </div>
+                <div class="custom-select">
+                    <div class="select-selected">
+                        <h3>-Select a Charity</h3>
+                    </div>
+                    <div class="select-arrow"><img class="img-size" src="../img/Icon/ChevronRight.svg"></div>
+                    <div class="select-arrow-down"><img class="img-size" src="../img/Icon/down.svg"></div>
+                    <div class="select-items">
+                        <div>Animal Welfare League NSW</div>
+                        <div>Australian Red Cross</div>
+                        <div>Camp Quality</div>
+                        <div>Cancer Council WA</div>
+                        <div>Kids Helpline</div>
+                        <div>Legacy</div>
+                        <div>Mission Australia</div>
+                        <div>Red Nose Foundation</div>
+                        <div>The Salvation Army</div>
+                        <div>Youth Focus</div>
+                    </div>
+                </div>
+            </div>
             <div class="cart-preview">
                 <h2>Items(2) $4.50</h2>
                 <div>
-                    <div>I Love You a Whole Bunch! - $2.25 <button class="remove-btn">Remove</button></div>
-                    <div>Christmas Party - $2.25 <button class="remove-btn">Remove</button></div>
-                </div>
-                <h3>Total: $4.50</h3>
-            </div>
-            <div class="choose-charity">
-                <h2>Choose Charity</h2>
-                    <div class="custom-select">
-                        <div class="select-selected">1</div>
-                        <div class="select-arrow"><img src="../img/Icon/ChevronRight.svg"></div>
-                        <div class="select-arrow-down"><img src="../img/Icon/down.svg"></div>
-                        <div class="select-items">
-                            <div>1</div>
-                            <div>51-100</div>
-                            <div>201-250</div>
+                    <div class="preview-layout">
+                        <div class="preview-item">
+                            <img class="preview-image" src="../img/val1.png" alt="val card 1">
+                            <div>
+                            <div class="text-money">
+                                I Love You a Whole Bunch!
+                            </div>
+
+                            <div>
+                                $2.25
+                            </div>
+                        </div>
+                            <button class="remove-btn">Remove</button>
                         </div>
                     </div>
+                </div>
+                <div>Christmas Party - $2.25 <button class="remove-btn">Remove</button></div>
+                <h3>Total: $4.50</h3>
             </div>
-        </section>
-        
-        <!-- Billing Information Section -->
-        <section class="billing-info">
-            <h2>Billing Information</h2>
-            <form id="billing-form">
+            
+    </section>
+
+    <!-- Billing Information Section -->
+    <section class="billing-info">
+        <h2>Billing Information</h2>
+        <form id="billing-form">
+            <div class="text-box">
                 <label for="company">Company</label>
                 <input type="text" id="company" name="company" placeholder="Enter Company Name">
+            </div>
 
+            <div class="text-box">
                 <label for="first-name">First Name*</label>
                 <input type="text" id="first-name" name="first-name" placeholder="Enter First Name" required>
+            </div>
 
+            <div class="text-box">
                 <label for="last-name">Last Name*</label>
                 <input type="text" id="last-name" name="last-name" placeholder="Enter Last Name" required>
+            </div>
 
+            <div class="text-box">
                 <label for="email">Email*</label>
                 <input type="email" id="email" name="email" placeholder="Enter Email" required>
+            </div>
 
+            <div class="text-box">
                 <label for="phone">Contact Number*</label>
                 <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required>
+            </div>
 
+            <div class="text-box">
                 <label for="address1">Address Line 1*</label>
                 <input type="text" id="address1" name="address1" placeholder="Enter Address" required>
+            </div>
 
+            <div class="text-box">
                 <label for="address2">Address Line 2</label>
                 <input type="text" id="address2" name="address2" placeholder="Enter Address">
+            </div>
 
+            <div class="text-box">
                 <label for="suburb">Suburb*</label>
                 <input type="text" id="suburb" name="suburb" placeholder="Enter Suburb" required>
+            </div>
 
+            <div class="text-box">
                 <label for="state">State*</label>
                 <input type="text" id="state" name="state" placeholder="Enter State" required>
+            </div>
 
+            <div class="text-box">
                 <label for="postcode">Postcode*</label>
                 <input type="text" id="postcode" name="postcode" placeholder="Enter Postcode" required>
+            </div>
 
+            <div class="text-box">
                 <label for="country">Country*</label>
                 <input type="text" id="country" name="country" placeholder="Enter Country" required>
+            </div>
 
-                <button type="submit">Pay Now</button>
-            </form>
-        </section>
+            <button class="pay-btn" type="submit">Pay Now</button>
+        </form>
+    </section>
     </div>
 
     <!-- Footer -->
@@ -128,4 +183,5 @@
 
     <script src="../assets/script/payment_1_script.js"></script>
 </body>
+
 </html>
