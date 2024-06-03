@@ -1,91 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/shopping_cart_2_style.css">
+    <title>Shopping Cart</title>
 </head>
+
 <body>
+
     <!-- Navigation Bar -->
-    <nav class="navwrapper">
-        <div class="nav">
+    <div class="navwrapper">
+        <nav class="nav">
             <div class="logo">CHARITY ECARDS</div>
             <div class="navlist">
                 <ul>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Cards</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Charity</a></li>
-                    <li><a href="#">Our Cards</a></li>
+                    <li class="btn nav"><a href="#">Pricing</a></li>
+                    <li class="btn nav"><a href="#">Cards</a></li>
+                    <li class="btn nav"><a href="#">About</a></li>
+                    <li class="btn nav"><a href="#">Contact</a></li>
+                    <li class="btn nav"><a href="#">Charity</a></li>
                 </ul>
             </div>
             <div class="shoppingbuttons">
-                <button class="btn">Checkout</button>
+                <img src="../img/shoppingcart.svg" alt="shoppingcart">
+                <a href="#" class="btn nav">Our Cards</a>
             </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-        </div>
-    </nav>
-    
-    <!-- Shopping Cart -->
-    <main class="container">
-        <h1>Shopping Cart</h1>
-        <div class="cart-items">
-            <div class="item">
-                <div class="item-info">
-                    <p>Christmas Party</p>
-                    <p>View Qty</p>
-                    <p>$2.25</p>
-                </div>
-                <div class="item-actions">
-                    <button class="remove-btn">Remove</button>
-                    <input type="number" value="1" min="1">
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-info">
-                    <p>Christmas Party</p>
-                    <p>View Qty</p>
-                    <p>$168.00</p>
-                </div>
-                <div class="item-actions">
-                    <button class="remove-btn">Remove</button>
-                    <input type="number" value="51-100" min="1">
-                </div>
-            </div>
-        </div>
-        <div class="total">
-            <p>Total: $4.50</p>
-            <button class="btn submit-btn">Submit Order</button>
-        </div>
-    </main>
+        </nav>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="useful-links">
-            <h3>Useful Links</h3>
-            <ul>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Cards</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+    <!-- Shopping Cart -->
+    <div class="container">
+        <h2 class="shopping-title">Shopping Cart</h2>
+        <div class="shopping-cart" id="second">
+            <div class="items-container">
+                <div class="cart-item">
+                    <div class="shop-photo">
+                        <img class="product-photo" src="../img/xmas2.png">
+                        <div>
+                            <h5 id="title">Christmas Party</h5>
+                            <h2 id="price">$2.25</h2>
+                        </div>
+                    </div>
+
+                    <div class="btn-qty">
+                        <div>
+                            <p>View Qty</p>
+                            <div class="custom-select">
+                                <div class="select-selected">1</div>
+                                <div class="select-arrow"><img src="../img/Icon/ChevronRight.svg"></div>
+                                <div class="select-arrow-down"><img src="../img/Icon/down.svg"></div>
+                                <div class="select-items">
+                                    <div>1</div>
+                                    <div>51-100</div>
+                                    <div>201-250</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rem-btn">
+                            <button class="remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="shop-photo">
+                        <img class="product-photo" src="../img/xmas2.png">
+                        <div>
+                            <h5>Christmas Party</h5>
+                            <h2>$168.00</h2>
+                        </div>
+                    </div>
+
+                    <div class="btn-qty">
+                        <div>
+                            <p>View Qty</p>
+                            <div class="custom-select">
+                                <div class="select-selected">51-100</div>
+                                <div class="select-arrow"><img src="../img/Icon/ChevronRight.svg"></div>
+                                <div class="select-arrow-down"><img src="../img/Icon/down.svg"></div>
+                                <div class="select-items">
+                                    <div>1</div>
+                                    <div>51-100</div>
+                                    <div>201-250</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rem-btn">
+                            <button class="remove" type="button">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="total-amount">
+                <div class="item-price">
+                    <h5>Items(2)</h5>
+                    <h5>$170.25</h5>
+                </div>
+                <hr />
+                <div class="total-price">
+                    <h4>Total</h4>
+                    <h4>$170.25</h4>
+                </div>
+                <div class="checkout">
+                    <button type="button"><a href="payment-page1.html">Checkout</a></button>
+                </div>
+            </div>
         </div>
-        <div class="socials">
-            <h3>Socials</h3>
-            <!-- Social media links can be added here -->
-        </div>
-        <div class="secure-payments">
-            <h3>Secure Payments</h3>
-            <!-- Secure payment logos can be added here -->
+    </div>
+
+    <footer class="mobile-amount">
+        <div>
+            <div class="mobile-text">
+                <h4>Total</h4>
+                <h4>$170.25</h4>
+            </div>
+            <button type="button" href="payment-page1.html">Submit Order</button>
         </div>
     </footer>
 
     <script src="../assets/script/shopping_cart_2_script.js"></script>
 </body>
+
 </html>
