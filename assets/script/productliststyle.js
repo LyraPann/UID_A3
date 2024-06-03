@@ -51,6 +51,8 @@ closeValpopup1.addEventListener('click', function() {
 //     valPopup1.classList.remove('show');
 // });
 
+
+
 function addCards() {
     let cardDetails= chooseCard1.innerHTML;
     console.log(cardDetails);
