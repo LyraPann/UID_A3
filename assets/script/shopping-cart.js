@@ -79,4 +79,3 @@ window.addEventListener('click', function(){
     //     price: price.innerHTML,
     //     image: popupButton.innerHTML,
     // }
-

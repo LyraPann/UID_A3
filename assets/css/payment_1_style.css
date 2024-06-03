@@ -303,11 +303,14 @@ footer ul li a {
 @media screen and (max-width: 390px) {
     .billing-info {
         display: none;
-}
+    }
 
-footer {
-    display: none;
-}
+    footer {
+        display: none;
+    }
 
-    
+    .cart-preview {
+        display: none;
+    }
+
 }

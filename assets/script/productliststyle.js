@@ -280,5 +280,3 @@ const openMenu = () => {
             }       
         })
 }
-
-
