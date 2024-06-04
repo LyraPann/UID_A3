@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //dropdown menu
-const selected = document.querySelector('.select-selected');
+const selected = document.querySelector('.number-selected');
 const items = document.querySelector('.select-items');
 const arrow = document.querySelector('.select-arrow');
 const arrowDown = document.querySelector('.select-arrow-down');
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropdownContent = document.querySelector('.menu');
     const arrow = document.querySelector('.arrow');
     const filterOptions = document.querySelectorAll('.text-option');
-    const products = document.querySelectorAll('.products-list > div');
+    const products = document.querySelectorAll('.charity-container > div');
 
 
     dropdownDisplay.addEventListener('click', () => {

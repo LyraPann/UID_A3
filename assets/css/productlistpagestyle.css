@@ -445,6 +445,8 @@ input {
 
 
 @media screen and (max-width: 390px) {
+
+
     .mobile-menu {
         display: block;
         padding: 12px 21px;
@@ -607,4 +609,6 @@ input {
         letter-spacing: 0.00563rem;
     }
 }
+
+
 
