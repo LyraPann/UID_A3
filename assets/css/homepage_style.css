@@ -23,7 +23,7 @@
 
 /* Main section styles */
 main {
-  padding: 2rem;
+  padding: 6rem;
   align-items: center;
 }
 
@@ -75,7 +75,7 @@ header {
 
 /* Charities section styles */
 h2 {
-  text-align: center;
+  text-align: left;
   font-size: 2rem;
   margin-top: 2rem;
 }
@@ -99,13 +99,30 @@ h2 {
 }
 
 .charity-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
   text-align: center;
-  width: 20rem;
+  width: 15rem;
+  height: 20rem;
   padding: 1.5625rem 2.4375rem;
+  overflow: hidden;
 }
+
+#disease {
+  background: var(--card-1, #7554CE);
+}
+
+#children {
+  background: #F4C479;
+}
+
+#community {
+  background: var(--card-2, #DDAEAB);
+}
+
+#animal {
+  background: var(--Pink, #D29DAC);
+}
+
 
 .charity-content {
   padding: 1rem;
@@ -143,9 +160,7 @@ h2 {
 .yoga-image {
   display: block;
   margin: 2rem auto;
-  max-width: 100%;
-  width: 441px;
-  height: 393px;
+  width: 20rem;
   flex-shrink: 0;
 }
 
