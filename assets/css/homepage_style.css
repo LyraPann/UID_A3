@@ -1,166 +1,30 @@
-/* General styles */
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-  
-  
-/* Navigation bar styles */
-.navwrapper {
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  flex-wrap: nowrap;
-}
-
-.logo {
-  color: #000;
+/* Cover section styles */
+.cover {
+  background-color: #D9B89E;
   text-align: center;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.navlist ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-}
-
-.navlist ul li {
-  margin: 0 1rem;
-  list-style: none;
-  text-decoration: none;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-/* The dropdown container */
-.dropdown {
-  float: left;
+  width: 100%;
+  height: 50rem;
   overflow: hidden;
 }
 
-.dropbtn {
-  width: max-content;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  padding-top: 20px;
-  min-width: 160px;
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 18px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  font-size: 12px;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ffffff6c;
-  border-radius: 12px;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-.shoppingbuttons {
-  display: flex;
-  align-items: center;
-}
-
-.btn {
-  color: var(--M3-sys-light-on-primary, #FFF);
-  text-align: center;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 22.612px; 
-  letter-spacing: 0.113px;
-
-  padding: 0.5rem 1rem;
-  margin-left: 1rem;
-  text-decoration: none;
-
-  border-radius: 113.061px;
-  background: var(--M3-sys-light-primary, #6750A4);
-
-  /* M3/Elevation Light/1 */
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-}
-
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.hamburger span {
-  height: 2px;
-  width: 25px;
-  background: #000;
-  margin-bottom: 4px;
-  border-radius: 5px;
-}
-
-/* Cover section styles */
-.cover {
-  position: relative;
-  text-align: center;
-  background-color: #D9B89E;
-  padding: 4rem 2rem;
-}
-
-.covertext {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-
-  color: #FFF;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 200px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-
-}
-
-.cardsspin {
-  max-width: 100%;
+.cover img {
+  width: 100vw;
   height: auto;
+}
+
+.take-a-spin {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  size: 80%;
+  top: 30%;
+  z-index: 100;
 }
 
 /* Main section styles */
 main {
   padding: 2rem;
+  align-items: center;
 }
 
 header {
@@ -182,14 +46,6 @@ header {
 .text p {
   font-size: 1rem;
   margin-bottom: 1.5rem;
-}
-
-.ourcards {
-  background-color: #007bff;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 5px;
 }
 
 .titleimg {
@@ -217,267 +73,97 @@ header {
   margin-top: 0.5rem;
 }
 
-/* Charity section styles */
-.charitysection {
+/* Charities section styles */
+h2 {
   text-align: center;
-  background-color: #f8f9fa;
-  padding: 2rem;
-  border-radius: 5px;
-  margin-bottom: 4rem;
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 
-.charitysection h2 {
-  font-size: 2rem;
+.charity-grid-wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-1, .grid-2 {
+  display: flex;
+  gap: 2rem;
+}
+
+.charity-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.charity-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 20rem;
+  padding: 1.5625rem 2.4375rem;
+}
+
+.charity-content {
+  padding: 1rem;
+}
+
+.charity-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.charity-content p {
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
-.home-page .charity {
-  display: inline-flex;
-  flex-direction: column;
-  height: 832px;
-  align-items: flex-start;
-  gap: 32px;
-  position: absolute;
-  top: 2410px;
-  left: 151px;
-}
-
-.home-page .div-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 25px 39px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-  background-color: #7553cd;
-  border-radius: 24px;
-  overflow: hidden;
-}
-
-.home-page .text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  padding: 10px;
-  position: relative;
-  flex: 1;
-  align-self: stretch;
-  width: 100%;
-  flex-grow: 1;
-}
-
-.home-page .text-wrapper-11 {
-  position: relative;
-  width: 290px;
-  margin-top: -1px;
-  font-family: "Poppins", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: 39.3px;
-}
-
-.home-page .text-wrapper-12 {
-  position: relative;
-  width: fit-content;
-  font-family: "Poppins", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: 22.9px;
-  white-space: nowrap;
-}
-
-.home-page .state-layer-wrapper {
-  all: unset;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  width: 114px;
-  height: 35px;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  position: relative;
-  background-color: var(--m3syslightsurface-container-low);
-  border-radius: 100px;
-  overflow: hidden;
-  box-shadow: var(--m3-elevation-light-2);
-}
-
-.home-page .label-text-wrapper {
-  gap: 8px;
-  padding: 10px 24px;
-  background-color: var(--m3state-layerslightprimaryopacity-008);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  flex: 1;
-  align-self: stretch;
-  width: 100%;
-  flex-grow: 1;
-}
-
-.home-page .label-text-2 {
-  position: relative;
-  width: fit-content;
-  margin-top: -3.5px;
-  margin-bottom: -1.5px;
-  margin-left: -1px;
-  margin-right: -1px;
-  font-family: "Poppins", Helvetica;
-  font-weight: 500;
-  color: var(--m-3syslightprimary);
-  font-size: 12px;
-  text-align: center;
-  letter-spacing: 0.1px;
-  line-height: 20px;
-  white-space: nowrap;
-}
-
-.home-page .doctors-in-white {
-  position: absolute;
-  width: 244px;
-  height: 248px;
-  top: 127px;
-  left: 117px;
-}
-
-.home-page .charity-2 {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 25px 39px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-  background-color: var(--card-2);
-  border-radius: 24px;
-  overflow: hidden;
-}
-
-.home-page .young-people-in-the {
-  position: absolute;
-  width: 259px;
-  height: 248px;
-  top: 127px;
-  left: 102px;
-}
-
-.home-page .charity-3 {
-  display: inline-flex;
-  flex-direction: column;
-  height: 832px;
-  align-items: flex-start;
-  gap: 32px;
-  position: absolute;
-  top: 2410px;
-  left: 586px;
-}
-
-.home-page .charity-4 {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 25px 39px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-  background-color: #f4c378;
-  border-radius: 24px;
-  overflow: hidden;
-}
-
-.home-page .young-boys-and-young {
-  position: absolute;
-  width: 237px;
-  height: 255px;
-  top: 120px;
-  left: 124px;
-}
-
-.home-page .charity-5 {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 25px 39px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-  background-color: var(--card-4);
-  border-radius: 24px;
-  overflow: hidden;
-}
-
-.home-page .girl-standing-and {
-  position: absolute;
-  width: 196px;
-  height: 230px;
-  top: 145px;
-  left: 165px;
-}
-
-.home-page .young-girl-and-boy {
-  position: absolute;
-  width: 519px;
-  height: 538px;
-  top: 1066px;
-  left: 993px;
-}
-
-
-/* Footer styles */
-footer {
-  background-color: #333;
+.charity-content button {
+  background: #007bff;
   color: #fff;
-  padding: 2rem;
-  text-align: center;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.footerlinks {
-  margin-top: 1rem;
+.charity-content button:hover {
+  background: #0056b3;
 }
 
-.footerlinks table {
-  width: 100%;
-  color: #fff;
-}
-
-.footerlinks th, .footerlinks td {
-  padding: 0.5rem;
-  text-align: left;
-}
-
-.footerlinks th {
-  border-bottom: 1px solid #555;
-}
-
-.footerlinks td img {
-  max-width: 50px;
+.charity-card img {
+  max-width: 100%;
   height: auto;
 }
 
-/* Media queries for responsiveness */
+.yoga-image {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+  width: 441px;
+  height: 393px;
+  flex-shrink: 0;
+}
+
+.charity-mobile {
+  display: none;
+  width: 22rem;
+  height: 19.375rem;
+  flex-shrink: 0;
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
   .nav {
     flex-direction: row;
   }
 
   .navlist ul {
-    flex-direction: column;
+    flex-direction: row;
     display: none;
   }
 
@@ -503,6 +189,10 @@ footer {
     margin-top: 2rem;
   }
 
+  .cover {
+    height: 20rem;
+  }
+
   .steps {
     flex-direction: column;
   }
@@ -511,7 +201,47 @@ footer {
     margin-bottom: 2rem;
   }
 
-  .charitysection p {
-    font-size: 0.9rem;
+  .charity-grid-wrapper {
+    display: none;
+  }
+
+  .charity-mobile {
+    display: flex;
+  }
+
+  .yoga-image {
+    width: 50%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    margin-bottom: 1rem;
+  }
+
+  .payments {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .yoga-image {
+    width: 30%;
+  }
+}
+
