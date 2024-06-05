@@ -1,0 +1,68 @@
+/* Typography */
+.title {
+    color: #000;
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.title2 {
+    display: none;
+}
+
+@media screen and (max-width: 390px) {
+    .title {
+        display: none;
+    }
+
+    .title2 {
+        display: block;
+        color: #000;
+        font-size: 2.8125rem;
+        font-style: normal;
+        font-weight: 500;
+        padding: 0; 
+        margin: 0;
+    }
+
+    .mobile-title {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5.5em;
+        margin-bottom: 2em;
+    }
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigtext {
+    color: #000;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+}
+
+.cardinfo {
+    color: #909090;
+    font-size: 0.875rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+}
+
+.real-title {
+    margin-top: 1.5em;
+}
+
+.money {
+    margin-bottom: 2em;
+}
