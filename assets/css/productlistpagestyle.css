@@ -13,6 +13,11 @@ body {
     padding: 0;
     box-sizing: border-box;
   }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   
   
   /* Navigation bar styles */
@@ -101,11 +106,18 @@ body {
     display: none;
 }
 
+.cardstitle {
+    color: #000;
+font-size: 2.8125rem;
+font-style: normal;
+font-weight: 600;
+}
+
 .title-search {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 88.1%;
+    max-width: 90%;
     padding: 0 4.5rem 0rem 4.5rem;
 }
 
@@ -120,12 +132,15 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 163.78%;
+    margin-bottom: 2em;
 }
 
 .xmas-coming {
     font-size: 3.5rem;
     font-style: normal;
     font-weight: 600;
+    margin: 0;
+    margin-top: 2rem;
 }
 
 
@@ -247,23 +262,22 @@ body {
 }
 
 
-
 /* search bar */
 .search-bar {
     position: relative;
     background-color: white;
-    width: 11rem;
-    height: 2rem;
+    width: 22.5rem;
+    height: 3.5rem;
     min-width: 11rem;
     max-width: 45rem;
     display: block;
-}
-
-.lines {
+  }
+  
+  .lines {
     background-color: #ECE6F0;
     display: flex;
-    width: 11rem;
-    height: 2rem;
+    width: 22.5rem;
+    height: 3.5rem;
     min-width: 11rem;
     max-width: 45rem;
     gap: 0.25rem;
@@ -272,17 +286,15 @@ body {
     border-radius: 30px;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-
-.search-icon {
+  }
+  
+  .search-icon {
     background-color: transparent;
     border: transparent;
-    height: 1.25rem;
-    padding-bottom: 1.8em;
-}
-
-input {
+  
+  }
+  
+  input {
     flex: 1;
     width: 7rem;
     height: 2rem;
@@ -290,9 +302,12 @@ input {
     border: 0;
     font-size: 0.75rem;
     outline: none;
-}
-
-
+    color: #49454F;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  }
 
 
 /* popups */
@@ -412,6 +427,7 @@ input {
     border-radius: 8.90625rem;
     box-shadow: 0px 1.425px 2.85px 0px rgba(0, 0, 0, 0.30), 0px 1.425px 4.275px 1.425px rgba(0, 0, 0, 0.15);
     background-color: #6750A4;
+    margin-top: 4rem;
 }
 
 .xmas-button {

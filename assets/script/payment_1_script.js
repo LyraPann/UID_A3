@@ -60,6 +60,7 @@ window.addEventListener('click', function () {
 })
 
 
+
 //charity filter
 document.addEventListener('DOMContentLoaded', () => {
     const dropdownDisplay = document.querySelector('.select');
