@@ -218,224 +218,97 @@ header {
 }
 
 /* Charity section styles */
-.charitysection {
-  text-align: center;
-  background-color: #f8f9fa;
-  padding: 2rem;
-  border-radius: 5px;
-  margin-bottom: 4rem;
+/* General styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.charitysection h2 {
+h2 {
+  text-align: center;
   font-size: 2rem;
+  margin-top: 2rem;
+}
+
+/* Charities section styles */
+.charities {
+  padding: 2rem;
+}
+
+.charity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.charity-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.charity-content {
+  padding: 1rem;
+}
+
+.charity-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.charity-content p {
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
-.home-page .charity {
-  display: inline-flex;
-  flex-direction: column;
-  height: 832px;
-  align-items: flex-start;
-  gap: 32px;
-  position: absolute;
-  top: 2410px;
-  left: 151px;
+.charity-content button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.home-page .div-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 25px 39px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-  background-color: #7553cd;
-  border-radius: 24px;
-  overflow: hidden;
+.charity-content button:hover {
+  background: #0056b3;
 }
 
-.home-page .text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  padding: 10px;
-  position: relative;
-  flex: 1;
-  align-self: stretch;
-  width: 100%;
-  flex-grow: 1;
+.charity-card img {
+  max-width: 100%;
+  height: auto;
 }
 
-.home-page .text-wrapper-11 {
-  position: relative;
-  width: 290px;
-  margin-top: -1px;
-  font-family: "Poppins", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: 39.3px;
+.yoga-image {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+  height: auto;
 }
 
-.home-page .text-wrapper-12 {
-  position: relative;
-  width: fit-content;
-  font-family: "Poppins", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: 22.9px;
-  white-space: nowrap;
+/* Responsive styles */
+@media (max-width: 768px) {
+  .charity-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .yoga-image {
+    width: 50%;
+  }
 }
 
-.home-page .state-layer-wrapper {
-  all: unset;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  width: 114px;
-  height: 35px;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  position: relative;
-  background-color: var(--m3syslightsurface-container-low);
-  border-radius: 100px;
-  overflow: hidden;
-  box-shadow: var(--m3-elevation-light-2);
-}
-
-.home-page .label-text-wrapper {
-  gap: 8px;
-  padding: 10px 24px;
-  background-color: var(--m3state-layerslightprimaryopacity-008);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  flex: 1;
-  align-self: stretch;
-  width: 100%;
-  flex-grow: 1;
-}
-
-.home-page .label-text-2 {
-  position: relative;
-  width: fit-content;
-  margin-top: -3.5px;
-  margin-bottom: -1.5px;
-  margin-left: -1px;
-  margin-right: -1px;
-  font-family: "Poppins", Helvetica;
-  font-weight: 500;
-  color: var(--m-3syslightprimary);
-  font-size: 12px;
-  text-align: center;
-  letter-spacing: 0.1px;
-  line-height: 20px;
-  white-space: nowrap;
-}
-
-.home-page .doctors-in-white {
-  position: absolute;
-  width: 244px;
-  height: 248px;
-  top: 127px;
-  left: 117px;
-}
-
-.home-page .charity-2 {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 25px 39px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-  background-color: var(--card-2);
-  border-radius: 24px;
-  overflow: hidden;
-}
-
-.home-page .young-people-in-the {
-  position: absolute;
-  width: 259px;
-  height: 248px;
-  top: 127px;
-  left: 102px;
-}
-
-.home-page .charity-3 {
-  display: inline-flex;
-  flex-direction: column;
-  height: 832px;
-  align-items: flex-start;
-  gap: 32px;
-  position: absolute;
-  top: 2410px;
-  left: 586px;
-}
-
-.home-page .charity-4 {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 25px 39px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-  background-color: #f4c378;
-  border-radius: 24px;
-  overflow: hidden;
-}
-
-.home-page .young-boys-and-young {
-  position: absolute;
-  width: 237px;
-  height: 255px;
-  top: 120px;
-  left: 124px;
-}
-
-.home-page .charity-5 {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 25px 39px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-  background-color: var(--card-4);
-  border-radius: 24px;
-  overflow: hidden;
-}
-
-.home-page .girl-standing-and {
-  position: absolute;
-  width: 196px;
-  height: 230px;
-  top: 145px;
-  left: 165px;
-}
-
-.home-page .young-girl-and-boy {
-  position: absolute;
-  width: 519px;
-  height: 538px;
-  top: 1066px;
-  left: 993px;
+@media (min-width: 769px) and (max-width: 1024px) {
+  .yoga-image {
+    width: 30%;
+  }
 }
 
 
