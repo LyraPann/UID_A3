@@ -40,13 +40,33 @@ nav ul li a {
 .container {
     width: 90%;
     margin: 2em auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
 }
 
 /* Cart and Charity Section */
+.mobile-circles {
+    display: none;
+}
+
+.page-title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.mobile-title {
+    display: none;
+}
+
 .cart-charity {
     display: flex;
     justify-content: space-between;
@@ -54,17 +74,21 @@ nav ul li a {
     flex-wrap: wrap;
 }
 
-.cart-preview,
+.cart-preview {
+    width: 48%;
+    padding: 1em;
+    border-radius: 0.75rem;
+    background: #FFF;
+    box-shadow: 0px 228px 64px 0px rgba(150, 150, 150, 0.00), 0px 146px 58px 0px rgba(150, 150, 150, 0.01), 0px 82px 49px 0px rgba(150, 150, 150, 0.05), 0px 37px 37px 0px rgba(150, 150, 150, 0.09), 0px 9px 20px 0px rgba(150, 150, 150, 0.10);
+}
+
+
 .choose-charity {
     width: 48%;
     padding: 1em;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px;
 }
-
-.cart-preview h2,
-.choose-charity h2,
-.billing-info h2 {}
 
 .circle-container {
     display: flex;
@@ -86,8 +110,9 @@ nav ul li a {
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
-    background-color: #573A76;
+    background-color: #735EAB;
     color: white;
+    font-family: Poppins;
 }
 
 .circle span {
@@ -101,7 +126,7 @@ nav ul li a {
 .preview-item {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 1em;
 }
 
 .preview-image {
@@ -118,7 +143,82 @@ nav ul li a {
 .text-money {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
+
+.top-number {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px 10px 25px;
+    margin-top: 0.5em;
+}
+
+.top-words {
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.btm-words {
+    font-family: Poppins;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.btm-number {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px 10px 25px;
+    margin-bottom: 3em;
+}
+
+.view-qty {
+    font-family: Poppins;
+    font-size: 0.45231rem;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    margin-top: 2em;
+}
+
+.card-title {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 0.64613rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.card-price {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.29231rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.qty-dropdown {
+    float: right;
+}
+
+.charity-container {
+    margin-top: 3em;
+    position: relative;
+}
+
+.charity-container div {
+    display: none;
+}
+
+.strtline {
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+
+
 
 
 /* Billing Information Section */
@@ -138,6 +238,11 @@ nav ul li a {
 .billing-info label {
     width: 100%;
     margin-top: 1em;
+    color: #000;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .billing-info input,
@@ -149,7 +254,14 @@ nav ul li a {
     height: 3.1875rem;
     background: #FAFAFA;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.17) inset;
+    color: #909090;
+    font-family: Poppins;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
 }
+
+
 
 .billing-info button {
     margin-top: 5em;
@@ -165,6 +277,11 @@ nav ul li a {
 
 .billing-info button:hover {
     background: #6750A4;
+}
+
+.billing-info a {
+    text-decoration: none;
+    color: white;
 }
 
 .text-box {
@@ -187,6 +304,78 @@ nav ul li a {
 }
 
 /* dropdown menu for charity */
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow-right {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+.arrow-down {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+.tick {
+    height: 50px;
+    width: 18px;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+    transform: rotate(45deg);
+    margin: 20px;
+}
+
+.select {
+    color: black;
+    border-radius: 25px;
+    background: white;
+    display: flex;
+    width: 19.5625rem;
+    height: 2.5625rem;
+    padding: 0.5rem 0.75rem 0.5rem 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 0.5em;
+    box-shadow: 10px 97px 27px 0px rgba(0, 0, 0, 0.00), 7px 62px 25px 0px rgba(0, 0, 0, 0.01), 4px 35px 21px 0px rgba(0, 0, 0, 0.05), 2px 16px 16px 0px rgba(0, 0, 0, 0.09), 0px 4px 9px 0px rgba(0, 0, 0, 0.10);
+}
+
+.menu {
+    display: none;
+    list-style: none;
+    background: white;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+}
+
+.menu div:hover {
+    background-color: #f1f1f1;
+}
+
+.text-option {
+    padding: 0.625rem 1.5625rem;
+    justify-content: flex-start;
+}
+
+.select-selected {
+    display: none;
+}
+
+
+
+
+
+/* dropdown menu for quantity */
 .custom-select {
     display: inline-block;
     position: relative;
@@ -194,25 +383,34 @@ nav ul li a {
     align-items: center;
 }
 
-.select-selected {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 1.375rem;
-    cursor: pointer;
-    user-select: none;
-    width: 19.5625rem;
-    height: 2.5625rem;
-    padding: 0.5rem 0.75rem 0.5rem 1.5rem;
+.number-selected {
     display: flex;
+    width: 3.69225rem;
+    height: 1.26594rem;
+    padding: 0.06463rem 0.32306rem;
+    justify-content: center;
     align-items: center;
+    gap: 0.32306rem;
+    flex-shrink: 0;
+    border-radius: 0.71075rem;
+    font-size: 0.38769rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #FFF;
+    box-shadow: 0px 37.218px 10.338px 0px rgba(150, 150, 150, 0.00), 0px 23.778px 9.304px 0px rgba(150, 150, 150, 0.01), 0px 13.44px 8.271px 0px rgba(150, 150, 150, 0.05), 0px 6.203px 6.203px 0px rgba(150, 150, 150, 0.09), 0px 1.551px 3.101px 0px rgba(150, 150, 150, 0.10);
 }
 
 .select-items {
     position: absolute;
     background-color: white;
     z-index: 999;
-    width: 19.5625rem;
+    width: 3.69225rem;
     display: none;
+    font-size: 0.38769rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .select-items div {
@@ -229,12 +427,14 @@ nav ul li a {
 .select-arrow-down {
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 5px;
     transform: translateY(-50%);
     pointer-events: none;
+
 }
 
 .select-arrow-down {
+
     display: none;
 }
 
@@ -243,9 +443,30 @@ nav ul li a {
 
 }
 
-.img-size {
-    max-width: 1em;
-    max-height: 1em;
+.img-size1 {
+    width: 10px;
+    height: 10px;
+}
+
+.img-size2 {
+    width: 5px;
+    height: 5px;
+}
+
+.remove-btn {
+    border-radius: 0.71075rem;
+    border: 0.517px solid #5100B9;
+    background-color: #FFF;
+    width: 2.60219rem;
+    height: 0.66813rem;
+    padding: 0rem 0.25844rem;
+    color: #5100B9;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 0.32306rem;
+    font-style: normal;
+    font-weight: 400;
+    float: right;
 }
 
 
@@ -277,12 +498,17 @@ footer ul li a {
     text-decoration: none;
 }
 
+.mobile-amount {
+    display: none;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .cart-charity {
         flex-direction: column;
     }
 
+    .cart-preview,
     .choose-charity {
         width: 100%;
         margin-bottom: 1em;
@@ -300,6 +526,16 @@ footer ul li a {
 }
 
 @media screen and (max-width: 390px) {
+    .page-title {
+        color: #000;
+font-family: Poppins;
+font-size: 2.8125rem;
+font-style: normal;
+font-weight: 500;
+padding: 1rem;
+margin: 0;
+    }
+
     .billing-info {
         display: none;
     }
@@ -310,5 +546,166 @@ footer ul li a {
 
     .cart-preview {
         display: none;
+    }
+
+    .charity-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-title {
+        color: #000;
+        font-family: Poppins;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .mobile-amount {
+        display: block;
+        color: black;
+        background-color: #fff;
+        width: 24.5625rem;
+        height: 8.3125rem;
+        position: fixed;
+        bottom: 0;
+        padding: 0.5em;
+        box-shadow: -44px -215px 61px 0px rgba(0, 0, 0, 0.00),
+            -28px -138px 56px 0px rgba(0, 0, 0, 0.01),
+            -16px -77px 47px 0px rgba(0, 0, 0, 0.05),
+            -7px -34px 35px 0px rgba(0, 0, 0, 0.09),
+            -2px -9px 19px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    .mobile-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .mobile-content {
+        width: 90%;
+        margin: 0.5em auto;
+    }
+
+    .circle-container {
+        display: none;
+    }
+
+    .mobile-title {
+        display: block;
+    }
+
+    .desktop-title {
+        display: none;
+    }
+
+    .total-text {
+        color: #000;
+        font-family: Poppins;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .submitbtn {
+        color: white;
+        font-family: Poppins;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+        margin-top: 1em;
+        width: 15.1875rem;
+        height: 2.625rem;
+        border: none;
+        border-radius: 8.90625rem;
+        background-color: #6750A4;
+        box-shadow: 0px 1.425px 2.85px 0px rgba(0, 0, 0, 0.30), 0px 1.425px 4.275px 1.425px rgba(0, 0, 0, 0.15);
+    }
+
+    .submitbtn a {
+        color: white;
+    }
+
+    .charity-item {
+        width: 80%;
+        margin: auto 2em;
+    }
+
+    .cart-charity {
+        height: 50em;
+    }
+
+    .current-circle-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .current-circle {
+        line-height: 0px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        background-color: #735EAB;
+        color: white;
+        font-family: Poppins;
+    }
+
+    .current-circle span {
+        display: block;
+        padding-top: 50%;
+        padding-bottom: 50%;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .mobile-circle-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .mobile-circle {
+        line-height: 0px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        background-color: white;
+        color: #735EAB;
+        font-family: Poppins;
+        border: 2px solid #735EAB;
+    }
+
+    .mobile-circle span {
+        display: block;
+        padding-top: 50%;
+        padding-bottom: 50%;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+
+    .next-page button {
+        border: none;
+        background-color: transparent;
+    }
+
+    .mobile-line {
+        width: 20%
+    }
+
+    .mobile-circles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+    a {
+        text-decoration: none;
     }
 }

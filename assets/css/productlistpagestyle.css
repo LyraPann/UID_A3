@@ -375,7 +375,13 @@ input {
     color: #fff;
     padding: 12px 0;
     background-color: #6750A4;
+    width: 17.9375rem;
+    align-self: flex-end;
     box-shadow: 0px 1.425px 2.85px 0px rgba(0, 0, 0, 0.30), 0px 1.425px 4.275px 1.425px rgba(0, 0, 0, 0.15);
+}
+
+.butchoose {
+    float: right;
 }
 
 .choose-button {
@@ -439,6 +445,8 @@ input {
 
 
 @media screen and (max-width: 390px) {
+
+
     .mobile-menu {
         display: block;
         padding: 12px 21px;
@@ -601,4 +609,6 @@ input {
         letter-spacing: 0.00563rem;
     }
 }
+
+
 

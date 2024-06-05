@@ -38,127 +38,267 @@
         </nav>
     </div>
 
+<div>
     <!-- Main Container -->
     <div class="container">
+        <h2 class="page-title">Payment</h2>
         <!-- Shopping Cart Preview and Choose Charity Section -->
         <section class="cart-charity">
             <div class="choose-charity">
+                <div class="mobile-circles">
+                    <div class="current-page">
+                        <div class="current-circle-container">
+                            <span class="current-circle">
+                                <span class="current-circle-text">1</span>
+                            </span>
+                        </div>
+                    </div>
+                    <hr class="mobile-line">
+                    <div class="next-page"><button>
+                            <a href="../pages/payment-page2-mobile.html">
+                                <div class="mobile-circle-container">
+                                    <span class="mobile-circle">
+                                        <span class="mobile-circle-text">2</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </button>
+                    </div>
+                    <hr class="mobile-line">
+                    <div class="next-page"><button>
+                            <a href="../pages/payment-page2.html">
+                                <div class="mobile-circle-container">
+                                    <span class="mobile-circle">
+                                        <span class="mobile-circle-text">3</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </button>
+                    </div>
+
+                </div>
                 <div class="circle-title">
                     <div class="circle-container">
                         <span class="circle">
                             <span class="circle-text">1</span>
                         </span>
                     </div>
-                    <h2>Choose Charity</h2>
+                    <h2 class="desktop-title section-title">Choose Charity</h2>
+                    <h2 class="mobile-title section-title">1. Choose Charity</h2>
                 </div>
                 <div class="custom-select">
                     <div class="select-selected">
-                        <h3>-Select a Charity</h3>
                     </div>
-                    <div class="select-arrow"><img class="img-size" src="../img/Icon/ChevronRight.svg"></div>
-                    <div class="select-arrow-down"><img class="img-size" src="../img/Icon/down.svg"></div>
-                    <div class="select-items">
-                        <div>Animal Welfare League NSW</div>
-                        <div>Australian Red Cross</div>
-                        <div>Camp Quality</div>
-                        <div>Cancer Council WA</div>
-                        <div>Kids Helpline</div>
-                        <div>Legacy</div>
-                        <div>Mission Australia</div>
-                        <div>Red Nose Foundation</div>
-                        <div>The Salvation Army</div>
-                        <div>Youth Focus</div>
+                    <div class="filter">
+                        <div class="select">
+                            <span class="selected">-Select a Charity</span>
+                            <div class="arrow arrow-right"></div>
+                        </div>
+                        <div class="menu">
+                            <div class="text-option" data-filter="animalwelfare">Animal Welfare League NSW</div>
+                            <div class="text-option" data-filter="redcross">Australian Red Cross</div>
+                            <div class="text-option" data-filter="campquality">Camp Quality</div>
+                            <div class="text-option" data-filter="cancercouncil">Cancer Council WA</div>
+                            <div class="text-option" data-filter="kidshelpline">Kids Helpline</div>
+                            <div class="text-option" data-filter="legacy">Legacy</div>
+                            <div class="text-option" data-filter="missionaustralia">Mission Australia</div>
+                            <div class="text-option" data-filter="rednose">Red Nose Foundation</div>
+                            <div class="text-option" data-filter="salarmy">The Salvation Army</div>
+                            <div class="text-option" data-filter="youthfocus">Youth Focus</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="charity-container">
+                    <div data-category="aniwell">
+                        <img class="charity-item" src="../img/charitesss/anuwel.png" alt="Animal Welfare League NSW">
+                    </div>
+                    <div data-category="redcross">
+                        <img class="charity-item" src="../img/charitesss/australiancross.png"
+                            alt="Australian Red Cross">
+                    </div>
+                    <div data-category="campq">
+                        <img class="charity-item" src="../img/charitesss/campq.png" alt="Camp Quality">
+                    </div>
+                    <div data-category="cancercounc">
+                        <img class="charity-item" src="../img/charitesss/cancercouncil.png" alt="Cancer Council WA">
+                    </div>
+                    <div data-category="kidshelp">
+                        <img class="charity-item" src="../img/charitesss/kidshelp.png" alt="Kids Helpline">
+                    </div>
+                    <div data-category="legacy">
+                        <img class="charity-item" src="../img/charitesss/legacy.png" alt="Legacy">
+                    </div>
+                    <div data-category="missaus">
+                        <img class="charity-item" src="../img/charitesss/missionaus.png" alt="Mission Australia">
+                    </div>
+                    <div data-category="rednose">
+                        <img class="charity-item" src="../img/charitesss/rednose.png" alt="Red Nose Foundation">
+                    </div>
+                    <div data-category="salarmy">
+                        <img class="charity-item" src="../img/charitesss/1200px-The_Salvation_Army 1.png"
+                            alt="The Salvation Army">
+                    </div>
+                    <div data-category="youthfocus">
+                        <img class="charity-item" src="../img/charitesss/youthfocus.png" alt="Youth Focus">
                     </div>
                 </div>
             </div>
-            <div class="cart-preview">
-                <h2>Items(2) $4.50</h2>
-                <div>
-                    <div class="preview-layout">
-                        <div class="preview-item">
-                            <img class="preview-image" src="../img/val1.png" alt="val card 1">
-                            <div>
-                            <div class="text-money">
-                                I Love You a Whole Bunch!
-                            </div>
 
-                            <div>
-                                $2.25
+            
+            <div class="cart-preview">
+                <div class="top-number">
+                    <h3 class="top-words">Items(2)</h3>
+                    <h3 class="top-words">$4.50</h3>
+                </div>
+                <div>
+                    <div>
+                        <div class="preview-layout">
+                            <div class="qty-dropdown">
+                                <p class="view-qty">View Qty</p>
+                                <div class="custom-select">
+                                    <div class="number-selected">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                                    </div>
+                                    <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                                    </div>
+                                    <div class="select-items">
+                                        <div>1</div>
+                                        <div>51-100</div>
+                                        <div>201-250</div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            <div class="preview-item">
+                                <img class="preview-image" src="../img/val1.png" alt="val card 1">
+                                <div class="text-money">
+                                    <div class="card-title">
+                                        I Love You a Whole Bunch
+                                    </div>
+
+                                    <div class="card-price">
+                                        $2.25
+                                    </div>
+                                </div>
+                            </div>
                             <button class="remove-btn">Remove</button>
                         </div>
                     </div>
+                    <div>
+                        <div class="preview-layout">
+                            <div class="qty-dropdown">
+                                <p class="view-qty">View Qty</p>
+                                <div class="custom-select">
+                                    <div class="number-selected">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                                    </div>
+                                    <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                                    </div>
+                                    <div class="select-items">
+                                        <div>1</div>
+                                        <div>51-100</div>
+                                        <div>201-250</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="preview-item">
+                                <img class="preview-image" src="../img/xmas2.png" alt="val card 1">
+                                <div class="text-money">
+                                    <div class="card-title">
+                                        Christmas Party
+                                    </div>
+
+                                    <div class="card-price">
+                                        $2.25
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                    <hr class="strtline">
+                    <div class="btm-number">
+                        <h3 class="btm-words">Total</h3>
+                        <h3 class="btm-words">$4.50</h3>
+                    </div>
                 </div>
-                <div>Christmas Party - $2.25 <button class="remove-btn">Remove</button></div>
-                <h3>Total: $4.50</h3>
-            </div>
-            
-    </section>
 
-    <!-- Billing Information Section -->
-    <section class="billing-info">
-        <h2>Billing Information</h2>
-        <form id="billing-form">
-            <div class="text-box">
-                <label for="company">Company</label>
-                <input type="text" id="company" name="company" placeholder="Enter Company Name">
+        </section>
+        <!-- Billing Information Section -->
+        <section class="billing-info">
+            <div class="circle-title">
+                <div class="circle-container">
+                    <span class="circle">
+                        <span class="circle-text">2</span>
+                    </span>
+                </div>
+                <h2 class="section-title">Billing Information</h2>
             </div>
+            <form id="billing-form">
+                <div class="text-box">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company" placeholder="Enter Company Name">
+                </div>
 
-            <div class="text-box">
-                <label for="first-name">First Name*</label>
-                <input type="text" id="first-name" name="first-name" placeholder="Enter First Name" required>
-            </div>
+                <div class="text-box">
+                    <label for="first-name">First Name*</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter First Name" required>
+                </div>
 
-            <div class="text-box">
-                <label for="last-name">Last Name*</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Enter Last Name" required>
-            </div>
+                <div class="text-box">
+                    <label for="last-name">Last Name*</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter Last Name" required>
+                </div>
 
-            <div class="text-box">
-                <label for="email">Email*</label>
-                <input type="email" id="email" name="email" placeholder="Enter Email" required>
-            </div>
+                <div class="text-box">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                </div>
 
-            <div class="text-box">
-                <label for="phone">Contact Number*</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required>
-            </div>
+                <div class="text-box">
+                    <label for="phone">Contact Number*</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required>
+                </div>
 
-            <div class="text-box">
-                <label for="address1">Address Line 1*</label>
-                <input type="text" id="address1" name="address1" placeholder="Enter Address" required>
-            </div>
+                <div class="text-box">
+                    <label for="address1">Address Line 1*</label>
+                    <input type="text" id="address1" name="address1" placeholder="Enter Address" required>
+                </div>
 
-            <div class="text-box">
-                <label for="address2">Address Line 2</label>
-                <input type="text" id="address2" name="address2" placeholder="Enter Address">
-            </div>
+                <div class="text-box">
+                    <label for="address2">Address Line 2</label>
+                    <input type="text" id="address2" name="address2" placeholder="Enter Address">
+                </div>
 
-            <div class="text-box">
-                <label for="suburb">Suburb*</label>
-                <input type="text" id="suburb" name="suburb" placeholder="Enter Suburb" required>
-            </div>
+                <div class="text-box">
+                    <label for="suburb">Suburb*</label>
+                    <input type="text" id="suburb" name="suburb" placeholder="Enter Suburb" required>
+                </div>
 
-            <div class="text-box">
-                <label for="state">State*</label>
-                <input type="text" id="state" name="state" placeholder="Enter State" required>
-            </div>
+                <div class="text-box">
+                    <label for="state">State*</label>
+                    <input type="text" id="state" name="state" placeholder="Enter State" required>
+                </div>
 
-            <div class="text-box">
-                <label for="postcode">Postcode*</label>
-                <input type="text" id="postcode" name="postcode" placeholder="Enter Postcode" required>
-            </div>
+                <div class="text-box">
+                    <label for="postcode">Postcode*</label>
+                    <input type="text" id="postcode" name="postcode" placeholder="Enter Postcode" required>
+                </div>
 
-            <div class="text-box">
-                <label for="country">Country*</label>
-                <input type="text" id="country" name="country" placeholder="Enter Country" required>
-            </div>
+                <div class="text-box">
+                    <label for="country">Country*</label>
+                    <input type="text" id="country" name="country" placeholder="Enter Country" required>
+                </div>
 
-            <button class="pay-btn" type="submit">Pay Now</button>
-        </form>
-    </section>
+                <button class="pay-btn" type="submit"><a href="../pages/payment-page2.html">Pay Now</a></button>
+            </form>
+        </section>
     </div>
+</div>
+
 
     <!-- Footer -->
     <footer>
@@ -181,7 +321,57 @@
         </div>
     </footer>
 
+    <footer class="mobile-amount">
+        <div class="mobile-content">
+            <div class="mobile-text">
+                <h4 class="total-text">Total</h4>
+                <h4 class="total-text">$4.50</h4>
+            </div>
+            <button class="submitbtn" type="button" href="#"><a href="../pages/payment-page2-mobile.html">Next Page</a></button>
+        </div>
+    </footer>
+
     <script src="../assets/script/payment_1_script.js"></script>
 </body>
 
 </html>
+
+
+<!-- <div class="filter">
+    <div class="select">
+        <span class="selected">Filter</span>
+        <div class="arrow arrow-right"></div>
+    </div>
+    <div class="menu">
+        <div class="text-option" data-filter="animalwelfare">Animal Welfare League NSW</div>
+        <div class="text-option" data-filter="redcross">Australian Red Cross</div>
+        <div class="text-option" data-filter="campquality">Camp Quality</div>
+        <div class="text-option" data-filter="cancercouncil">Cancer Council WA</div>
+        <div class="text-option" data-filter="kidshelpline">Kids Helpline</div>
+        <div class="text-option" data-filter="legacy">Legacy</div>
+        <div class="text-option" data-filter="missionaustralia">Mission Australias</div>
+        <div class="text-option" data-filter="rednose">Red Nose Foundation</div>
+        <div class="text-option" data-filter="salarmy">The Salvation Army</div>
+        <div class="text-option" data-filter="youthfocus">Youth Focus</div>
+    </div>
+</div>
+
+<div class="custom-select">
+    <div class="select-selected">
+        <h3>-Select a Charity</h3>
+    </div>
+    <div class="select-arrow"><img class="img-size" src="../img/Icon/ChevronRight.svg"></div>
+    <div class="select-arrow-down"><img class="img-size" src="../img/Icon/down.svg"></div>
+    <div class="select-items">
+        <div>Animal Welfare League NSW</div>
+        <div>Australian Red Cross</div>
+        <div>Camp Quality</div>
+        <div>Cancer Council WA</div>
+        <div>Kids Helpline</div>
+        <div>Legacy</div>
+        <div>Mission Australia</div>
+        <div>Red Nose Foundation</div>
+        <div>The Salvation Army</div>
+        <div>Youth Focus</div>
+    </div>
+</div> -->
