@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
 }
+
 .take-a-spin {
   width: 80%;
   top: 30%;
@@ -19,22 +20,31 @@
 }
 
 .spin {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: -5rem;
+  position: absolute;
   width: 100vw;
   height: auto;
-  z-index: 100;
+  z-index: 2;
+}
+
+.cover-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: rem;
+  z-index: 200;
+  padding-top: 10rem;
 }
 
 .btn.cover {
-  display: flex ;
-  flex-direction: column;
   height: 1.5rem;
   width: fit-content;
   justify-content: center;
 
   position: absolute;
   z-index: 10;
-
+  
   border-radius: 8.90625rem;
   background: var(--M3-sys-light-primary, #6750A4);
 
@@ -44,8 +54,11 @@
 
 /* Main section styles */
 main {
+  position: relative;
+  background-color: #FFF;
   padding: 6rem;
   align-items: center;
+  z-index: 3;
 }
 
 header {
