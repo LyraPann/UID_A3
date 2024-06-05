@@ -646,15 +646,16 @@ font-weight: 600;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 20px;
+    width: 90%; /* Could be more or less, depending on screen size */
+    height: 80%;
 }
 
 /* The Close Button */
 .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 40px;
 }
 
 .close:hover,
@@ -664,3 +665,157 @@ font-weight: 600;
     cursor: pointer;
 }
 
+.popup-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.scroll-img {
+    width: 29.75rem;
+height: 42.0625rem;
+border-radius: 1.5625rem;
+align-self: center;
+}
+
+
+
+
+/* dropdown for popups */
+.custom-select {
+    display: inline-block;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number-selected {
+    display: flex;
+    width: 34.8125rem;
+    height: 4.5625rem;
+    padding: 0.5rem 0.75rem 0.5rem 1.5rem;
+    border-radius: 1.5625rem;
+    background-color: #F7F7F7;
+    box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.15);
+    align-items: center;
+}
+
+.select-items {
+    position: absolute;
+    background-color: white;
+    z-index: 999;
+    width: 100%;
+    display: none;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.select-items div {
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.select-items div:hover {
+    background-color: #ddd;
+}
+
+.select-arrow,
+.select-arrow-down {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+
+}
+
+.select-arrow-down {
+    display: none;
+    padding-right: 7px;
+}
+
+.select-items.show {
+    display: block;
+
+}
+
+.img-size1 {
+    width: 30px;
+    height: 30px;
+}
+
+.img-size2 {
+    width: 15px;
+    height: 15px;
+}
+
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    align-self: center;
+    max-width: 29rem;
+    position: relative;
+    margin: 1rem;
+    margin-left: 3rem;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 3rem;
+    transition: 0.6s ease;
+    user-select: none;
+  }
+
+  .prev {
+    left: -55px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: -55px;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  .together {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .bottom-section {
+    padding-top: 5em;
+  }
+
+  .popupbtn {
+    float: end;
+  }
