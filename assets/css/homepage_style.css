@@ -312,38 +312,70 @@ h2 {
 }
 
 
-/* Footer styles */
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #f8f9fa;
   padding: 2rem;
   text-align: center;
 }
 
-.footerlinks {
-  margin-top: 1rem;
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.footerlinks table {
+.footer-logo img {
+  max-width: 100px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  color: #fff;
+  max-width: 800px;
 }
 
-.footerlinks th, .footerlinks td {
-  padding: 0.5rem;
-  text-align: left;
+.footer-column {
+  flex: 1;
+  min-width: 150px;
 }
 
-.footerlinks th {
-  border-bottom: 1px solid #555;
+.footer-column h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
-.footerlinks td img {
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.payments img {
   max-width: 50px;
-  height: auto;
+  margin-right: 10px;
 }
 
-/* Media queries for responsiveness */
+.footer-bottom {
+  margin-top: 2rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
   .nav {
     flex-direction: row;
@@ -384,7 +416,42 @@ footer {
     margin-bottom: 2rem;
   }
 
-  .charitysection p {
-    font-size: 0.9rem;
+  .charity-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .yoga-image {
+    width: 50%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    margin-bottom: 1rem;
+  }
+
+  .payments {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .yoga-image {
+    width: 30%;
   }
 }
