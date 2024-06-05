@@ -434,7 +434,6 @@ nav ul li a {
 }
 
 .select-arrow-down {
-
     display: none;
 }
 
@@ -452,6 +451,9 @@ nav ul li a {
     width: 5px;
     height: 5px;
 }
+
+
+
 
 .remove-btn {
     border-radius: 0.71075rem;

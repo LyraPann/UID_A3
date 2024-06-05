@@ -187,7 +187,7 @@ font-weight: 600;
 }
 
 @media screen and (max-width: 390px) {
-.products-list2 {
+.products-list1 {
     display: flex;
     flex-direction: row;
     overflow-x: none;
@@ -196,6 +196,9 @@ font-weight: 600;
     gap: 20px;
     padding: 0;
     padding-left: 1.2em;
+}
+.products-list2 {
+  display: none;
 }
 .product-items {
     width: 10.375rem;

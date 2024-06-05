@@ -1,4 +1,247 @@
-.cover-card {
-    width: 20.8125rem;
-height: 29.5rem;
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+/* Navigation bar styles */
+.navwrapper {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.navlist ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navlist ul li {
+    margin: 0 1rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.shoppingbuttons {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    color: var(--M3-sys-light-on-primary, #FFF);
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22.612px;
+    letter-spacing: 0.113px;
+
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    text-decoration: none;
+
+    border-radius: 113.061px;
+    background: var(--M3-sys-light-primary, #6750A4);
+
+    /* M3/Elevation Light/1 */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 2px;
+    width: 25px;
+    background: #000;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+
+
+
+
+.container {
+    width: 90%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-cover {
+    width: 20.8125rem;
+    height: 29.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* dropdown and button */
+.custom-select {
+    display: inline-block;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number-selected {
+    display: flex;
+    width: 19.5625rem;
+    height: 2.5625rem;
+    padding: 0.5rem 0.75rem 0.5rem 1.5rem;
+    border-radius: 1.5625rem;
+    background-color: #F7F7F7;
+    box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.15);
+    align-items: center;
+}
+
+.select-items {
+    position: absolute;
+    background-color: white;
+    z-index: 999;
+    width: 100%;
+    display: none;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.select-items div {
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.select-items div:hover {
+    background-color: #ddd;
+}
+
+.select-arrow,
+.select-arrow-down {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+
+}
+
+.select-arrow-down {
+    display: none;
+    padding-right: 7px;
+}
+
+.select-items.show {
+    display: block;
+
+}
+
+.img-size1 {
+    width: 30px;
+    height: 30px;
+}
+
+.img-size2 {
+    width: 15px;
+    height: 15px;
+}
+
+.addbtn {
+    display: flex;
+width: 15.1875rem;
+height: 2.625rem;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 0.7125rem;
+flex-shrink: 0;
+border-radius: 8.90625rem;
+background: var(--M3-sys-light-primary, #6750A4);
+box-shadow: 0px 1.425px 2.85px 0px rgba(0, 0, 0, 0.30), 0px 1.425px 4.275px 1.425px rgba(0, 0, 0, 0.15);
+border: none;
+color:white;
+text-align: center;
+font-family: Poppins;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 500;
+}
+
+.btndiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/* page layout */
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigtext {
+    color: #000;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+}
+
+.cardinfo {
+    color: #909090;
+    font-size: 0.875rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+}
+
+.real-title {
+    margin-top: 1.5em;
+}
+
+.money {
+    margin-bottom: 2em;
+}
+
