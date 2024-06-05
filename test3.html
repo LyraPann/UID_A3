@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/productlistpagestyle.css">
+  <link rel="stylesheet" href="test3.html">
 
   <title>Product List Page</title>
 </head>
@@ -51,9 +51,9 @@
       <h1 class="xmas-coming">Christmas is Coming</h1>
       <p class="xmas-para">Check out our collection of Christmas cards that will sure to set a cozy mood for the coming
         season!</p>
-      <div class="xmasbtn">
-        <button type="button" class="xmas-button">Christmas Cards</button>
-      </div>
+        <div class="xmasbtn">
+      <button type="button" class="xmas-button">Christmas Cards</button>
+    </div>
     </div>
   </div>
 
@@ -95,13 +95,13 @@
       </button>
       <div class="helloclass">
         <div id="valPopup1" class="main-scroll-div">
-          <div>
-            <button onclick={scrollIn()} class="icon"><img src="../img/left.svg"></button>
-          </div>
+            <div>
+              <button onclick={scrollIn()} class="icon"><img src="../img/left.svg"></button>
+            </div>
           <div class="cover">
             <div class="scroll-imgs">
-              <div class="child"><img class="product-items child-img thanks" src="../img/val1.png"></div>
-              <div class="child"><img class="product-items child-img thanks" src="../img/birthday-02 2.png"></div>
+                <div class="child"><img class="product-items child-img thanks" src="../img/val1.png"></div>
+                <div class="child"><img class="product-items child-img thanks" src="../img/birthday-02 2.png"></div>
             </div>
           </div>
           <div>
@@ -110,87 +110,33 @@
         </div>
         <div class="text-image">
           <div>
-            <h2 id="title">
-              I Love You a Whole Bunch!
-            </h2>
-            <p class="paragraph">My love for you can't be expressed with even the prettiest bouquet</p>
-            <p id="para1" class="para1">$2.25</p>
-            <select id="dropdown-items" name="dropdown-items" class="number-select">
-              <option value="1" class="option">1</option>
-              <option value="51-100" class="option">51-100</option>
-              <option value="201-250" class="option">201-250</option>
-            </select>
+          <h2 id="title">
+            I Love You a Whole Bunch!
+          </h2>
+          <p class="paragraph">My love for you can't be expressed with even the prettiest bouquet</p>
+          <p id="para1" class="para1">$2.25</p>
+          <select id="dropdown-items" name="dropdown-items" class="number-select">
+            <option value="1" class="option">1</option>
+            <option value="51-100" class="option">51-100</option>
+            <option value="201-250" class="option">201-250</option>
+          </select>
+        </div>
+        <div class="butchoose">
+          <div class="choosebtn">
+            <button onclick={addCards()} id="chooseCard1" class="choose-button">Choose</button>
           </div>
-          <div class="butchoose">
-            <div class="choosebtn">
-              <button onclick={addCards()} id="chooseCard1" class="choose-button">Choose</button>
-            </div>
-          </div>
+        </div>
         </div>
       </div>
     </div>
 
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div><img class="product-items thanks" src="../img/val1.png"></div>
-        <div>
-          <h2>I Love You a Whole Bunch!</h2>
-          <p>My love for you can't be expressed with even the prettiest bouquet</p>
-          <p>$2.25</p>
-          <div>
-            <div class="custom-select">
-              <div class="number-selected">
-                <p>1 view</p>
-              </div>
-              <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
-              </div>
-              <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
-              </div>
-              <div class="select-items">
-                <div>1 view</div>
-                <div>51-100 views</div>
-                <div>201-250 views</div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
 
     <!-- ===================== the products ===================== -->
     <div class="products-list" id="products">
       <div class="popupVal1" data-category="valentinecards">
-        <button type="button" onclick={cardDetails()}>
+        <button type="button" id="myBtn">
           <img id="popupButton" class="product-items thanks" src="../img/val1.png">
         </button>
-        <!-- <div id="valPopup1" class="popup1">
-          <div class="valpopupcontent">
-            <button id="closeValpopup1">
-              <img class="close-button help" src="img/Close.svg">
-            </button>
-            <div class="slider">
-              <div class="slides">
-                <img class="slide" src="img/val1.png" alt="Image #1">
-                <img class="slide" src="img/val2.png" alt="Image #2">
-              </div>
-              <button class="prev" onclick="prevSlide()">&#10094</button>
-              <button class="next" onclick="nextSlide()">&#10095</button>
-            </div>
-            <h2>
-              I Love You a Whole Bunch!
-            </h2>
-            <p>My love for you can't be expressed with even the prettiest bouquet</p>
-            <button id="chooseCard1" class="choose-button">
-              Choose
-            </button>
-          </div>
-        </div> -->
       </div>
 
       <div data-category="thanksgivingcards">
@@ -200,9 +146,9 @@
       </div>
 
       <div data-category="pickmecards">
-        <button id="myBtn">
+        <a href="#">
           <img class="product-items motivate" src="../img/motivate1.png">
-        </button>
+        </a>
       </div>
 
       <div data-category="valentinecards">
@@ -383,7 +329,14 @@
     </div>
   </div>
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Some text in the Modal..</p>
+    </div>
 
 
 
@@ -412,6 +365,7 @@
       </div>
     </div>
   </footer>
+
 
   <footer class="desktop-footer">
     <img src="img/footericon.svg" alt="footer icon">
@@ -451,7 +405,18 @@
   </footer>
 
 
-  <script src="../assets/script/productliststyle.js"></script>
+  <script src="test3.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
