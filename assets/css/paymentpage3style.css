@@ -1,0 +1,686 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    margin: 2em auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Form and buttons */
+.mobile-circles {
+    display: none;
+}
+
+.page-title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.mobile-title {
+    display: none;
+}
+
+.cart-charity {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cart-preview {
+    width: 40%;
+    padding: 1em;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.choose-charity {
+    width: 44%;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.circle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.circle-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.circle {
+    line-height: 0px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #735EAB;
+    color: white;
+    font-family: Poppins;
+}
+
+.circle span {
+    display: block;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+.text-money {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btm-words {
+    font-family: Poppins;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.btm-number {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px 10px 25px;
+    margin-bottom: 3em;
+}
+
+.view-qty {
+    font-family: Poppins;
+    font-size: 0.45231rem;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    margin-top: 2em;
+}
+
+.card-title {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 0.64613rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.card-price {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.29231rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.charity-container {
+    margin-top: 3em;
+    position: relative;
+}
+
+.charity-container div {
+    display: none;
+}
+
+.strtline {
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+
+.payment-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10.625rem;
+    height: 6.5rem;
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 228px 64px 0px rgba(150, 150, 150, 0.00), 0px 146px 58px 0px rgba(150, 150, 150, 0.01), 0px 82px 49px 0px rgba(150, 150, 150, 0.05), 0px 37px 37px 0px rgba(150, 150, 150, 0.09), 0px 9px 20px 0px rgba(150, 150, 150, 0.10);
+}
+
+.payment-types {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    row-gap: 0.5em;
+    margin-left: 3em;
+    margin-top: 3em;
+}
+
+
+
+
+/* Card Information Section */
+.billing-info {
+    width: 100%;
+    margin-top: 6em;
+}
+
+.card-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.cardform label {
+    color: #000;
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-form input,
+.card-form select {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 0.5rem;
+    border: none;
+    height: 3.1875rem;
+    background: #FAFAFA;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.17) inset;
+    color: #909090;
+    font-family: Poppins;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.form-title {
+    color: #000;
+font-family: Poppins;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.billing-info button {
+    margin-top: 2em;
+    border: none;
+    background-color: #735EAB;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.billing-info button:hover {
+    background: #6750A4;
+}
+
+.billing-info a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.smallbox {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-box {
+    width: 100%;
+}
+
+.cvv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-title {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pay-btn {
+    width: 24.125rem;
+    height: 3.5625rem;
+    border-radius: 8.90625rem;
+    background-color: #735EAB;
+    color: white;
+    margin-left: 42.1em;
+}
+
+.popup-circle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.popup-circle-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.popup-circle {
+    line-height: 0px;
+    border-radius: 50%;
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #735EAB;
+    color: white;
+    font-family: Poppins;
+}
+
+.popup-circle span {
+    display: block;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+
+/* bottom section */
+.total-togther {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.layout-pop {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.bottom-text {
+    color: #000;
+text-align: right;
+font-family: 'Poppins', sans-serif;
+font-size: 2.25rem;
+font-style: normal;
+font-weight: 400;
+}
+
+.remove-btn {
+    border-radius: 0.71075rem;
+    border: 0.517px solid #5100B9;
+    background-color: #FFF;
+    width: 2.60219rem;
+    height: 0.66813rem;
+    padding: 0rem 0.25844rem;
+    color: #5100B9;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 0.32306rem;
+    font-style: normal;
+    font-weight: 400;
+    float: right;
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 2em 0;
+    margin-top: 2em;
+    text-align: center;
+}
+
+footer .useful-links,
+footer .socials,
+footer .secure-payments {
+    margin: 1em 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin: 0.5em 0;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mobile-amount {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart-charity {
+        flex-direction: column;
+    }
+
+    .cart-preview,
+    .choose-charity {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 576px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .container {
+        width: 90%;
+        height: 150%;
+    }
+    .page-title {
+        color: #000;
+        font-family: Poppins;
+        font-size: 2.8125rem;
+        font-style: normal;
+        font-weight: 500;
+        padding: 1rem;
+        margin: 0;
+    } 
+
+    .payment-types {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1em;
+        row-gap: 1em;
+        margin-left: 0em;
+        margin-top: 3em;
+    }
+
+    .billing-info {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .cart-preview {
+        display: block;
+        padding-bottom: 12em;
+    }
+
+    .charity-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-title {
+        color: #000;
+        font-family: Poppins;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .mobile-amount {
+        display: block;
+        color: black;
+        background-color: #fff;
+        width: 24.5625rem;
+        height: 8.3125rem;
+        position: fixed;
+        bottom: 0;
+        padding: 0.5em;
+        box-shadow: -44px -215px 61px 0px rgba(0, 0, 0, 0.00),
+            -28px -138px 56px 0px rgba(0, 0, 0, 0.01),
+            -16px -77px 47px 0px rgba(0, 0, 0, 0.05),
+            -7px -34px 35px 0px rgba(0, 0, 0, 0.09),
+            -2px -9px 19px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    .mobile-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .mobile-content {
+        width: 90%;
+        margin: 0.5em auto;
+    }
+
+    .circle-container {
+        display: none;
+    }
+
+    .mobile-title {
+        display: block;
+    }
+
+    .desktop-title {
+        display: none;
+    }
+
+    .total-text {
+        color: #000;
+        font-family: Poppins;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .payment-btn {
+    width: 9rem;
+height: 5rem;
+    }
+
+    .payimg {
+        width:50%
+    }
+
+    .submitbtn {
+        color: white;
+        font-family: Poppins;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+        margin-top: 1em;
+        width: 15.1875rem;
+        height: 2.625rem;
+        border: none;
+        border-radius: 8.90625rem;
+        background-color: #6750A4;
+        box-shadow: 0px 1.425px 2.85px 0px rgba(0, 0, 0, 0.30), 0px 1.425px 4.275px 1.425px rgba(0, 0, 0, 0.15);
+    }
+
+    .submitbtn a {
+        color: white;
+    }
+
+    .charity-item {
+        width: 80%;
+        margin: auto 2em;
+    }
+
+    .cart-charity {
+        height: 50em;
+    }
+
+    .current-circle-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .current-circle {
+        line-height: 0px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        background-color: white;
+        color: #735EAB;
+        font-family: Poppins;
+        border: 2px solid #735EAB;
+    }
+
+    .current-circle span {
+        display: block;
+        padding-top: 50%;
+        padding-bottom: 50%;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .mobile-circle-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .mobile-circle {
+        line-height: 0px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        background-color: #735EAB;
+        color: white;
+        font-family: Poppins;
+    }
+
+    .mobile-circle span {
+        display: block;
+        padding-top: 50%;
+        padding-bottom: 50%;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+
+    .mobile-circle-container1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .mobile-circle1 {
+        line-height: 0px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        background-color: white;
+        color: #735EAB;
+        font-family: Poppins;
+        border: 2px solid #735EAB;
+    }
+
+    .mobile-circle1 span {
+        display: block;
+        padding-top: 50%;
+        padding-bottom: 50%;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+
+
+    .next-page button {
+        border: none;
+        background-color: transparent;
+    }
+
+    .current-page button {
+        border: none;
+        background-color: transparent;
+    }
+
+
+    .mobile-line {
+        width: 20%
+    }
+
+    .mobile-circles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+}

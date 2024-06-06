@@ -278,8 +278,9 @@ margin: 0;
         font-size: 1.5rem;
         font-style: normal;
         font-weight: 400;
-        background-color: #735EAB;
-        color: white;
+        background-color: white;
+        color: #735EAB;
+        border: 2px solid #735EAB;
         font-family: Poppins;
     }
 
@@ -295,6 +296,17 @@ margin: 0;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+    }
+
+    .mobile-circle1 {
+        line-height: 0px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        background-color: #735EAB;
+        color: white;
+        font-family: Poppins;
     }
 
     .mobile-circle {
@@ -317,7 +329,20 @@ margin: 0;
         margin-right: 1.2rem;
     }
 
+    .mobile-circle1 span {
+        display: block;
+        padding-top: 50%;
+        padding-bottom: 50%;
+        margin-left: 1.4rem;
+        margin-right: 1.4rem;
+    }  
+
     .next-page button {
+        border: none;
+        background-color: transparent;
+    }
+
+    .current-page button {
         border: none;
         background-color: transparent;
     }
