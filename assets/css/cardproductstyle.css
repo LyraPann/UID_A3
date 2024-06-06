@@ -1,4 +1,4 @@
-/* search bar */
+/* Search Bar */
 .search-bar {
   position: relative;
   background-color: white;
@@ -12,22 +12,18 @@
 .lines {
   background-color: #ECE6F0;
   display: flex;
-  width: 22.5rem;
-  height: 3.5rem;
-  min-width: 11rem;
-  max-width: 45rem;
+  width: 100%;
+  height: 100%;
   gap: 0.25rem;
   align-items: center;
   border: transparent;
   border-radius: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px;
 }
 
 .search-icon {
   background-color: transparent;
   border: transparent;
-
 }
 
 input {
@@ -36,16 +32,14 @@ input {
   height: 2rem;
   background-color: transparent;
   border: 0;
-  font-size: 0.75rem;
-  outline: none;
-  color: #49454F;
   font-size: 1rem;
-  font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  outline: none;
+  color: #49454F;
 }
 
-/* layout */
+/* Layout */
 .product-items {
   width: 272px;
   height: 386px;
@@ -56,7 +50,6 @@ input {
 .products-list2 {
   display: flex;
   flex-direction: row;
-  overflow-x: none;
   flex-wrap: wrap;
   width: 100%;
   gap: 1rem 3rem;
@@ -79,7 +72,6 @@ input {
 .title {
   color: #000;
   font-size: 2.8125rem;
-  font-style: normal;
   font-weight: 600;
 }
 
@@ -91,16 +83,14 @@ input {
   display: none;
 }
 
+/* Responsive Design for Mobile */
 @media screen and (max-width: 390px) {
   .products-list1 {
-    display: block;
     display: flex;
     flex-direction: row;
-    overflow-x: none;
     flex-wrap: wrap;
     width: 100%;
     gap: 20px;
-    padding: 0;
     padding-left: 1.2em;
   }
 
@@ -118,12 +108,7 @@ input {
   }
 
   .title-search {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    padding-left: 1.2em;
+    padding: 0 1.2em;
     margin-bottom: 0;
   }
 
@@ -135,17 +120,14 @@ input {
     display: block;
     color: #000;
     font-size: 2.8125rem;
-    font-style: normal;
     font-weight: 500;
     padding: 0;
     margin: 0;
   }
 
   .mobile-title {
-    display: block;
     display: flex;
     flex-direction: column;
-    margin-top: 5.5em;
-    margin-bottom: 2em;
+    margin: 5.5em 0 2em 0;
   }
 }
