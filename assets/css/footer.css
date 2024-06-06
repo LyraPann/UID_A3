@@ -73,3 +73,30 @@ footer {
     text-decoration: none;
     color: #333;
   }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-column {
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-logo img {
+      margin-bottom: 1rem;
+    }
+
+    .payments {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
