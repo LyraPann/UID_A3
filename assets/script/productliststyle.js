@@ -1,260 +1,125 @@
-// Pop ups
-let popupButton= document.getElementById("popupButton");
-let valPopup1= document.getElementById("valPopup1");
-let closeValpopup1= document.getElementById("closeValpopup1");
-let chooseCard1= document.getElementById("chooseCard1");
-let helloDisplay= document.getElementById("hello");
-const title= document.getElementById('title')
-const price= document.getElementById('para1')
 
-const cardDetails= ()=> {
-//popupButton.addEventListener('click', function() {
-    console.log("about to add to "+valPopup1)
-    // valPopup1.classList.add('show');
-    // helloDisplay.style.display= 'block';
-    valPopup1.classList.toggle('show');
+// function addCards() {
+//     const itemObjects = [];
+//     const myItem = {
+//         title: title.innerHTML,
+//         price: price.innerHTML,
+//         image: popupButton.innerHTML,
+//     }
+//     itemObjects.push(myItem);
+//     const itemObjectsJSON = JSON.stringify(itemObjects);
+//     localStorage.setItem('items', itemObjectsJSON);
+//     console.log(itemObjects);
 
-    if (valPopup1.classList.contains('show')) {
-        helloDisplay.style.display= 'block';        
-    } 
-    else {
-        helloDisplay.style.display= 'none';
-    }       
-// });
-}
+// }
 
+// //pop up image slider
+// const slides = document.querySelectorAll(".slides img");
+// let slideIndex = 0;
+// let intervalId = null;
 
-// document.getElementById("open-modal").addEventListener('click', function(){
-//     document.body.classList.add('modal-open');
-//     console.log('clicked')
-// })
+// document.addEventListener("DOMContentLoaded", initializeSlider);
 
-// document.getElementById('close-modal').addEventListener('click', function(){
-//     document.body.classList.remove('modal-open');
-// })
+// function initializeSlider() {
+//     if (slides.length > 0) {
+//         slides[slideIndex].classList.add("displaySlide");
+//     }
+// }
 
-// document.querySelector('.modal-overlay').addEventListener('click', function(){
-//     document.body.classList.remove('modal-open');
-// })
+// function showSlide(index) {
+//     if (index >= slides.length) {
+//         slideIndex = 0;
+//     }
+//     else if (index < 0) {
+//         slideIndex = slides.length - 1;
+//     }
 
+//     slides.forEach(slide => {
+//         slide.classList.remove("displaySlide");
+//     });
+//     slides[slideIndex].classList.add("displaySlide");
+// }
 
-closeValpopup1.addEventListener('click', function() {
-    //valPopup1.classList.remove('show');
+// function prevSlide() {
+//     clearInterval(intervalId);
+//     slideIndex--;
+//     showSlide(slideIndex);
+// }
 
-    if (valPopup1.classList.contains('show')) {
-        helloDisplay.style.display= 'none';          
-    } 
-    else {
-        helloDisplay.style.display= 'block';
-    } 
-});
+// function nextSlide() {
+//     slideIndex++;
+//     showSlide(slideIndex);
+// }
 
-// chooseCard1.addEventListener('click', function() {
-//     valPopup1.classList.remove('show');
-// });
+// function scrollOut() {
+//     let left = document.querySelector('.scroll-imgs');
+//     left.scrollBy(350, 0);
+// }
 
-function addCards() {
-    const itemObjects= [];
-    const myItem= {
-        title: title.innerHTML, 
-        price: price.innerHTML,
-        image: popupButton.innerHTML,
-    }
-    itemObjects.push(myItem);
-    const itemObjectsJSON = JSON.stringify(itemObjects);
-    localStorage.setItem('items', itemObjectsJSON);
-    console.log(itemObjects);
-    
-}
-
-//pop up image slider
-const slides = document.querySelectorAll(".slides img");
-let slideIndex = 0;
-let intervalId = null;
-
-document.addEventListener("DOMContentLoaded", initializeSlider);
-
-function initializeSlider(){
-    if(slides.length > 0){
-        slides[slideIndex].classList.add("displaySlide");
-    }
-}
-
-function showSlide(index){
-    if(index >= slides.length){
-        slideIndex = 0;
-    }
-    else if(index < 0){
-        slideIndex = slides.length - 1;
-    }
-
-    slides.forEach(slide => {
-        slide.classList.remove("displaySlide");
-    });
-    slides[slideIndex].classList.add("displaySlide");
-}
-
-function prevSlide(){
-    clearInterval(intervalId);
-    slideIndex--;
-    showSlide(slideIndex);
-}
-
-function nextSlide(){
-    slideIndex++;
-    showSlide(slideIndex);
-}
-
-function scrollOut(){
-    let left= document.querySelector('.scroll-imgs');
-    left.scrollBy(350, 0);
-}
-
-function scrollIn(){
-    let right= document.querySelector('.scroll-imgs');
-    right.scrollBy(-350, 0);
-}
+// function scrollIn() {
+//     let right = document.querySelector('.scroll-imgs');
+//     right.scrollBy(-350, 0);
+// }
 
 
 
 //filter
 document.addEventListener('DOMContentLoaded', () => {
-    const dropdownDisplay= document.querySelector('.select');
-    const dropdownContent= document.querySelector('.menu');
-    const arrow= document.querySelector('.arrow');
-    const filterOptions= document.querySelectorAll('.text-option');
-    const products= document.querySelectorAll('.products-list > div');
+    const dropdownDisplay = document.querySelector('.select');
+    const dropdownContent = document.querySelector('.menu');
+    const arrow = document.querySelector('.arrow');
+    const filterOptions = document.querySelectorAll('.text-option');
+    const products = document.querySelectorAll('.products-list > div');
 
 
-dropdownDisplay.addEventListener('click', () => {
-    dropdownContent.style.display= dropdownContent.style.display=== 'block' ? 'none': 'block';
-    arrow.classList.remove('arrow-down');
-    arrow.classList.add('arrow-right');
+    dropdownDisplay.addEventListener('click', () => {
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        arrow.classList.remove('arrow-down');
+        arrow.classList.add('arrow-right');
     });
 
-filterOptions.forEach(option =>{
-option.addEventListener('click', function(){
-    const filterValue= this.getAttribute('data-filter');
-    filterItems(filterValue);
-    // filterClass= document.getElementsByClassName('filter');
-    // filterClass.classList.add('filter-class');
-    // filterClass.style.display='none';
-    const filterClass = document.getElementsByClassName('filter');
-Array.from(filterClass).forEach(element => {
-    element.classList.add('filter-class');
-});
-    document.querySelector('.selected').textContent= option.textContent;
-    dropdownContent.style.display='none';
-    arrow.classList.remove('arrow-down');
-    arrow.classList.add('arrow-right');
-}) 
-})
+    filterOptions.forEach(option => {
+        option.addEventListener('click', function () {
+            const filterValue = this.getAttribute('data-filter');
+            filterItems(filterValue);
+            const filterClass = document.getElementsByClassName('filter');
+            Array.from(filterClass).forEach(element => {
+                element.classList.add('filter-class');
+            });
+            document.querySelector('.selected').textContent = option.textContent;
+            dropdownContent.style.display = 'none';
+            arrow.classList.remove('arrow-down');
+            arrow.classList.add('arrow-right');
+        })
+    })
 
-function filterItems(category) {
-    products.forEach(product => {
-        if (category=== 'allcard') {
-            product.style.display='block'
-        }
-        else {
-            if (product.getAttribute('data-category')=== category) {
-                product.style.display='block'
+    function filterItems(category) {
+        products.forEach(product => {
+            if (category === 'allcard') {
+                product.style.display = 'block'
             }
             else {
-                product.style.display='none'
+                if (product.getAttribute('data-category') === category) {
+                    product.style.display = 'block'
+                }
+                else {
+                    product.style.display = 'none'
+                }
             }
-        }
-    })
-}
+        })
+    }
 
-// function filterItems(filterValue) {
-//     products.forEach(product => {
-//         product.style.display= (filterValue=== 'all' || product.getAttribute("data-category")=== filterValue) ? 'block': 'none';
-//     })
-// }
+    const cards = [];
+    const addtocartButtons = document.querySelectorAll('.add-to-cart');
+    const cardModal = document.getElementById('card-modal');
+    // const cardSpan= cardModal.getElementsByClassName('close')[0];
+    const cardsItems = document.getElementById('cards-items');
+    const viewcardsButton = document.getElementById('view-cards')
 
-// filterOptions.forEach(option => {
-//     option.addEventListener('click', () => {
-//         const filterValue= option.getAttribute('data-filter');
-//         filterItems(filterValue);
-//         let filterClass=document.getElementsByClassName('filter');
-//         // filterClass.classList.add('filter-class')
-//         filterClass.style.display='none';
-//         dropdownContent.style.display = 'none';
-//         arrow.classList.remove('arrow-down');
-//         arrow.classList.add('arrow-right');
-//         document.querySelector('.selected').textContent= option.textContent;
-//     });
-// });
-
-const cards= [];
-const addtocartButtons= document.querySelectorAll('.add-to-cart');
-const cardModal= document.getElementById('card-modal');
-// const cardSpan= cardModal.getElementsByClassName('close')[0];
-const cardsItems= document.getElementById('cards-items');
-const viewcardsButton= document.getElementById('view-cards')
-
-// // const newItem = ()=> {
-//     addtocartButtons.forEach(button => {
-//         document.getElementById('chooseCard1').addEventListener('click', function(){
-//             const itemTitle= this.getAttribute('data-title');
-//             // additemstoCart(itemTitle);
-//             console.log('clicked')
-//             // localStorage.setItem(additemtoCart(itemTitle));
-//             alert(itemTitle + ' has been added to your cart');
-//         })
-//     })
-// // }
-
-// addtocartButtons.forEach(button => {
-//     button.addEventListener('click', function(){
-//         const itemTitle= this.getAttribute('data-title');
-//         // additemstoCart(itemTitle);
-//         localStorage.setItem(additemtoCart(itemTitle));
-//         alert(itemTitle + ' has been added to your cart');
-//     })
-// })
-
-// function additemtoCart(itemTitle) {
-//     cards.push(itemTitle);
-//     // updateCardDisplay() {
-
-//     // }
-//     function updateCardDisplay () {
-//         cardsItems.innerHTML= '';
-//         cards.forEach((item, index)=> {
-//             const listItem= document.createElement('li');
-//             listItem.textContent= item;
-//             const removeButton= doucment.createElement('button');
-//             removeButton.textContent= 'remove';
-//             removeButton.addEventListener('click', ()=> {
-//                 removeitemfromCart(index);
-//             })
-//             listItem.appendChild(removeButton);
-//             cardsItems.appendChild(listItem);
-//         })
-//     }
-//     function removeitemfromCart(index) {
-//         cards.splice(index, 1);
-//         updateCardDisplay();
-//     }
-//     viewcardsButton.addEventListener('click', function(){
-//         cardModal.style.display='block';
-//     })
-//     cardSpan.onclick= function(){
-//         cardModal.style.display='none';
-//     }
-//     window.onclick= function(event) {
-//         if (event.target= cardModal) {
-//             cardModal.style.display= 'none';
-//         }
-//     }
-// }
-
-
-window.addEventListener('click', (event) => {
-    if (!event.target.closest('.filter')) {
-            if (dropdownDisplay.style.display=== 'block') {
-                dropdownContent.style.display= 'none';
+    window.addEventListener('click', (event) => {
+        if (!event.target.closest('.filter')) {
+            if (dropdownDisplay.style.display === 'block') {
+                dropdownContent.style.display = 'none';
                 arrow.classList.remove('arrow-down');
                 arrow.classList.add('arrow-right');
             }
@@ -263,50 +128,113 @@ window.addEventListener('click', (event) => {
 });
 
 
-const openMenu = () => { 
+const openMenu = () => {
     console.log('click');
-        const myElement= document.getElementById('myElement');
-        const myButton= document.getElementById('myButton');
-        const closeButton= document.getElementById('closeButton');
+    const myElement = document.getElementById('myElement');
+    const myButton = document.getElementById('myButton');
+    const closeButton = document.getElementById('closeButton');
 
-        myButton.addEventListener('click', () => {
-            myButton.classList.toggle('activebtn');
+    myButton.addEventListener('click', () => {
+        myButton.classList.toggle('activebtn');
 
-            if (myButton.classList.contains('activebtn')) {
-                myElement.style.display= 'block';          
-            } 
-            else {
-                myElement.style.display= 'none';
-            }       
-        })
-}
-
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+        if (myButton.classList.contains('activebtn')) {
+            myElement.style.display = 'block';
+        }
+        else {
+            myElement.style.display = 'none';
+        }
+    })
 }
 
 
+
+// popups
+
+// Popup 1
+let modal1 = document.getElementById("popup1");
+let btn1 = document.getElementById("btn1");
+let span1 = document.getElementById("close1");
+
+btn1.onclick = function () {
+    modal1.style.display = "block";
+}
+
+span1.onclick = function () {
+    modal1.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+}
+
+// Popup 2
+let modal2 = document.getElementById("popup2");
+let btn2 = document.getElementById("btn2");
+let span2 = document.getElementById("close2");
+
+btn2.onclick = function () {
+    modal2.style.display = "block";
+}
+
+span2.onclick = function () {
+    modal2.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+
+let slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+function plusSlides2(n) {
+    showSlides2(slideIndex2 += n);
+}
+
+function currentSlide2(n) {
+    showSlides2(slideIndex2 = n);
+}
+
+function showSlides2(n) {
+    let i;
+    let slides2 = document.getElementsByClassName("mySlides2");
+    if (n > slides2.length) { slideIndex2 = 1 }
+    if (n < 1) { slideIndex2 = slides2.length }
+    for (i = 0; i < slides2.length; i++) {
+        slides2[i].style.display = "none";
+    }
+    slides2[slideIndex2 - 1].style.display = "block";
+}
+
+// Popup 3
+
+//dropdown
 const selected = document.querySelector('.number-selected');
 const items = document.querySelector('.select-items');
 const arrow = document.querySelector('.select-arrow');
@@ -342,33 +270,3 @@ window.addEventListener('click', function () {
         arrowDown.style.display = 'none'
     }
 })
-
-
-let slideInde = 1;
-showSlides(slideInde);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideInde += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideInde = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideInde = 1}
-  if (n < 1) {slideInde = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideInde-1].style.display = "block";
-  dots[slideInde-1].className += " active";
-}
