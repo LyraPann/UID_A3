@@ -89,9 +89,14 @@ const openMenu = () => {
 let modal1= document.getElementById("popup1");
 let btn1= document.getElementById("btn1");
 let span1= document.getElementById("close1");
+let chose1= document.getElementById("choose1")
 
 btn1.onclick= function () {
     modal1.style.display = "block";
+}
+
+chose1.onclick= function () {
+    modal1.style.display= "none";
 }
 
 span1.onclick= function () {

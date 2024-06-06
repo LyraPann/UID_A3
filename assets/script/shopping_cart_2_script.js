@@ -37,27 +37,27 @@ window.addEventListener('click', function () {
     });
 });
 
-// Load items from local storage
-document.addEventListener('DOMContentLoaded', function () {
-    const myCards = localStorage.getItem('items');
-    if (myCards) {
-        const JSONcards = JSON.parse(myCards);
-        console.log(JSONcards);
+// // Load items from local storage
+// document.addEventListener('DOMContentLoaded', function () {
+//     const myCards = localStorage.getItem('items');
+//     if (myCards) {
+//         const JSONcards = JSON.parse(myCards);
+//         console.log(JSONcards);
 
-        function getItems() {
-            JSONcards.forEach(product => {
-                const title = document.getElementById('title');
-                const price = document.getElementById('price');
-                title.innerHTML = product.title;
-                price.innerHTML = product.price;
-            });
-        }
+//         function getItems() {
+//             JSONcards.forEach(product => {
+//                 const title = document.getElementById('title');
+//                 const price = document.getElementById('price');
+//                 title.innerHTML = product.title;
+//                 price.innerHTML = product.price;
+//             });
+//         }
 
-        getItems();
-    } else {
-        console.log("No items found in localStorage");
-    }
-});
+//         getItems();
+//     } else {
+//         console.log("No items found in localStorage");
+//     }
+// });
 
 // Handle remove button click event
 document.querySelectorAll('.remove').forEach(button => {

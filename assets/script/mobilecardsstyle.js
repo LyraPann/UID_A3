@@ -34,3 +34,15 @@ window.addEventListener('click', function () {
         arrowDown.style.display = 'none'
     }
 })
+
+
+//Go Back to Last Page
+document.getElementById('gobackButton').addEventListener('click', function() {
+    window.history.back();
+});
+
+document.getElementById('gobackButton2').addEventListener('click', function() {
+    window.history.back();
+});
+
+
