@@ -1,7 +1,7 @@
 /* Text style */
 .product-name {
     color: #000;
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-size: 0.9375rem;
     font-weight: 400;
     line-height: normal;
@@ -9,10 +9,19 @@
 
 .product-price {
     color: #000;
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-size: 1.5rem;
     font-weight: 400;
     line-height: normal;
+}
+
+.shopping-title {
+    color: #000;
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 600;
+    margin-left: 1em;
+    margin-bottom: 0;
 }
 
 /* Container styles */
@@ -51,17 +60,16 @@ h2 {
 .items-container {
     display: flex;
     flex-direction: column;
-    gap: 1em;
-}
-
-#second {
-    z-index: 1;
+    gap: 2em;
+    margin-left: 1em;
 }
 
 .product-photo {
     width: 9.0625rem;
     height: 12.875rem;
     border-radius: 1.375rem;
+    align-self: center;
+    margin-left: 0.5em;
 }
 
 .shop-photo {
@@ -98,7 +106,7 @@ h2 {
 }
 
 .total-amount {
-    margin-left: 47em;
+    margin-left: 50.5em;
     position: fixed;
     width: 28.9375rem;
     height: 17.75rem;
@@ -139,14 +147,13 @@ h2 {
 }
 
 /* Custom select dropdown */
-.number-select {
+/* .number-select {
     outline: transparent;
     border-radius: 1.375rem;
     background: #FFF;
     width: 6.5625rem;
     height: 2.25rem;
     padding: 0.125rem 0.625rem;
-    background: url(img/Icon/ChevronRight.svg) no-repeat right;
     display: inline;
     position: relative;
     overflow: hidden;
@@ -167,36 +174,34 @@ h2 {
     background-color: #fff;
     color: #000;
     border: 6px solid yellow;
-}
+} */
 
 .custom-select {
     display: inline-block;
     position: relative;
-    width: 200px;
 }
 
 .select-selected {
     background-color: #f0f0f0;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 4px;
     cursor: pointer;
     user-select: none;
     display: flex;
-width: 3.9375rem;
-height: 1.1875rem;
-padding: 0.125rem 0.625rem;
-justify-content: center;
-align-items: center;
-gap: 0.625rem;
-flex-shrink: 0;
+    width: 6.5625rem;
+    height: 2.25rem;
+    padding: 0.125rem 0.625rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.375rem;
+    background: #FFF;
+    box-shadow: 0px 72px 20px 0px rgba(150, 150, 150, 0.00), 0px 46px 18px 0px rgba(150, 150, 150, 0.01), 0px 26px 16px 0px rgba(150, 150, 150, 0.05), 0px 12px 12px 0px rgba(150, 150, 150, 0.09), 0px 3px 6px 0px rgba(150, 150, 150, 0.10);
+    gap: 0.625rem;
 }
 
 .select-items {
     position: absolute;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    background-color: white;
     z-index: 999;
     width: 100%;
     display: none;
@@ -212,7 +217,8 @@ flex-shrink: 0;
     background-color: #ddd;
 }
 
-.select-arrow, .select-arrow-down {
+.select-arrow,
+.select-arrow-down {
     position: absolute;
     top: 50%;
     right: 10px;
@@ -377,11 +383,11 @@ flex-shrink: 0;
         height: 8.3125rem;
         position: fixed;
         bottom: 0;
-        box-shadow: -44px -215px 61px 0px rgba(0, 0, 0, 0.00), 
-        -28px -138px 56px 0px rgba(0, 0, 0, 0.01), 
-        -16px -77px 47px 0px rgba(0, 0, 0, 0.05), 
-        -7px -34px 35px 0px rgba(0, 0, 0, 0.09), 
-        -2px -9px 19px 0px rgba(0, 0, 0, 0.10);
+        box-shadow: -44px -215px 61px 0px rgba(0, 0, 0, 0.00),
+            -28px -138px 56px 0px rgba(0, 0, 0, 0.01),
+            -16px -77px 47px 0px rgba(0, 0, 0, 0.05),
+            -7px -34px 35px 0px rgba(0, 0, 0, 0.09),
+            -2px -9px 19px 0px rgba(0, 0, 0, 0.10);
     }
 
     .mobile-text {

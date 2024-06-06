@@ -12,7 +12,7 @@
     margin: 2em auto;
     display: flex;
     flex-direction: row;
-    display: table;
+    justify-content: space-between;
 }
 
 .shopping-products {
