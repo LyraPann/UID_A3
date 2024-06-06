@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
      <!-- Navigation Bar -->
   <div class="navwrapper">
     <nav class="nav">
@@ -58,33 +57,32 @@
         </ul>
       </div>
       <div class="shoppingbuttons">
-        <a href="../pages/shopping_cart_2.html"><img src="../img/shoppingcart.svg" alt="shoppingcart"></a>
+        <a href="../pages/shopping_cart_2.html" class="shopping-cart"><img src="../img/shoppingcart.svg" alt="shoppingcart"></a>
         <a href="product-list.html" class="btn nav">Our Cards</a>
       </div>
     </nav>
-  </div>
+    </header>
 
     <!-- Shopping Cart -->
-    <div class="container">
+    <main class="container">
         <h2 class="shopping-title">Shopping Cart</h2>
         <div class="shopping-cart" id="second">
             <div class="items-container">
                 <div class="cart-item">
                     <div class="shop-photo">
-                        <img class="product-photo" src="../img/xmas2.png">
+                        <img class="product-photo" src="../img/xmas2.png" alt="Christmas Party">
                         <div>
-                            <h5 id="title">Christmas Party</h5>
-                            <h2 id="price">$2.25</h2>
+                            <h5 class="product-name">Christmas Party</h5>
+                            <h2 class="product-price">$2.25</h2>
                         </div>
                     </div>
-
                     <div class="btn-qty">
                         <div>
                             <p>View Qty</p>
                             <div class="custom-select">
                                 <div class="select-selected">1</div>
-                                <div class="select-arrow"><img src="../img/Icon/ChevronRight.svg"></div>
-                                <div class="select-arrow-down"><img src="../img/Icon/down.svg"></div>
+                                <div class="select-arrow"><img src="../img/Icon/ChevronRight.svg" alt="Arrow"></div>
+                                <div class="select-arrow-down"><img src="../img/Icon/down.svg" alt="Arrow Down"></div>
                                 <div class="select-items">
                                     <div>1</div>
                                     <div>51-100</div>
@@ -92,29 +90,26 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="rem-btn">
                             <button class="remove" type="button">Remove</button>
                         </div>
                     </div>
                 </div>
-
                 <div class="cart-item">
                     <div class="shop-photo">
-                        <img class="product-photo" src="../img/xmas2.png">
+                        <img class="product-photo" src="../img/xmas2.png" alt="Christmas Party">
                         <div>
-                            <h5>Christmas Party</h5>
-                            <h2>$168.00</h2>
+                            <h5 class="product-name">Christmas Party</h5>
+                            <h2 class="product-price">$168.00</h2>
                         </div>
                     </div>
-
                     <div class="btn-qty">
                         <div>
                             <p>View Qty</p>
                             <div class="custom-select">
                                 <div class="select-selected">51-100</div>
-                                <div class="select-arrow"><img src="../img/Icon/ChevronRight.svg"></div>
-                                <div class="select-arrow-down"><img src="../img/Icon/down.svg"></div>
+                                <div class="select-arrow"><img src="../img/Icon/ChevronRight.svg" alt="Arrow"></div>
+                                <div class="select-arrow-down"><img src="../img/Icon/down.svg" alt="Arrow Down"></div>
                                 <div class="select-items">
                                     <div>1</div>
                                     <div>51-100</div>
@@ -122,20 +117,18 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="rem-btn">
                             <button class="remove" type="button">Remove</button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="total-amount">
+            <aside class="total-amount">
                 <div class="item-price">
-                    <h5>Items(2)</h5>
+                    <h5>Items (2)</h5>
                     <h5>$170.25</h5>
                 </div>
-                <hr />
+                <hr>
                 <div class="total-price">
                     <h4>Total</h4>
                     <h4>$170.25</h4>
@@ -143,47 +136,47 @@
                 <div class="checkout">
                     <button type="button"><a href="payment_1.html">Checkout</a></button>
                 </div>
-            </div>
+            </aside>
         </div>
-    </div>
+    </main>
 
     <!-- Footer Section -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-links">
-        <div class="footer-column">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#" class="footer-title">About Us</a></li>
-            <li><a href="#" class="footer-title">Contact Us</a></li>
-            <li><a href="#" class="footer-title">Pricing</a></li>
-            <li><a href="#" class="footer-title">Terms and Conditions</a></li>
-            <li><a href="#" class="footer-title">Privacy Policy</a></li>
-          </ul>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#" class="footer-title">About Us</a></li>
+                        <li><a href="#" class="footer-title">Contact Us</a></li>
+                        <li><a href="#" class="footer-title">Pricing</a></li>
+                        <li><a href="#" class="footer-title">Terms and Conditions</a></li>
+                        <li><a href="#" class="footer-title">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Socials</h4>
+                    <ul>
+                        <li><a href="#" class="footer-text">Facebook</a></li>
+                        <li><a href="#" class="footer-text">LinkedIn</a></li>
+                        <li><a href="#" class="footer-text">Instagram</a></li>
+                        <li><a href="#" class="footer-text">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Secure Payments</h4>
+                    <div class="payments">
+                        <img src="../img/VISA.png" alt="Visa">
+                        <img src="../img/Mastercard.png" alt="Mastercard">
+                        <img src="../img/AmericanExpress.png" alt="American Express">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer-column">
-          <h4>Socials</h4>
-          <ul>
-            <li><a href="#" class="footer-text">Facebook</a></li>
-            <li><a href="#" class="footer-text">LinkedIn</a></li>
-            <li><a href="#" class="footer-text">Instagram</a></li>
-            <li><a href="#" class="footer-text">Twitter</a></li>
-          </ul>
+        <div class="footer-bottom">
+            <p>© Copyright Charity Greeting Cards PTY LTD. All Rights Reserved.</p>
         </div>
-        <div class="footer-column">
-          <h4>Secure Payments</h4>
-          <div class="payments">
-            <img src="../img/VISA.png" alt="Visa">
-            <img src="../img/Mastercard.png" alt="Mastercard">
-            <img src="../img/AmericanExpress.png" alt="American Express">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© Copyright Charity Greeting Cards PTY LTD. All Rights Reserved.</p>
-    </div>
-  </footer>
+    </footer>
 
     <script src="../assets/script/shopping_cart_2_script.js"></script>
 </body>
