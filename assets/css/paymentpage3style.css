@@ -5,37 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Styling the body */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-/* Navigation Bar */
-nav {
-    background: #333;
-    color: #fff;
-    padding: 1em 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    margin: 0 1em;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
 /* Main Container */
 .container {
     width: 90%;
@@ -385,38 +354,6 @@ font-weight: 400;
 }
 
 
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    padding: 2em 0;
-    margin-top: 2em;
-    text-align: center;
-}
-
-footer .useful-links,
-footer .socials,
-footer .secure-payments {
-    margin: 1em 0;
-}
-
-footer ul {
-    list-style: none;
-}
-
-footer ul li {
-    margin: 0.5em 0;
-}
-
-footer ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.mobile-amount {
-    display: none;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .cart-charity {
@@ -444,6 +381,7 @@ footer ul li a {
     .container {
         width: 90%;
         height: 150%;
+        margin-top: 5em;
     }
     .page-title {
         color: #000;
@@ -454,6 +392,10 @@ footer ul li a {
         padding: 1rem;
         margin: 0;
     } 
+
+    .desktop-footer {
+        display: none;
+    }
 
     .payment-types {
         display: flex;
@@ -557,6 +499,7 @@ height: 5rem;
         font-style: normal;
         font-weight: 500;
         margin-top: 1em;
+        margin-left: 2.55em;
         width: 15.1875rem;
         height: 2.625rem;
         border: none;

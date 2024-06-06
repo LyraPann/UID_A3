@@ -7,37 +7,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Payment Page</title>
     <link rel="stylesheet" href="../assets/css/paymentpage3style.css">
+    <link rel="stylesheet" href="../assets/css/nav.css">
+    <link rel="stylesheet" href="../assets/css/general.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <title>Payment Page</title>
 </head>
 
 <body>
 
 
-    <!-- ===================== navigation bar ===================== -->
-    <div class="navwrapper">
-        <nav class="nav">
-            <div class="logo">CHARITYECARDS</div>
-            <div class="navlist">
-                <ul>
-                    <li class="btn.nav"><a href="#">Pricing</a></li>
-                    <li class="btn.nav"><a href="#">Cards</a></li>
-                    <li class="btn.nav"><a href="#">About</a></li>
-                    <li class="btn.nav"><a href="#">Contact</a></li>
-                    <li class="btn.nav"><a href="#">Charity</a></li>
-                </ul>
-            </div>
-            <div class="shoppingbuttons">
-                <img src="../img/shoppingcart.svg" alt="shoppingcart">
-                <a href="#" class="btn nav">Our Cards</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+
+  <!-- Navigation Bar -->
+  <div class="navwrapper">
+    <nav class="nav">
+      <div class="dropdown mobile">
+        <div class="dropbtn">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="dropdown-content">
+          <a href="chrstmas-product-list.html">Christmas Cards</a>
+          <a href="pickmeupcards.html">Pick Me Up Cards</a>
+          <a href="thanksgivingcards.html">Thanksgiving Cards</a>
+          <a href="valentine-product list.html">Valentine Cards</a>
+        </div>
     </div>
+      <a class="logo" href="index_homepage.html">CHARITYECARDS</a>
+      <div class="navlist">
+        <ul>
+          <li><a href="#">Pricing</a></li>
+          <div class="dropdown">
+            <li class="dropbtn">
+              <a href="../pages/product-list.html">Cards</a>
+              <img src="../img/Group.svg" alt="Group">
+            </li>
+            <i class="fa fa-caret-down"></i>
+            <div class="dropdown-content">
+              <a href="chrstmas-product-list.html">Christmas Cards</a>
+              <a href="pickmeupcards.html">Pick Me Up Cards</a>
+              <a href="thanksgivingcards.html">Thanksgiving Cards</a>
+              <a href="valentine-product list.html">Valentine Cards</a>
+            </div>
+          </div>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Charity</a></li>
+        </ul>
+      </div>
+      <div class="shoppingbuttons">
+        <a href="../pages/shopping_cart.html"><img src="../img/shoppingcart.svg" alt="shoppingcart"></a>
+        <a href="product-list.html" class="btn nav">Our Cards</a>
+      </div>
+    </nav>
+  </div>
 
     <div class="mobile-height">
         <!-- Main Container -->
@@ -152,26 +178,42 @@
     </div>
 
 
-    <!-- Footer -->
-    <footer>
-        <div class="useful-links">
-            <h3>Useful Links</h3>
-            <ul>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Cards</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+    <footer class="desktop-footer">
+        <div class="footer-container">
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="#" class="footer-title">About Us</a></li>
+                <li><a href="#" class="footer-title">Contact Us</a></li>
+                <li><a href="#" class="footer-title">Pricing</a></li>
+                <li><a href="#" class="footer-title">Terms and Conditions</a></li>
+                <li><a href="#" class="footer-title">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Socials</h4>
+              <ul>
+                <li><a href="#" class="footer-text">Facebook</a></li>
+                <li><a href="#" class="footer-text">LinkedIn</a></li>
+                <li><a href="#" class="footer-text">Instagram</a></li>
+                <li><a href="#" class="footer-text">Twitter</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Secure Payments</h4>
+              <div class="payments">
+                <img src="../img/VISA.png" alt="Visa">
+                <img src="../img/Mastercard.png" alt="Mastercard">
+                <img src="../img/AmericanExpress.png" alt="American Express">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="socials">
-            <h3>Socials</h3>
-            <!-- Social media links can be added here -->
+        <div class="footer-bottom">
+          <p>© Copyright Charity Greeting Cards PTY LTD. All Rights Reserved.</p>
         </div>
-        <div class="secure-payments">
-            <h3>Secure Payments</h3>
-            <!-- Secure payment logos can be added here -->
-        </div>
-    </footer>
+      </footer>
 
     <footer class="mobile-amount">
         <div class="mobile-content">

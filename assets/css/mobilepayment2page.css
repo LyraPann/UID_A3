@@ -5,49 +5,10 @@
     box-sizing: border-box;
 }
 
-/* Styling the body */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-/* Navigation Bar */
-nav {
-    background: #333;
-    color: #fff;
-    padding: 1em 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    margin: 0 1em;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* general styling */
+/*general layout*/
 .container {
     width: 90%;
     margin: 2em auto;
-}
-
-.filling-info {
-    width: 48%;
-    padding: 1em;
-    border: none;
-    border-radius: 5px;
-    height: 85em;
 }
 
 
@@ -56,6 +17,7 @@ nav ul li a {
 .billing-info {
     width: 100%;
     margin-top: 2em;
+    margin-bottom: 10em;
 }
 
 .billing-info form {
@@ -104,39 +66,6 @@ nav ul li a {
 
 
 
-
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    padding: 2em 0;
-    margin-top: 2em;
-    text-align: center;
-}
-
-footer .useful-links,
-footer .socials,
-footer .secure-payments {
-    margin: 1em 0;
-}
-
-footer ul {
-    list-style: none;
-}
-
-footer ul li {
-    margin: 0.5em 0;
-}
-
-footer ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.mobile-amount {
-    display: none;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
 
@@ -144,6 +73,11 @@ footer ul li a {
         width: 100%;
         margin-bottom: 1em;
     }
+}
+
+.container {
+    width: 90%;
+    margin: 2em auto;
 }
 
 @media (max-width: 576px) {
@@ -157,6 +91,12 @@ footer ul li a {
 }
 
 @media screen and (max-width: 390px) {
+    .container {
+        width: 90%;
+        margin: 2em auto;
+        margin-top: 5em;
+    }
+
     .page-title {
         color: #000;
 font-family: Poppins;
@@ -167,6 +107,9 @@ padding: 1rem;
 margin: 0;
     }
 
+    .desktop-footer {
+        display: none;
+    }
 
     footer {
         display: none;
@@ -246,6 +189,7 @@ margin: 0;
         font-style: normal;
         font-weight: 500;
         margin-top: 1em;
+        margin-left: 2.55em;
         width: 15.1875rem;
         height: 2.625rem;
         border: none;

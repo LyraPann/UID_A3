@@ -9,38 +9,62 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/productlistpagestyle.css">
-
+  <link rel="stylesheet" href="../assets/css/productlistpagestyle.css">  <link rel="stylesheet" href="../assets/css/nav.css">
+  <link rel="stylesheet" href="../assets/css/general.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="../assets/css/typography.css">
   <title>Product List Page</title>
 </head>
 
 
 <body>
-  <!-- ===================== navigation bar ===================== -->
+
+  <!-- Navigation Bar -->
   <div class="navwrapper">
     <nav class="nav">
-      <div class="logo">CHARITYECARDS</div>
+      <div class="dropdown mobile">
+        <div class="dropbtn">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="dropdown-content">
+          <a href="chrstmas-product-list.html">Christmas Cards</a>
+          <a href="pickmeupcards.html">Pick Me Up Cards</a>
+          <a href="thanksgivingcards.html">Thanksgiving Cards</a>
+          <a href="valentine-product list.html">Valentine Cards</a>
+        </div>
+    </div>
+      <a class="logo" href="index_homepage.html">CHARITYECARDS</a>
       <div class="navlist">
         <ul>
-          <li class="btn.nav"><a href="#">Pricing</a></li>
-          <li class="btn.nav"><a href="#">Cards</a></li>
-          <li class="btn.nav"><a href="#">About</a></li>
-          <li class="btn.nav"><a href="#">Contact</a></li>
-          <li class="btn.nav"><a href="#">Charity</a></li>
+          <li><a href="#">Pricing</a></li>
+          <div class="dropdown">
+            <li class="dropbtn">
+              <a href="../pages/product-list.html">Cards</a>
+              <img src="../img/Group.svg" alt="Group">
+            </li>
+            <i class="fa fa-caret-down"></i>
+            <div class="dropdown-content">
+              <a href="chrstmas-product-list.html">Christmas Cards</a>
+              <a href="pickmeupcards.html">Pick Me Up Cards</a>
+              <a href="thanksgivingcards.html">Thanksgiving Cards</a>
+              <a href="valentine-product list.html">Valentine Cards</a>
+            </div>
+          </div>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Charity</a></li>
         </ul>
       </div>
       <div class="shoppingbuttons">
-        <img src="../img/shoppingcart.svg" alt="shoppingcart">
-        <a href="#" class="btn nav">Our Cards</a>
-      </div>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <a href="../pages/shopping_cart.html"><img src="../img/shoppingcart.svg" alt="shoppingcart"></a>
+        <a href="product-list.html" class="btn nav">Our Cards</a>
       </div>
     </nav>
   </div>
-
   <h2 class="mobile-title">All Cards</h2>
 
   <div class="card-text">
@@ -163,7 +187,6 @@
                   <div class="number-selected">
                     <p>1 view</p>
                   </div>
-
                   <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
                   </div>
                   <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
@@ -187,25 +210,15 @@
       <div class="modal-content">
         <span id="close2" class="close">&times;</span>
         <div class="popup-layout">
-          <div class="slideshow-container">
             <div class="together">
-              <div class="mySlides fade">
-                <img class="popupimage" src="..//img/xmas2.png">
-              </div>
-              <div class="mySlides fade">
-                <img class="popupimage" src="../img/3.png">
-              </div>
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <img class="popupimage2" src="..//img/xmas2.png">
             </div>
             <br>
-          </div>
-
           <div>
             <div class="left-side">
               <div class="top-section">
-                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
-                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
               </div>
               <div class="bottom-section">
                 <h2 class="popup-title">$2.25</h2>
@@ -213,7 +226,7 @@
                   <div class="number-selected">
                     <p>1 view</p>
                   </div>
-                  
+  
                   <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
                   </div>
                   <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
@@ -233,6 +246,1445 @@
     </div>
 
 
+    <div id="popup3" class="modal">
+      <div class="modal-content">
+        <span id="close3" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup4" class="modal">
+      <div class="modal-content">
+        <span id="close4" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup5" class="modal">
+      <div class="modal-content">
+        <span id="close5" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup6" class="modal">
+      <div class="modal-content">
+        <span id="close6" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup8" class="modal">
+      <div class="modal-content">
+        <span id="close8" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup7" class="modal">
+      <div class="modal-content">
+        <span id="close7" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup9" class="modal">
+      <div class="modal-content">
+        <span id="close9" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup10" class="modal">
+      <div class="modal-content">
+        <span id="close10" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup11" class="modal">
+      <div class="modal-content">
+        <span id="close11" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup12" class="modal">
+      <div class="modal-content">
+        <span id="close12" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup13" class="modal">
+      <div class="modal-content">
+        <span id="close13" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup14" class="modal">
+      <div class="modal-content">
+        <span id="close14" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup16" class="modal">
+      <div class="modal-content">
+        <span id="close16" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup15" class="modal">
+      <div class="modal-content">
+        <span id="close15" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup17" class="modal">
+      <div class="modal-content">
+        <span id="close17" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup18" class="modal">
+      <div class="modal-content">
+        <span id="close18" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup19" class="modal">
+      <div class="modal-content">
+        <span id="close19" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup20" class="modal">
+      <div class="modal-content">
+        <span id="close20" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup21" class="modal">
+      <div class="modal-content">
+        <span id="close21" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup22" class="modal">
+      <div class="modal-content">
+        <span id="close22" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup23" class="modal">
+      <div class="modal-content">
+        <span id="close23" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup24" class="modal">
+      <div class="modal-content">
+        <span id="close24" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup25" class="modal">
+      <div class="modal-content">
+        <span id="close25" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup26" class="modal">
+      <div class="modal-content">
+        <span id="close26" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup27" class="modal">
+      <div class="modal-content">
+        <span id="close27" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup28" class="modal">
+      <div class="modal-content">
+        <span id="close28" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup29" class="modal">
+      <div class="modal-content">
+        <span id="close29" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup30" class="modal">
+      <div class="modal-content">
+        <span id="close30" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup31" class="modal">
+      <div class="modal-content">
+        <span id="close31" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup32" class="modal">
+      <div class="modal-content">
+        <span id="close32" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup33" class="modal">
+      <div class="modal-content">
+        <span id="close33" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup34" class="modal">
+      <div class="modal-content">
+        <span id="close34" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup35" class="modal">
+      <div class="modal-content">
+        <span id="close35" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup36" class="modal">
+      <div class="modal-content">
+        <span id="close36" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup37" class="modal">
+      <div class="modal-content">
+        <span id="close37" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/xmas2.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">Christmas Party</h2>
+                <p class="popup-info">Merry Christmas/Hope to see you there!</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup38" class="modal">
+      <div class="modal-content">
+        <span id="close38" class="close">&times;</span>
+        <div class="popup-layout">
+            <div class="together">
+                <img class="popupimage2" src="..//img/val1.png">
+            </div>
+            <br>
+          <div>
+            <div class="left-side">
+              <div class="top-section">
+                <h2 class="popup-title">I Love You a Whole Bunch!</h2>
+                <p class="popup-info">My love for you can't be expressed with even the prettiest bouquet</p>
+              </div>
+              <div class="bottom-section">
+                <h2 class="popup-title">$2.25</h2>
+                <div class="custom-select">
+                  <div class="number-selected">
+                    <p>1 view</p>
+                  </div>
+  
+                  <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                  </div>
+                  <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                  </div>
+                  <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="popupbtn" type="button">Choose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- ===================== the products ===================== -->
     <div class="products-list" id="products">
@@ -249,185 +1701,185 @@
       </div>
 
       <div data-category="pickmecards">
-        <button class="product-button">
+        <button type="button" id="btn3" class="product-button">
           <img class="product-items motivate" src="../img/motivate1.png">
         </button>
       </div>
 
       <div data-category="valentinecards">
-        <a href="#">
+        <button type="button" id="btn4" class="product-button">
           <img class="product-items val" src="../img/val2.png">
-        </a>
+        </button>
       </div>
       <div data-category="thanksgivingcards">
-        <a href="#">
+        <button type="button" id="btn5" class="product-button">
           <img class="product-items thanks" src="../img/thanks2.png">
-        </a>
+        </button>
       </div>
       <div data-category="christmascards">
-        <a href="#">
+        <button type="button" id="btn6" class="product-button">
           <img class="product-items xmas" src="../img/xmas1.png">
-        </a>
+        </button>
       </div>
       <div data-category="christmascards">
-        <a href="#">
+        <button type="button" id="btn7" class="product-button">
           <img class="product-items xmas" src="../img/xmas2.png">
-        </a>
+        </button>
       </div>
       <div data-category="pickmecards">
-        <a href="#">
+        <button type="button" id="btn8" class="product-button">
           <img class="product-items motivate" src="../img/motivate2.png">
-        </a>
+        </button>
       </div>
       <div data-category="valentinecards">
-        <a href="#">
+        <button type="button" id="btn9" class="product-button">
           <img class="product-items val" src="../img/val1.png">
-        </a>
+        </button>
       </div>
       <div data-category="thanksgivingcards">
-        <a href="#">
+        <button type="button" id="btn10" class="product-button">
           <img class="product-items thanks" src="../img/thanks1.png">
-        </a>
+        </button>
       </div>
       <div data-category="pickmecards">
-        <a href="#">
+        <button type="button" id="btn11" class="product-button">
           <img class="product-items motivate" src="../img/motivate1.png">
-        </a>
+        </button>
       </div>
       <div data-category="valentinecards">
-        <a href="#">
+        <button type="button" id="btn12" class="product-button">
           <img class="product-items val" src="../img/val2.png">
-        </a>
+        </button>
       </div>
       <div data-category="thanksgivingcards">
-        <a href="#">
+        <button type="button" id="btn13" class="product-button">
           <img class="product-items thanks" src="../img/thanks2.png">
-        </a>
+        </button>
       </div>
       <div data-category="christmascards">
-        <a href="#">
+        <button type="button" id="btn14" class="product-button">
           <img class="product-items xmas" src="../img/xmas1.png">
-        </a>
+        </button>
       </div>
       <div data-category="christmascards">
-        <a href="#">
+        <button type="button" id="btn15" class="product-button">
           <img class="product-items xmas" src="../img/xmas2.png">
-        </a>
+        </button>
       </div>
       <div data-category="pickmecards">
-        <a href="#">
+        <button type="button" id="btn16" class="product-button">
           <img class="product-items motivate" src="../img/motivate2.png">
-        </a>
+        </button>
       </div>
       <div data-category="valentinecards">
-        <a>
+        <button type="button" id="btn17" class="product-button">
           <img class="product-items val" src="../img/val1.png">
-        </a>
+        </button>
       </div>
       <div data-category="thanksgivingcards">
-        <a href="#">
+        <button type="button" id="btn18" class="product-button">
           <img class="product-items thanks" src="../img/thanks1.png">
-        </a>
+        </button>
       </div>
       <div data-category="pickmecards">
-        <a href="#">
+        <button type="button" id="btn19" class="product-button">
           <img class="product-items motivate" src="../img/motivate1.png">
-        </a>
+        </button>
       </div>
       <div data-category="valentinecards">
-        <a href="#">
+        <button type="button" id="btn20" class="product-button">
           <img class="product-items val" src="../img/val2.png">
-        </a>
+        </button>
       </div>
       <div data-category="thanksgivingcards">
-        <a href="#">
+        <button type="button" id="btn21" class="product-button">
           <img class="product-items thanks" src="../img/thanks2.png">
-        </a>
+        </button>
       </div>
       <div data-category="christmascards">
-        <a href="#">
+        <button type="button" id="btn22" class="product-button">
           <img class="product-items xmas" src="../img/xmas1.png">
-        </a>
+        </button>
       </div>
       <div data-category="christmascards">
-        <a href="#">
+        <button type="button" id="btn23" class="product-button">
           <img class="product-items xmas" src="../img/xmas2.png">
-        </a>
+        </button>
       </div>
       <div data-category="pickmecards">
-        <a href="#">
+        <button type="button" id="btn24" class="product-button">
           <img class="product-items motivate" src="../img/motivate2.png">
-        </a>
+        </button>
       </div>
       <div data-category="valentinecards">
-        <a href="#">
+        <button type="button" id="btn25" class="product-button">
           <img class="product-items val" src="../img/val1.png">
-        </a>
+        </button>
       </div>
       <div data-category="thanksgivingcards">
-        <a href="#">
+        <button type="button" id="btn26" class="product-button">
           <img class="product-items thanks" src="../img/thanks1.png">
-        </a>
+        </button>
       </div>
       <div data-category="pickmecards">
-        <a href="#">
+        <button type="button" id="btn27" class="product-button">
           <img class="product-items motivate" src="../img/motivate1.png">
-        </a>
+        </button>
       </div>
       <div data-category="valentinecards">
-        <a href="#">
+        <button type="button" id="btn28" class="product-button">
           <img class="product-items val" src="../img/val2.png">
-        </a>
+        </button>
       </div>
       <div data-category="thanksgivingcards">
-        <a href="#">
+        <button type="button" id="btn29" class="product-button">
           <img class="product-items thanks" src="../img/thanks2.png">
-        </a>
+        </button>
       </div>
       <div data-category="christmascards">
-        <a href="#">
+        <button type="button" id="btn30" class="product-button">
           <img class="product-items xmas" src="../img/xmas1.png">
-        </a>
+        </button>
       </div>
       <div data-category="christmascards">
-        <a href="#">
+        <button type="button" id="btn31" class="product-button">
           <img class="product-items xmas" src="../img/xmas2.png">
-        </a>
+        </button>
       </div>
       <div data-category="pickmecards">
-        <a href="#">
+        <button type="button" id="btn32" class="product-button">
           <img class="product-items" src="../img/motivate2.png">
-        </a>
+        </button>
       </div>
       <div data-category="valentinecards">
-        <a href="#">
+        <button type="button" id="btn33" class="product-button">
           <img class="product-items" src="../img/val1.png">
-        </a>
+        </button>
       </div>
       <div data-category="thanksgivingcards">
-        <a href="#">
+        <button type="button" id="btn34" class="product-button">
           <img class="product-items" src="../img/thanks1.png">
-        </a>
+        </button>
       </div>
       <div data-category="pickmecards">
-        <a href="#">
+        <button type="button" id="btn35" class="product-button">
           <img class="product-items" src="../img/motivate1.png">
-        </a>
+        </button>
       </div>
       <div data-category="valentinecards">
-        <a href="#">
+        <button type="button" id="btn36" class="product-button">
           <img class="product-items" src="../img/val2.png">
-        </a>
+        </button>
       </div>
       <div data-category="thanksgivingcards">
-        <a href="#">
+        <button type="button" id="btn37" class="product-button">
           <img class="product-items" src="../img/thanks2.png">
-        </a>
+        </button>
       </div>
       <div data-category="christmascards">
-        <a href="#">
+        <button type="button" id="btn38" class="product-button">
           <img class="product-items" src="../img/xmas1.png">
-        </a>
+        </button>
       </div>
     </div>
   </div>
@@ -462,40 +1914,40 @@
     </div>
   </footer>
 
-  <footer class="desktop-footer">
-    <img src="img/footericon.svg" alt="footer icon">
-    <div class="footerlinks">
-      <table>
-        <tr>
-          <th>Useful Links</th>
-          <th>Socials</th>
-          <th>Secure Payments</th>
-        </tr>
-        <tr>
-          <td>About Us</td>
-          <td>Facebook</td>
-          <td>
-            <img src="img/VISA.png" alt="VISA">
-            <img src="img/Mastercard.png" alt="Mastercard">
-            <img src="img/AmericanExpress.png" alt="American AmericanExpress">
-          </td>
-        </tr>
-        <tr>
-          <td>Contact Us</td>
-          <td>Linkedin</td>
-        </tr>
-        <tr>
-          <td>Pricing</td>
-          <td>Instagram</td>
-        </tr>
-        <tr>
-          <td>Terms and Conditions</td>
-          <td>Twitter</td>
-        </tr>
-        <tr>
-          <td>Privacy Policy</td>
-        </tr>
-      </table>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#" class="footer-title">About Us</a></li>
+            <li><a href="#" class="footer-title">Contact Us</a></li>
+            <li><a href="#" class="footer-title">Pricing</a></li>
+            <li><a href="#" class="footer-title">Terms and Conditions</a></li>
+            <li><a href="#" class="footer-title">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Socials</h4>
+          <ul>
+            <li><a href="#" class="footer-text">Facebook</a></li>
+            <li><a href="#" class="footer-text">LinkedIn</a></li>
+            <li><a href="#" class="footer-text">Instagram</a></li>
+            <li><a href="#" class="footer-text">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Secure Payments</h4>
+          <div class="payments">
+            <img src="../img/VISA.png" alt="Visa">
+            <img src="../img/Mastercard.png" alt="Mastercard">
+            <img src="../img/AmericanExpress.png" alt="American Express">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Copyright Charity Greeting Cards PTY LTD. All Rights Reserved.</p>
     </div>
   </footer>
 

@@ -7,36 +7,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Payment Page</title>
     <link rel="stylesheet" href="../assets/css/mobilepayment2page.css">
+    <link rel="stylesheet" href="../assets/css/nav.css">
+    <link rel="stylesheet" href="../assets/css/general.css">
+    <link rel="stylesheet" href="../assets/css/footer.css"> 
+    <title>Payment Page</title>
 </head>
 
 <body>
 
-    <!-- ===================== navigation bar ===================== -->
-    <div class="navwrapper">
-        <nav class="nav">
-            <div class="logo">CHARITYECARDS</div>
-            <div class="navlist">
-                <ul>
-                    <li class="btn.nav"><a href="#">Pricing</a></li>
-                    <li class="btn.nav"><a href="#">Cards</a></li>
-                    <li class="btn.nav"><a href="#">About</a></li>
-                    <li class="btn.nav"><a href="#">Contact</a></li>
-                    <li class="btn.nav"><a href="#">Charity</a></li>
-                </ul>
-            </div>
-            <div class="shoppingbuttons">
-                <img src="../img/shoppingcart.svg" alt="shoppingcart">
-                <a href="#" class="btn nav">Our Cards</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+
+  <!-- Navigation Bar -->
+  <div class="navwrapper">
+    <nav class="nav">
+      <div class="dropdown mobile">
+        <div class="dropbtn">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="dropdown-content">
+          <a href="chrstmas-product-list.html">Christmas Cards</a>
+          <a href="pickmeupcards.html">Pick Me Up Cards</a>
+          <a href="thanksgivingcards.html">Thanksgiving Cards</a>
+          <a href="valentine-product list.html">Valentine Cards</a>
+        </div>
     </div>
+      <a class="logo" href="index_homepage.html">CHARITYECARDS</a>
+      <div class="navlist">
+        <ul>
+          <li><a href="#">Pricing</a></li>
+          <div class="dropdown">
+            <li class="dropbtn">
+              <a href="../pages/product-list.html">Cards</a>
+              <img src="../img/Group.svg" alt="Group">
+            </li>
+            <i class="fa fa-caret-down"></i>
+            <div class="dropdown-content">
+              <a href="chrstmas-product-list.html">Christmas Cards</a>
+              <a href="pickmeupcards.html">Pick Me Up Cards</a>
+              <a href="thanksgivingcards.html">Thanksgiving Cards</a>
+              <a href="valentine-product list.html">Valentine Cards</a>
+            </div>
+          </div>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Charity</a></li>
+        </ul>
+      </div>
+      <div class="shoppingbuttons">
+        <a href="../pages/shopping_cart.html"><img src="../img/shoppingcart.svg" alt="shoppingcart"></a>
+        <a href="product-list.html" class="btn nav">Our Cards</a>
+      </div>
+    </nav>
+  </div>
+
 
 <div>
     <!-- Main Container -->
@@ -140,38 +167,18 @@
 </div>
 </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="useful-links">
-            <h3>Useful Links</h3>
-            <ul>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Cards</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+<footer class="mobile-amount">
+    <div class="mobile-content">
+        <div class="mobile-text">
+            <h4 class="total-text">Total</h4>
+            <h4 class="total-text">$4.50</h4>
         </div>
-        <div class="socials">
-            <h3>Socials</h3>
-            <!-- Social media links can be added here -->
-        </div>
-        <div class="secure-payments">
-            <h3>Secure Payments</h3>
-            <!-- Secure payment logos can be added here -->
-        </div>
-    </footer>
+        <button class="submitbtn" type="button" href="#">
+            <a href="../pages/payment-page3.html">Next Page</a>
+        </button>
+    </div>
+</footer>
 
-    <footer class="mobile-amount">
-        <div class="mobile-content">
-            <div class="mobile-text">
-                <h4 class="total-text">Total</h4>
-                <h4 class="total-text">$4.50</h4>
-            </div>
-            <button class="submitbtn" type="button" href="#"><a href="../pages/payment-page2-mobile.html">Next Page</a></button>
-        </div>
-    </footer>
-
-    <script src="../assets/script/payment_1_script.js"></script>
 </body>
 
 </html>

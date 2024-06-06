@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/mobilecardstyle.css">
     <link rel="stylesheet" href="../assets/css/nav.css">
     <link rel="stylesheet" href="../assets/css/general.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/typography.css">
-    <title>Payment Approved</title>
+    <title>Product Page</title>
 </head>
-<body>
 
+<body>
 
   <!-- Navigation Bar -->
   <div class="navwrapper">
@@ -62,73 +64,37 @@
     </nav>
   </div>
 
-
-    <!-- ===================== payment done graphics ===================== -->
-    <div>
-        <h2>Payment Complete</h2>
-        <img src="img/purpletick.png">
-        <p>Thank you for your purchase! 20% of every dollar is donated to the charity of your choice!</p>
-    </div>
-
-
-
-    <!-- ===================== send ecard ===================== -->
-    <div>
-        <p>
-            Send your card to your recipient
-        </p>
-
+    <div class="container">
+        <div class="image-container">
+            <img class="card-cover" src="../img/val1.png" alt="Christmas Party">
+        </div>
+        <div class="text-box">
+            <h3 class="bigtext real-title">I Love You a Whole Bunch!</h3>
+            <h4 class="cardinfo">My love for you can't be expressed with even the 
+                prettiest bouquet</h4>
+            <h3 class="bigtext money">$2.25</h3>
+        </div>
         <div>
-            <div>
-                <span>Sender Email*</span>
-                <input type="text" placeholder="Enter Sender Email">
-            </div>
-            <div>
-                <span>Reciever Email*</span>
-                <input type="text" placeholder="Enter Reciever Email">
+            <div class="custom-select">
+                <div class="number-selected">
+                    <p>1 view</p>
+                </div>
+                <div class="select-arrow"><img class="img-size1" src="../img/Icon/ChevronRight.svg">
+                </div>
+                <div class="select-arrow-down"><img class="img-size2" src="../img/Icon/down.svg">
+                </div>
+                <div class="select-items">
+                    <div>1 view</div>
+                    <div>51-100 views</div>
+                    <div>201-250 views</div>
+                </div>
             </div>
         </div>
-        <button>Send</button>
+        <div class="btndiv">
+            <button type="button" class="addbtn">Add To Cart</button>
+        </div>
     </div>
+</body>
+<script src="../assets/script/mobilecardsstyle.js"></script>
 
-
-
-    <footer>
-      <div class="footer-container">
-        <div class="footer-links">
-          <div class="footer-column">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><a href="#" class="footer-title">About Us</a></li>
-              <li><a href="#" class="footer-title">Contact Us</a></li>
-              <li><a href="#" class="footer-title">Pricing</a></li>
-              <li><a href="#" class="footer-title">Terms and Conditions</a></li>
-              <li><a href="#" class="footer-title">Privacy Policy</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>Socials</h4>
-            <ul>
-              <li><a href="#" class="footer-text">Facebook</a></li>
-              <li><a href="#" class="footer-text">LinkedIn</a></li>
-              <li><a href="#" class="footer-text">Instagram</a></li>
-              <li><a href="#" class="footer-text">Twitter</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>Secure Payments</h4>
-            <div class="payments">
-              <img src="../img/VISA.png" alt="Visa">
-              <img src="../img/Mastercard.png" alt="Mastercard">
-              <img src="../img/AmericanExpress.png" alt="American Express">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© Copyright Charity Greeting Cards PTY LTD. All Rights Reserved.</p>
-      </div>
-    </footer>
-
-    </body>
-    </html>
+</html>
