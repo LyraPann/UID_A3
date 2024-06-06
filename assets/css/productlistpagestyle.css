@@ -178,7 +178,7 @@
     flex-direction: row;
     display: flex;
     justify-content: space-between;
-    gap: 23px;
+    gap: 45px;
     width: 100%;
     padding: 2rem 1rem 0rem 3rem;
 }
@@ -383,9 +383,15 @@ input {
         font-style: normal;
         font-weight: 500;
         padding-left: 0.5em;
+        margin-top: 2em
     }
 
     .products-list {
+        display: none;
+    }
+
+    .products-list2 {
+        display: block;
         display: flex;
         flex-direction: row;
         overflow-x: none;
@@ -400,11 +406,14 @@ input {
     .products-filter {
         flex-direction: column;
         align-items: center;
+        padding: 0;
         width: 100%;
+        gap: 1.5em;
     }
 
     .card-text {
         flex-direction: column;
+        padding: 0;
     }
 
     .christmas-text {
@@ -412,7 +421,7 @@ input {
         margin: 0;
         justify-content: center;
         padding-left: 1.5em;
-        padding-bottom: 6em;
+        padding-bottom: 2em;
         padding-right: 1em;
     }
 
