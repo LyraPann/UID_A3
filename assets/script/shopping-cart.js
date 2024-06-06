@@ -39,6 +39,18 @@ window.addEventListener('click', function(){
 })
 
 
+const myDiv = document.getElementById('productOne');
+
+function hideDiv1() {
+    myDiv.style.visibility = 'hidden';
+}
+
+const myDiv2 = document.getElementById('productTwo');
+
+function hideDiv2() {
+    myDiv2.style.visibility = 'hidden';
+}
+
 
     // const myCards= localStorage.getItem('items')
     // const JSONcards= JSON.parse(myCards);
@@ -52,26 +64,26 @@ window.addEventListener('click', function(){
     //     })
     // }
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const myCards = localStorage.getItem('items');
-        if (myCards) {
-            const JSONcards = JSON.parse(myCards);
-            console.log(JSONcards);
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     const myCards = localStorage.getItem('items');
+    //     if (myCards) {
+    //         const JSONcards = JSON.parse(myCards);
+    //         console.log(JSONcards);
     
-            function getItems() {
-                JSONcards.forEach(product => {
-                    const title = document.getElementById('title');
-                    const price = document.getElementById('price');
-                    title.innerHTML = product.title;
-                    price.innerHTML = product.price;
-                });
-            }
+    //         function getItems() {
+    //             JSONcards.forEach(product => {
+    //                 const title = document.getElementById('title');
+    //                 const price = document.getElementById('price');
+    //                 title.innerHTML = product.title;
+    //                 price.innerHTML = product.price;
+    //             });
+    //         }
     
-            getItems(); 
-        } else {
-            console.log("No items found in localStorage");
-        }
-    })
+    //         getItems(); 
+    //     } else {
+    //         console.log("No items found in localStorage");
+    //     }
+    // })
 
     // const itemObjects= [];
     // const myItem= {

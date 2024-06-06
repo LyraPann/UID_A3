@@ -68,13 +68,37 @@ document.querySelectorAll('.remove').forEach(button => {
     });
 });
 
-// Update the total price function
-function updateTotal() {
-    let total = 0;
-    document.querySelectorAll('.cart-item').forEach(item => {
-        const price = parseFloat(item.querySelector('h2').textContent.replace('$', ''));
-        total += price;
-    });
-    document.querySelector('.total-amount h4:nth-child(2)').textContent = `$${total.toFixed(2)}`;
-    document.querySelector('.mobile-amount h4:nth-child(2)').textContent = `$${total.toFixed(2)}`;
-}
+// // Update the total price function
+// function updateTotal() {
+//     let total = 0;
+//     document.querySelectorAll('.cart-item').forEach(item => {
+//         const price = parseFloat(item.querySelector('h2').textContent.replace('$', ''));
+//         total += price;
+//     });
+//     document.querySelector('.total-amount h4:nth-child(2)').textContent = `$${total.toFixed(2)}`;
+//     document.querySelector('.mobile-amount h4:nth-child(2)').textContent = `$${total.toFixed(2)}`;
+// }
+
+// const myDiv = document.getElementById('productOne');
+
+// function hideDiv1() {
+//     myDiv.style.visibility = 'hidden';
+// }
+
+// const myDiv2 = document.getElementById('productTwo');
+
+// function hideDiv2() {
+//     myDiv2.style.visibility = 'hidden';
+// }
+
+// function toggleVisibility1() {
+//     let div1 = document.getElementById("productOne");
+//     if (div1.style.display === "block") {
+//         div1.style.display = "none";}
+// }
+
+// function toggleVisibility2() {
+//     let div2 = document.getElementById("productTwo");
+//     if (div2.style.display === "block") {
+//         div2.style.display = "none";}
+// }
