@@ -83,6 +83,10 @@
     display: block;
 }
 
+.products-list2 {
+    display: none;
+}
+
 
 /* filter */
 .arrow {

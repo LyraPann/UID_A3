@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../assets/css/general.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/typography.css">
+    <link rel="stylesheet" href="../assets/css/payment-approved-style.css">
     <title>Payment Approved</title>
 </head>
 <body>
@@ -63,34 +64,40 @@
   </div>
 
 
+  <div class="container">
     <!-- ===================== payment done graphics ===================== -->
-    <div>
-        <h2>Payment Complete</h2>
-        <img src="img/purpletick.png">
-        <p>Thank you for your purchase! 20% of every dollar is donated to the charity of your choice!</p>
+    <div class="left-side">
+        <h2 class="bigger-text">Payment Complete</h2>
+        <img class="purp-tick" src="../img/purpletick.png">
+        <p class="smaller-text">Thank you for your purchase! 20% of every dollar is donated to the charity of your choice!</p>
     </div>
 
 
 
     <!-- ===================== send ecard ===================== -->
-    <div>
-        <p>
+    <div class="right-side">
+      <div class="send-card">
+        <p class="smaller-text">
             Send your card to your recipient
         </p>
 
         <div>
-            <div>
-                <span>Sender Email*</span>
-                <input type="text" placeholder="Enter Sender Email">
+          <form class="send-form">
+            <div class="text-box">
+                <label for="company">Sender Email</label>
+                <input type="text" id="company" name="company" placeholder="Receiver Email">
             </div>
-            <div>
-                <span>Reciever Email*</span>
-                <input type="text" placeholder="Enter Reciever Email">
-            </div>
-        </div>
-        <button>Send</button>
-    </div>
 
+            <div class="text-box">
+                <label for="first-name">Receiver Email</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Receiver Email" required>
+            </div>
+            </form>
+        </div>
+        <button type="button" class="sendbtn">Send</button>
+      </div>
+    </div>
+  </div>
 
 
     <footer>

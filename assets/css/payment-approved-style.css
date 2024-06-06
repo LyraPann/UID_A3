@@ -1,0 +1,118 @@
+/* general styling */
+.container {
+    width: 90%;
+    margin: 2em auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5em;
+    padding-bottom: 6em;
+    justify-content: space-between;
+}
+
+.left-side {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.right-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 34.25rem;
+    height: 30rem;
+    margin-top: 3em;
+    border-radius: 0.75rem;
+    background: #FFF;
+    box-shadow: 48px 383px 108px 0px rgba(0, 0, 0, 0.00), 31px 245px 99px 0px rgba(0, 0, 0, 0.01), 17px 138px 83px 0px rgba(0, 0, 0, 0.03), 8px 61px 62px 0px rgba(0, 0, 0, 0.04), 2px 15px 34px 0px rgba(0, 0, 0, 0.05);
+}
+
+
+.smaller-text {
+    color: #000;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+footer {
+    bottom: 0px;
+}
+
+
+/* left side style */
+.purp-tick {
+    width: 11.0625rem;
+    height: 11.0625rem;
+}
+
+/* right-side stlye */
+.text-box {
+    align-items: flex-start;
+}
+
+.text-box input {
+    width: 25rem;
+    height: 3.1875rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    background: #FAFAFA;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15) inset;
+    border: none;
+}
+
+.send-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+.send-form {
+    margin-top: 3em;
+}
+
+.sendbtn {
+    display: flex;
+    width: 24.125rem;
+    height: 3.5625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7125rem;
+    flex-shrink: 0;
+    align-self: center;
+    border: 0;
+    border-radius: 8.90625rem;
+    background-color: #6750A4;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 2em;
+    box-shadow: 0px 1.425px 2.85px 0px rgba(0, 0, 0, 0.30), 0px 1.425px 4.275px 1.425px rgba(0, 0, 0, 0.15);
+}
+
+
+@media screen and (max-width: 390px) {
+    .left-side {
+        width: 100%;
+    }
+
+    .smaller-text {
+        display: none;
+    }
+
+    .right-side {
+        width: 100%;
+        height: auto;
+    }
+}
