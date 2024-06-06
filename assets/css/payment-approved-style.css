@@ -103,8 +103,18 @@ footer {
 
 
 @media screen and (max-width: 390px) {
+    .bigger-text {
+        color: #000;
+text-align: center;
+font-size: 2.8125rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+    }
+
     .left-side {
         width: 100%;
+        gap: 0;
     }
 
     .smaller-text {
@@ -112,7 +122,31 @@ footer {
     }
 
     .right-side {
+        display: flex;
         width: 100%;
         height: auto;
+        background-color: transparent;
+        margin-top: 0;
+        box-shadow: none;
     }
+
+    .text-box input {
+        width: 19.5rem;
+        height: 3.1875rem;
+        border-radius: 0.5rem;
+        background: #FAFAFA;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15) inset;
+        border: none;
+    }
+
+    .sendbtn {
+        display: flex;
+        width: 20rem;
+        height: 3rem;
+padding: 0.89063rem 2.1375rem;
+justify-content: center;
+align-items: center;
+gap: 0.7125rem;
+flex: 1 0 0;
+align-self: stretch;
 }
