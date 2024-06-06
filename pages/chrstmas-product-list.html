@@ -8,36 +8,61 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/cardproductstyle.css">
+  <link rel="stylesheet" href="../assets/css/nav.css">
+  <link rel="stylesheet" href="../assets/css/general.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="../assets/css/typography.css">
   <title>Christmas Cards</title>
 </head>
 
 <body>
 
-  <!-- ===================== navigation bar ===================== -->
-  <div class="navwrapper">
-    <nav class="nav">
-      <div class="logo">CHARITYECARDS</div>
-      <div class="navlist">
-        <ul>
-          <li class="btn.nav"><a href="#">Pricing</a></li>
-          <li class="btn.nav"><a href="#">Cards</a></li>
-          <li class="btn.nav"><a href="#">About</a></li>
-          <li class="btn.nav"><a href="#">Contact</a></li>
-          <li class="btn.nav"><a href="#">Charity</a></li>
-        </ul>
+    <!-- Navigation Bar -->
+    <div class="navwrapper">
+      <nav class="nav">
+        <div class="dropdown mobile">
+          <div class="dropbtn">
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="dropdown-content">
+            <a href="chrstmas-product-list.html">Christmas Cards</a>
+            <a href="pickmeupcards.html">Pick Me Up Cards</a>
+            <a href="thanksgivingcards.html">Thanksgiving Cards</a>
+            <a href="valentine-product list.html">Valentine Cards</a>
+          </div>
       </div>
-      <div class="shoppingbuttons">
-        <img src="../img/shoppingcart.svg" alt="shoppingcart">
-        <a href="#" class="btn nav">Our Cards</a>
-      </div>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </div>
-
+        <a class="logo" href="index_homepage.html">CHARITYECARDS</a>
+        <div class="navlist">
+          <ul>
+            <li><a href="#">Pricing</a></li>
+            <div class="dropdown">
+              <li class="dropbtn">
+                <a href="../pages/product-list.html">Cards</a>
+                <img src="../img/Group.svg" alt="Group">
+              </li>
+              <i class="fa fa-caret-down"></i>
+              <div class="dropdown-content">
+                <a href="chrstmas-product-list.html">Christmas Cards</a>
+                <a href="pickmeupcards.html">Pick Me Up Cards</a>
+                <a href="thanksgivingcards.html">Thanksgiving Cards</a>
+                <a href="valentine-product list.html">Valentine Cards</a>
+              </div>
+            </div>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Charity</a></li>
+          </ul>
+        </div>
+        <div class="shoppingbuttons">
+          <a href="../pages/shopping_cart.html"><img src="../img/shoppingcart.svg" alt="shoppingcart"></a>
+          <a href="product-list.html" class="btn nav">Our Cards</a>
+        </div>
+      </nav>
+    </div>
   
   <div class="mobile-layout">
     <div class="title-search">
