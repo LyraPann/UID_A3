@@ -83,6 +83,261 @@ input {
   display: none;
 }
 
+/* popups */
+/* pop-ups */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 20px;
+  width: 90%;
+  /* Could be more or less, depending on screen size */
+  height: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 40px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.scroll-img {
+  width: 29.75rem;
+  height: 42.0625rem;
+  border-radius: 1.5625rem;
+  align-self: center;
+}
+
+
+
+
+/* dropdown for popups */
+.custom-select {
+  display: inline-block;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.number-selected {
+  display: flex;
+  width: 34.8125rem;
+  height: 3.5rem;
+  padding: 0.5rem 0.75rem 0.5rem 1.5rem;
+  border-radius: 1.5625rem;
+  background-color: #F7F7F7;
+  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.select-items {
+  position: absolute;
+  background-color: white;
+  z-index: 999;
+  width: 100%;
+  display: none;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.select-items div {
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-items div:hover {
+  background-color: #ddd;
+}
+
+.select-arrow,
+.select-arrow-down {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  pointer-events: none;
+
+}
+
+.select-arrow-down {
+  display: none;
+  padding-right: 7px;
+}
+
+.select-items.show {
+  display: block;
+
+}
+
+.img-size1 {
+  width: 30px;
+  height: 30px;
+}
+
+.img-size2 {
+  width: 15px;
+  height: 15px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  align-self: center;
+  max-width: 29rem;
+  position: relative;
+  margin: 2.3rem;
+  margin-left: 3rem;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 3rem;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.prev {
+  left: -55px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -55px;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+      opacity: .4
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+.popupbtn {
+  display: flex;
+  width: 17.9375rem;
+  height: 3.5625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7125rem;
+  flex-shrink: 0;
+  border-radius: 8.90625rem;
+  background-color: #6750A4;
+  border: none;
+  color: white;
+  font: Poppins;
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  box-shadow: 0px 1.425px 2.85px 0px rgba(0, 0, 0, 0.30), 0px 1.425px 4.275px 1.425px rgba(0, 0, 0, 0.15);
+  margin-left: 17.5em;
+  margin-top: 11.5em;
+}
+
+.popup-title {
+  color: #000;
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+.popup-info {
+  color: #909090;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.left-side {
+  margin-left: 3em;
+  margin-top: 2.5em;
+}
+
+.product-button {
+  border: none;
+  background-color: transparent;
+}
+
+.popupimage {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.popupimage2 {
+  width: 80%;
+  border-radius: 20px;
+  margin-top: 3em;
+  margin-left: 3em;
+}
+
+
 /* Responsive Design for Mobile */
 @media screen and (max-width: 390px) {
   .products-list1 {
