@@ -588,6 +588,11 @@ window.onclick = function (event) {
 let modal21= document.getElementById("popup21");
 let btn21= document.getElementById("btn21");
 let span21= document.getElementById("close21");
+let chose21= document.getElementById("choose21")
+
+chose21.onclick= function () {
+    modal21.style.display= "none";
+}
 
 btn21.onclick= function () {
     modal21.style.display = "block";
@@ -608,6 +613,11 @@ window.onclick= function (event) {
 let modal22= document.getElementById("popup22");
 let btn22= document.getElementById("btn22");
 let span22= document.getElementById("close22");
+let chose22= document.getElementById("choose22")
+
+chose22.onclick= function () {
+    modal22.style.display= "none";
+}
 
 btn22.onclick= function () {
     modal22.style.display = "block";
@@ -627,6 +637,11 @@ window.onclick= function (event) {
 let modal23= document.getElementById("popup23");
 let btn23= document.getElementById("btn23");
 let span23= document.getElementById("close23");
+let chose23= document.getElementById("choose23")
+
+chose23.onclick= function () {
+    modal23.style.display= "none";
+}
 
 btn23.onclick= function () {
     modal23.style.display= "block";
@@ -646,6 +661,11 @@ window.onclick = function (event) {
 let modal24= document.getElementById("popup24");
 let bt24= document.getElementById("btn24");
 let span24= document.getElementById("close24");
+let chose24= document.getElementById("choose24")
+
+chose24.onclick= function () {
+    modal24.style.display= "none";
+}
 
 btn24.onclick = function () {
     modal24.style.display = "block";
@@ -665,6 +685,11 @@ window.onclick = function (event) {
 let modal25= document.getElementById("popup25");
 let btn25= document.getElementById("btn25");
 let span25= document.getElementById("close25");
+let chose25= document.getElementById("choose25")
+
+chose25.onclick= function () {
+    modal25.style.display= "none";
+}
 
 btn25.onclick = function () {
     modal25.style.display = "block";
@@ -684,6 +709,11 @@ window.onclick = function (event) {
 let modal26= document.getElementById("popup26");
 let btn26= document.getElementById("btn26");
 let span26= document.getElementById("close26");
+let chose26= document.getElementById("choose26")
+
+chose26.onclick= function () {
+    modal26.style.display= "none";
+}
 
 btn26.onclick = function () {
     modal26.style.display = "block";
@@ -704,6 +734,11 @@ window.onclick = function (event) {
 let modal27= document.getElementById("popup27");
 let btn27= document.getElementById("btn27");
 let span27= document.getElementById("close27");
+let chose27= document.getElementById("choose27")
+
+chose27.onclick= function () {
+    modal27.style.display= "none";
+}
 
 btn27.onclick = function () {
     modal27.style.display = "block";
@@ -723,6 +758,11 @@ window.onclick = function (event) {
 let modal28= document.getElementById("popup28");
 let btn28= document.getElementById("btn28");
 let span28= document.getElementById("close28");
+let chose28= document.getElementById("choose28")
+
+chose28.onclick= function () {
+    modal28.style.display= "none";
+}
 
 btn28.onclick = function () {
     modal28.style.display = "block";
@@ -743,6 +783,11 @@ window.onclick = function (event) {
 let modal29= document.getElementById("popup29");
 let btn29= document.getElementById("btn29");
 let span29= document.getElementById("close29");
+let chose29= document.getElementById("choose29")
+
+chose29.onclick= function () {
+    modal29.style.display= "none";
+}
 
 btn29.onclick = function () {
     modal29.style.display = "block";
@@ -762,6 +807,11 @@ window.onclick = function (event) {
 let modal30= document.getElementById("popup30");
 let btn30= document.getElementById("btn30");
 let span30= document.getElementById("close30");
+let chose30= document.getElementById("choose30")
+
+chose30.onclick= function () {
+    modal30.style.display= "none";
+}
 
 btn30.onclick = function () {
     modal30.style.display = "block";
@@ -781,7 +831,11 @@ window.onclick = function (event) {
 let modal31= document.getElementById("popup31");
 let btn31= document.getElementById("btn31");
 let span31= document.getElementById("close31");
+let chose31= document.getElementById("choose31")
 
+chose30.onclick= function () {
+    modal30.style.display= "none";
+}
 btn31.onclick= function () {
     modal31.style.display = "block";
 }
@@ -801,7 +855,11 @@ window.onclick= function (event) {
 let modal32= document.getElementById("popup32");
 let btn32= document.getElementById("btn32");
 let span32= document.getElementById("close32");
+let chose32= document.getElementById("choose32")
 
+chose32.onclick= function () {
+    modal32.style.display= "none";
+}
 btn32.onclick= function () {
     modal32.style.display = "block";
 }
@@ -820,7 +878,11 @@ window.onclick= function (event) {
 let modal33= document.getElementById("popup33");
 let btn33= document.getElementById("btn33");
 let span33= document.getElementById("close33");
+let chose33= document.getElementById("choose33")
 
+chose33.onclick= function () {
+    modal33.style.display= "none";
+}
 btn33.onclick= function () {
     modal33.style.display= "block";
 }
@@ -839,6 +901,11 @@ window.onclick = function (event) {
 let modal34= document.getElementById("popup34");
 let btn34= document.getElementById("btn34");
 let span34= document.getElementById("close34");
+let chose34= document.getElementById("choose34")
+
+chose34.onclick= function () {
+    modal34.style.display= "none";
+}
 
 btn34.onclick = function () {
     modal34.style.display = "block";
@@ -858,7 +925,11 @@ window.onclick = function (event) {
 let modal35= document.getElementById("popup35");
 let btn35= document.getElementById("btn35");
 let span35= document.getElementById("close35");
+let chose35= document.getElementById("choose35")
 
+chose35.onclick= function () {
+    modal35.style.display= "none";
+}
 btn35.onclick = function () {
     modal35.style.display = "block";
 }
@@ -877,6 +948,11 @@ window.onclick = function (event) {
 let modal36= document.getElementById("popup36");
 let btn36= document.getElementById("btn36");
 let span36= document.getElementById("close36");
+let chose36= document.getElementById("choose36")
+
+chose36.onclick= function () {
+    modal36.style.display= "none";
+}
 
 btn36.onclick = function () {
     modal36.style.display = "block";
@@ -897,7 +973,11 @@ window.onclick = function (event) {
 let modal37= document.getElementById("popup37");
 let btn37= document.getElementById("btn37");
 let span37= document.getElementById("close37");
+let chose37= document.getElementById("choose37")
 
+chose37.onclick= function () {
+    modal37.style.display= "none";
+}
 btn37.onclick = function () {
     modal37.style.display = "block";
 }
@@ -916,6 +996,11 @@ window.onclick = function (event) {
 let modal38= document.getElementById("popup38");
 let btn38= document.getElementById("btn38");
 let span38= document.getElementById("close38");
+let chose38= document.getElementById("choose38")
+
+chose38.onclick= function () {
+    modal38.style.display= "none";
+}
 
 btn38.onclick = function () {
     modal38.style.display = "block";
